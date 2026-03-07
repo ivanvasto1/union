@@ -44,7 +44,7 @@
   .float-wa{bottom:96px;background:#25D366;}
   .float-tg{bottom:36px;background:#0088cc;}
   .hero-grid{display:none;}
-.hero-glow{display:none;}
+.hero-glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(204,0,0,0.048) 0%,transparent 70%);pointer-events:none;}
   .card-bg-suit{position:absolute;font-size:400px;opacity:0.015;right:-80px;bottom:-80px;line-height:1;pointer-events:none;user-select:none;color:#fff;}
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
   .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
@@ -223,7 +223,7 @@
 
 <!-- CTA -->
 <section style="padding:120px 24px;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(204,0,0,0.06) 0%,transparent 70%);"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(204,0,0,0.036) 0%,transparent 70%);"></div>
   <div style="max-width:700px;margin:0 auto;text-align:center;position:relative;">
     <p class="section-label fade-up" style="margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> <span id="label-cta">GET STARTED</span></p>
     <h2 class="fade-up d1" id="cta-headline" style="font-size:52px;margin-bottom:24px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h2>
