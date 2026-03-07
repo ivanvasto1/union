@@ -50,6 +50,9 @@
   @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
   @media(max-width:768px){
+    nav{padding:0 12px!important;}
+    .lang-btn{padding:3px 5px!important;font-size:10px!important;}
+    
     .hero-headline{font-size:38px!important;}
     .unions-grid{grid-template-columns:1fr!important;}
     .trust-grid{grid-template-columns:1fr!important;}
@@ -74,20 +77,20 @@
 
 <!-- NAV -->
 <nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:900;background:transparent;transition:all 0.4s ease;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
-  <div style="display:flex;align-items:center;gap:6px;">
+  <div style="display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;">
     <svg width="35" height="26" viewBox="0 0 35 26" fill="none">
       <polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="white" stroke-width="1.8"/>
       <polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/>
     </svg>
-    <span style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:4px;color:#fff;">TOP UNION</span>
+    <span style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;color:#fff;white-space:nowrap;">TOP UNION</span>
   </div>
-  <div style="display:flex;align-items:center;gap:24px;">
+  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
     <div style="display:flex;align-items:center;gap:4px;border-left:1px solid #1a1a1a;padding-left:16px;">
       <button class="lang-btn active" onclick="setLang('en')">EN</button>
       <button class="lang-btn" onclick="setLang('ru')">RU</button>
       <button class="lang-btn" onclick="setLang('pt')">PT</button>
     </div>
-    <button class="btn-red" style="padding:10px 14px;font-size:12px;border-radius:2px;white-space:nowrap;" onclick="window.open('https://t.me/topallianceppp','_blank')" id="nav-join">JOIN NOW</button>
+    <button class="btn-red" style="padding:8px 10px;font-size:11px;border-radius:2px;white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis;" onclick="window.open('https://t.me/topallianceppp','_blank')" id="nav-join">JOIN NOW</button>
   </div>
 </nav>
 
