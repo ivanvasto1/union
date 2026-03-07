@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TOP UNION — Global Poker Union</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px;}
+  body{font-family:'Montserrat',sans-serif;background:#080808;color:#fff;overflow-x:hidden;}
+  ::-webkit-scrollbar{width:4px;}
+  ::-webkit-scrollbar-track{background:#080808;}
+  ::-webkit-scrollbar-thumb{background:#CC0000;}
+  .fade-up{opacity:0;transform:translateY(40px);transition:all 0.8s cubic-bezier(0.16,1,0.3,1);}
+  .fade-up.in{opacity:1;transform:translateY(0);}
+  .d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.35s;}.d4{transition-delay:0.5s;}
+  .btn-red{background:#CC0000;color:#fff;border:none;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:2px;transition:all 0.3s ease;}
+  .btn-red:hover{background:#FF1A1A;transform:translateY(-2px);box-shadow:0 8px 30px rgba(204,0,0,0.4);}
+  .btn-outline{background:transparent;color:#fff;border:1px solid #444;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:2px;transition:all 0.3s ease;}
+  .btn-outline:hover{border-color:#CC0000;color:#CC0000;}
+  .union-card{background:#0f0f0f;border:1px solid #1a1a1a;transition:all 0.4s ease;cursor:pointer;border-radius:4px;padding:40px 32px;position:relative;overflow:hidden;}
+  .union-card:hover{border-color:#CC0000;transform:translateY(-6px);box-shadow:0 20px 60px rgba(204,0,0,0.2);}
+  .trust-card{background:#0f0f0f;border:1px solid #1a1a1a;transition:all 0.4s ease;border-radius:4px;padding:36px 28px;}
+  .trust-card:hover{border-color:#CC0000;}
+  .section-label{font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:16px;}
+  .id-badge{font-family:'Courier New',monospace;background:rgba(204,0,0,0.1);border:1px solid rgba(204,0,0,0.3);color:#CC0000;padding:3px 10px;border-radius:3px;font-size:13px;letter-spacing:2px;display:inline-block;margin-bottom:32px;}
+  .lang-btn{background:transparent;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.2s;padding:4px 8px;color:#666;}
+  .lang-btn.active{color:#CC0000;}
+  .lang-btn:hover:not(.active){color:#999;}
+  .float-btn{position:fixed;right:24px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:1000;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(0,0,0,0.4);}
+  .float-btn:hover{transform:scale(1.12);}
+  .float-wa{bottom:96px;background:#25D366;}
+  .float-tg{bottom:36px;background:#0088cc;}
+  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(204,0,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(204,0,0,0.03) 1px,transparent 1px);background-size:60px 60px;}
+  .hero-glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(204,0,0,0.08) 0%,transparent 70%);pointer-events:none;}
+  .card-bg-suit{position:absolute;font-size:400px;opacity:0.015;right:-80px;bottom:-80px;line-height:1;pointer-events:none;user-select:none;color:#fff;}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
+  .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
+  .modal-box{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:6px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
+  .modal-box::-webkit-scrollbar{width:3px;}
+  .modal-box::-webkit-scrollbar-thumb{background:#CC0000;}
+  .modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#888;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+  .modal-close:hover{background:#CC0000;color:#fff;}
+  .modal-tab{background:#1a1a1a;border:none;color:#555;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;transition:all 0.2s;}
+  .modal-tab.active{background:#CC0000;color:#fff;}
+  .footer-link{background:none;border:none;color:#444;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
+  .footer-link:hover{color:#CC0000;}
+  @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+  @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+  @media(max-width:768px){
+    .hero-headline{font-size:38px!important;}
+    .unions-grid{grid-template-columns:1fr!important;}
+    .trust-grid{grid-template-columns:1fr!important;}
+    .stats-bar{grid-template-columns:1fr 1fr!important;}
+    .trust-stats{grid-template-columns:1fr 1fr!important;}
+    .float-btn{width:46px;height:46px;right:16px;}
+    .float-wa{bottom:84px;}.float-tg{bottom:28px;}
+    .modal-box{padding:24px!important;}
+  }
+  @media(max-width:480px){.hero-headline{font-size:30px!important;}}
+</style>
+</head>
+<body>
+
+<!-- Floating buttons -->
+<a href="https://api.whatsapp.com/send/?phone=%2B37368429373" target="_blank" class="float-btn float-wa">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="https://t.me/topallianceppp" target="_blank" class="float-btn float-tg">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:900;background:transparent;transition:all 0.4s ease;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+  <div style="display:flex;align-items:center;gap:6px;">
+    <svg width="35" height="26" viewBox="0 0 35 26" fill="none">
+      <polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="white" stroke-width="1.8"/>
+      <polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/>
+    </svg>
+    <span style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:4px;color:#fff;">TOP UNION</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:24px;">
+    <div style="display:flex;align-items:center;gap:4px;border-left:1px solid #1a1a1a;padding-left:16px;">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('ru')">RU</button>
+      <button class="lang-btn" onclick="setLang('pt')">PT</button>
+    </div>
+    <button class="btn-red" style="padding:10px 14px;font-size:12px;border-radius:2px;white-space:nowrap;" onclick="window.open('https://t.me/topallianceppp','_blank')" id="nav-join">JOIN NOW</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 16px 80px;">
+  <div style="position:absolute;inset:0;overflow:hidden;">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+</div>
+  <div id="hero-content" style="position:relative;max-width:900px;width:100%;text-align:center;">
+    <p class="section-label fade-up" style="margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> GLOBAL POKER UNION</p>
+    <h1 class="fade-up d1 hero-headline" id="hero-headline" style="font-size:72px;color:#fff;margin-bottom:28px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h1>
+    <p class="fade-up d2" id="hero-sub" style="font-size:18px;color:#bbb;margin-bottom:48px;line-height:1.7;font-weight:300;"></p>
+    <div class="fade-up d3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:80px;">
+      <button class="btn-red" id="cta-owner" style="padding:16px 36px;font-size:16px;border-radius:2px;width:100%;max-width:400px;" onclick="window.open('https://t.me/topallianceppp','_blank')"></button>
+      <button class="btn-outline" id="cta-explore" style="padding:16px 36px;font-size:16px;border-radius:2px;width:100%;max-width:400px;" onclick="document.getElementById('unions').scrollIntoView({behavior:'smooth'})"></button>
+    </div>
+    <div class="fade-up d4 stats-bar" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
+      <div style="background:#0f0f0f;padding:28px 16px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:42px;" class="counter" data-target="80" data-suffix="+">0+</div><div class="stat-label" data-key="stat_clubs" style="font-size:12px;color:#555;letter-spacing:1px;margin-top:6px;text-transform:uppercase;"></div></div>
+      <div style="background:#0f0f0f;padding:28px 16px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:42px;" class="counter" data-target="170000" data-suffix="+">0+</div><div class="stat-label" data-key="stat_players" style="font-size:12px;color:#555;letter-spacing:1px;margin-top:6px;text-transform:uppercase;"></div></div>
+      <div style="background:#0f0f0f;padding:28px 16px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:42px;" class="counter" data-target="3" data-suffix="">0</div><div class="stat-label" data-key="stat_platforms" style="font-size:12px;color:#555;letter-spacing:1px;margin-top:6px;text-transform:uppercase;"></div></div>
+      <div style="background:#0f0f0f;padding:28px 16px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:42px;">24/7</div><div class="stat-label" data-key="stat_uptime" style="font-size:12px;color:#555;letter-spacing:1px;margin-top:6px;text-transform:uppercase;"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIONS -->
+<section id="unions" style="padding:120px 24px;position:relative;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div id="unions-header" style="text-align:center;margin-bottom:64px;">
+      <p class="section-label fade-up" style="margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:8px;" id="unions-label"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> CHOOSE YOUR PLATFORM</p>
+      <h2 class="fade-up d1" id="unions-sub" style="font-size:52px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h2>
+    </div>
+    <div class="unions-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div class="union-card fade-up d2">
+        <div class="card-bg-suit">♠</div>
+        <div style="position:relative;z-index:1;">
+          <div style="font-size:11px;color:#CC0000;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;font-weight:700;background:rgba(204,0,0,0.08);border:1px solid rgba(204,0,0,0.2);display:inline-block;padding:4px 12px;border-radius:2px;">ClubGG</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;">EUROPA PARTY</h3>
+          <div class="id-badge">ID: 4453</div>
+          <ul style="list-style:none;margin-bottom:36px;" id="features-clubgg"></ul>
+          <button class="btn-red union-cta" style="width:100%;padding:14px;font-size:14px;border-radius:2px;" onclick="window.open('https://t.me/topallianceppp','_blank')"></button>
+        </div>
+      </div>
+      <div class="union-card fade-up d3">
+        <div class="card-bg-suit">♦</div>
+        <div style="position:relative;z-index:1;">
+          <div style="font-size:11px;color:#CC0000;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;font-weight:700;background:rgba(204,0,0,0.08);border:1px solid rgba(204,0,0,0.2);display:inline-block;padding:4px 12px;border-radius:2px;">PPPoker</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;">TOP UNION</h3>
+          <div class="id-badge">ID: 3404</div>
+          <ul style="list-style:none;margin-bottom:36px;" id="features-pp"></ul>
+          <button class="btn-red union-cta" style="width:100%;padding:14px;font-size:14px;border-radius:2px;" onclick="window.open('https://t.me/topallianceppp','_blank')"></button>
+        </div>
+      </div>
+      <div class="union-card fade-up d4">
+        <div class="card-bg-suit">♣</div>
+        <div style="position:relative;z-index:1;">
+          <div style="font-size:11px;color:#CC0000;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;font-weight:700;background:rgba(204,0,0,0.08);border:1px solid rgba(204,0,0,0.2);display:inline-block;padding:4px 12px;border-radius:2px;">X-Poker</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;">PRIME</h3>
+          <div class="id-badge">ID: 7301</div>
+          <ul style="list-style:none;margin-bottom:36px;" id="features-xp"></ul>
+          <button class="btn-red union-cta" style="width:100%;padding:14px;font-size:14px;border-radius:2px;" onclick="window.open('https://t.me/topallianceppp','_blank')"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section style="padding:120px 24px;background:#050505;position:relative;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:80px;">
+      <p class="section-label fade-up" style="margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> TRUST & SECURITY</p>
+      <h2 class="fade-up d1" id="trust-headline" style="font-size:48px;margin-bottom:20px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h2>
+      <p class="fade-up d2" id="trust-sub" style="font-size:16px;color:#666;max-width:560px;margin:0 auto;"></p>
+    </div>
+    <div class="trust-stats fade-up d2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;margin-bottom:60px;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
+      <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);" class="counter" data-target="170000" data-suffix="+">0+</div><div class="stat-label" data-key="trust_stat_players" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
+      <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);" class="counter" data-target="80" data-suffix="+">0+</div><div class="stat-label" data-key="trust_stat_clubs" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
+      <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);" class="counter" data-target="3" data-suffix="">0</div><div class="stat-label" data-key="trust_stat_platforms" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
+      <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);" class="counter" data-target="100" data-suffix="%">0%</div><div class="stat-label" data-key="trust_stat_transparency" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
+    </div>
+    <div class="trust-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div class="trust-card fade-up d2">
+        <div style="margin-bottom:20px;"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="10" y="18" width="20" height="16" rx="2" stroke="#CC0000" stroke-width="1.5"/><path d="M14 18V13a6 6 0 0 1 12 0v5" stroke="#CC0000" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="26" r="2.5" fill="#CC0000"/><line x1="20" y1="28.5" x2="20" y2="31" stroke="#CC0000" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 id="trust1-title" style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;"></h4>
+        <p id="trust1-desc" style="font-size:14px;color:#666;line-height:1.7;"></p>
+      </div>
+      <div class="trust-card fade-up d3">
+        <div style="margin-bottom:20px;"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" rx="2" stroke="#333" stroke-width="1.5"/><line x1="8" y1="14" x2="32" y2="14" stroke="#CC0000" stroke-width="1.5"/><rect x="13" y="4" width="2" height="6" rx="1" fill="#CC0000"/><rect x="25" y="4" width="2" height="6" rx="1" fill="#CC0000"/><path d="M13 21h4M13 26h8M21 21h6" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4 id="trust2-title" style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;"></h4>
+        <p id="trust2-desc" style="font-size:14px;color:#666;line-height:1.7;"></p>
+      </div>
+      <div class="trust-card fade-up d4">
+        <div style="margin-bottom:20px;"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="16" r="7" stroke="#CC0000" stroke-width="1.5"/><circle cx="20" cy="16" r="3" fill="#CC0000" opacity="0.3"/><circle cx="20" cy="16" r="1.5" fill="#CC0000"/><path d="M10 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#333" stroke-width="1.5" stroke-linecap="round"/><line x1="28" y1="28" x2="32" y2="32" stroke="#CC0000" stroke-width="1.5" stroke-linecap="round"/><circle cx="32" cy="32" r="2" fill="#CC0000"/></svg></div>
+        <h4 id="trust3-title" style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;"></h4>
+        <p id="trust3-desc" style="font-size:14px;color:#666;line-height:1.7;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:120px 24px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(204,0,0,0.06) 0%,transparent 70%);"></div>
+  <div style="max-width:700px;margin:0 auto;text-align:center;position:relative;">
+    <p class="section-label fade-up" style="margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> GET STARTED</p>
+    <h2 class="fade-up d1" id="cta-headline" style="font-size:52px;margin-bottom:24px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h2>
+    <p class="fade-up d2" id="cta-sub" style="font-size:17px;color:#777;margin-bottom:48px;line-height:1.7;"></p>
+    <div class="fade-up d3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://t.me/topallianceppp" target="_blank" class="btn-red" style="padding:18px 44px;font-size:16px;border-radius:2px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> TELEGRAM</a>
+      <a href="https://api.whatsapp.com/send/?phone=%2B37368429373" target="_blank" class="btn-outline" style="padding:18px 44px;font-size:16px;border-radius:2px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg> WHATSAPP</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid #1a1a1a;padding:40px 24px;text-align:center;">
+  <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px;">
+    <svg width="30" height="22" viewBox="0 0 35 26" fill="none"><polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="#444" stroke-width="1.8"/><polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/></svg>
+    <span style="font-family:'Bebas Neue',sans-serif;letter-spacing:4px;color:#666;font-size:16px;">TOP UNION</span>
+  </div>
+  <div id="footer-copy" style="font-size:13px;color:#666;margin-bottom:16px;"></div>
+  <div style="display:flex;gap:16px;justify-content:center;margin-bottom:24px;">
+    <a href="https://t.me/TOP_UNION_X" target="_blank" style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:3px;color:#888;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888'">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      TELEGRAM
+    </a>
+    <a href="https://www.instagram.com/top_union_x" target="_blank" style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:3px;color:#888;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888'">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      INSTAGRAM
+    </a>
+  </div>
+  <div style="display:flex;gap:20px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;">
+    <button class="footer-link" onclick="openModal('privacy')" id="fp-privacy"></button>
+    <span style="color:#1e1e1e;">·</span>
+    <button class="footer-link" onclick="openModal('terms')" id="fp-terms"></button>
+    <span style="color:#1e1e1e;">·</span>
+    <button class="footer-link" onclick="openModal('responsible')" id="fp-responsible"></button>
+  </div>
+  <div style="margin-bottom:12px;display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:11px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;">18+</span>
+    <span id="footer-disclaimer" style="font-size:12px;color:#666;"></span>
+  </div>
+  <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap;">
+    <span style="font-size:12px;color:#555;">ClubGG · Europa Party · ID 4453</span>
+    <span style="color:#444;">|</span>
+    <span style="font-size:12px;color:#555;">PPPoker · Top Union · ID 3404</span>
+    <span style="color:#444;">|</span>
+    <span style="font-size:12px;color:#555;">X-Poker · Prime · ID 7301</span>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
+    <div style="display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;">
+      <button class="modal-tab active" id="tab-privacy" onclick="switchTab('privacy')">Privacy</button>
+      <button class="modal-tab" id="tab-terms" onclick="switchTab('terms')">Terms</button>
+      <button class="modal-tab" id="tab-responsible" onclick="switchTab('responsible')">Resp. Gaming</button>
+    </div>
+    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
+    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:28px;"></div>
+    <div id="modal-content"></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#333;">© 2025 Global Poker Union</div>
+  </div>
+</div>
+
+<script>
+const T={
+  en:{
+    nav_join:"JOIN NOW",
+    hero_headline:"THE GLOBAL POKER UNION THAT RUNS THE GAME",
+    hero_sub:"80+ clubs. 170,000 players. 3 platforms.",
+    cta_owner:"JOIN AS A CLUB OWNER",cta_explore:"EXPLORE THE NETWORK",
+    stat_clubs:"Active Clubs",stat_players:"Players",stat_platforms:"Platforms",stat_uptime:"Uptime",
+    unions_headline:"CHOOSE YOUR PLATFORM",unions_sub:"Choose your platform. Join the network. Start earning.",
+    union_cta:"JOIN UNION",
+    features:["Premium traffic pool","Dedicated support team","Certified fair play","Weekly settlements","24/7 live tables","Fast-growing community","Flexible rake structure","Anti-bot protection","Largest agent network"],
+    trust_headline:"BUILT ON TRUST. BACKED BY NUMBERS.",trust_sub:"Every number here represents a real club owner, a real player, a real partnership.",
+    trust_1_title:"Certified RNG",trust_1_desc:"Every hand is provably fair. Certified random number generators with 24/7 monitoring.",
+    trust_2_title:"Weekly Reports",trust_2_desc:"Full financial transparency. Detailed weekly settlements for all partners.",
+    trust_3_title:"Anti-Fraud System",trust_3_desc:"Anti-bot and anti-fraud technology running around the clock.",
+    cta_headline:"READY TO SCALE YOUR POKER BUSINESS?",cta_sub:"Join 80+ club owners who already trust the Global Poker Union.",
+    footer_rights:"All rights reserved.",
+    trust_stat_players:"Players",trust_stat_clubs:"Clubs",trust_stat_platforms:"Platforms",trust_stat_transparency:"Transparency",
+    fp_privacy:"Privacy Policy",fp_terms:"Terms of Service",fp_responsible:"Responsible Gaming",
+    footer_disclaimer:"Platform & infrastructure provider only"
+  },
+  ru:{
+    nav_join:"ПРИСОЕДИНИТЬСЯ",
+    hero_headline:"ПОКЕРНЫЙ СОЮЗ, КОТОРЫЙ УПРАВЛЯЕТ ИГРОЙ",
+    hero_sub:"80+ клубов. 170 000 игроков. 3 платформы.",
+    cta_owner:"СТАТЬ ПАРТНЁРОМ",cta_explore:"УЗНАТЬ БОЛЬШЕ",
+    stat_clubs:"Активных клубов",stat_players:"Игроков",stat_platforms:"Платформы",stat_uptime:"Аптайм",
+    unions_headline:"ВЫБЕРИТЕ ПЛАТФОРМУ",unions_sub:"ВЫБЕРИТЕ ПЛАТФОРМУ. ВСТУПИТЕ В СОЮЗ. ЗАРАБАТЫВАЙТЕ.",
+    union_cta:"ВСТУПИТЬ В СОЮЗ",
+    features:["Премиум трафик-пул","Выделенная поддержка","Сертифицированная честность","Еженедельные расчёты","Столы 24/7","Быстрорастущее сообщество","Гибкий рейк","Антибот защита","Крупнейшая сеть агентов"],
+    trust_headline:"ПОСТРОЕНО НА ДОВЕРИИ. ПОДТВЕРЖДЕНО ЦИФРАМИ.",trust_sub:"Каждая цифра — это реальный клуб, реальный игрок, реальное партнёрство.",
+    trust_1_title:"Сертифицированный ГСЧ",trust_1_desc:"Каждая раздача честна и проверяема. Сертифицированные ГСЧ с круглосуточным мониторингом.",
+    trust_2_title:"Еженедельные отчёты",trust_2_desc:"Полная финансовая прозрачность. Детальные еженедельные расчёты для всех партнёров.",
+    trust_3_title:"Антифрод система",trust_3_desc:"Антибот и антифрод технологии работают круглосуточно.",
+    cta_headline:"ГОТОВЫ МАСШТАБИРОВАТЬ ПОКЕРНЫЙ БИЗНЕС?",cta_sub:"Присоединяйтесь к 80+ владельцам клубов, которые уже доверяют Глобальному Союзу.",
+    footer_rights:"Все права защищены.",
+    trust_stat_players:"Игроков",trust_stat_clubs:"Клубов",trust_stat_platforms:"Платформы",trust_stat_transparency:"Прозрачность",
+    fp_privacy:"Политика конфиденциальности",fp_terms:"Условия использования",fp_responsible:"Ответственная игра",
+    footer_disclaimer:"Только платформа и инфраструктура для клубов"
+  },
+  pt:{
+    nav_join:"ENTRAR AGORA",
+    hero_headline:"A UNIÃO GLOBAL DE POKER QUE DOMINA O JOGO",
+    hero_sub:"Mais de 80 clubes. 170.000 jogadores. 3 plataformas.",
+    cta_owner:"ENTRAR COMO DONO DE CLUBE",cta_explore:"EXPLORAR A REDE",
+    stat_clubs:"Clubes Ativos",stat_players:"Jogadores",stat_platforms:"Plataformas",stat_uptime:"Disponibilidade",
+    unions_headline:"ESCOLHA SUA PLATAFORMA",unions_sub:"Escolha sua plataforma. Entre na rede. Comece a lucrar.",
+    union_cta:"ENTRAR NA UNIÃO",
+    features:["Pool de tráfego premium","Equipe de suporte dedicada","Jogo justo certificado","Liquidações semanais","Mesas ao vivo 24/7","Comunidade em crescimento","Rake flexível","Proteção antibot","Maior rede de agentes"],
+    trust_headline:"CONSTRUÍDO NA CONFIANÇA. RESPALDADO POR NÚMEROS.",trust_sub:"Cada número representa um clube real, um jogador real, uma parceria real.",
+    trust_1_title:"GNA Certificado",trust_1_desc:"Cada mão é comprovadamente justa. GNA certificados com monitoramento 24/7.",
+    trust_2_title:"Relatórios Semanais",trust_2_desc:"Transparência financeira total. Liquidações semanais detalhadas para todos os parceiros.",
+    trust_3_title:"Sistema Antifraude",trust_3_desc:"Tecnologia antibot e antifraude funcionando 24 horas por dia.",
+    cta_headline:"PRONTO PARA ESCALAR SEU NEGÓCIO DE POKER?",cta_sub:"Junte-se a mais de 80 donos de clube que já confiam na União Global de Poker.",
+    footer_rights:"Todos os direitos reservados.",
+    trust_stat_players:"Jogadores",trust_stat_clubs:"Clubes",trust_stat_platforms:"Plataformas",trust_stat_transparency:"Transparência",
+    fp_privacy:"Política de Privacidade",fp_terms:"Termos de Serviço",fp_responsible:"Jogo Responsável",
+    footer_disclaimer:"Apenas plataforma e infraestrutura para clubes"
+  }
+};
+
+const LEGAL={
+  privacy:{
+    en:{title:"Privacy Policy",content:[{h:"1. Introduction",t:"Global Poker Union is committed to protecting your personal information."},{h:"2. Data We Collect",t:"We collect basic contact information you voluntarily provide, solely for establishing a business relationship."},{h:"3. How We Use Your Data",t:"Your data is used exclusively to communicate with you regarding partnership opportunities."},{h:"4. No Third-Party Sharing",t:"We do not sell, trade, or transfer your personal information to any third parties."},{h:"5. Data Security",t:"We implement appropriate technical measures to protect your personal information."},{h:"6. Contact",t:"Contact us via Telegram @topallianceppp or WhatsApp +37368429373."}]},
+    ru:{title:"Политика конфиденциальности",content:[{h:"1. Введение",t:"Global Poker Union обязуется защищать вашу личную информацию."},{h:"2. Данные",t:"Мы собираем базовую контактную информацию исключительно для деловых отношений."},{h:"3. Использование",t:"Данные используются для связи по вопросам партнёрства."},{h:"4. Третьи лица",t:"Мы не передаём информацию третьим лицам."},{h:"5. Безопасность",t:"Применяем технические меры для защиты вашей информации."},{h:"6. Контакт",t:"Telegram @topallianceppp или WhatsApp +37368429373."}]},
+    pt:{title:"Política de Privacidade",content:[{h:"1. Introdução",t:"A Global Poker Union protege suas informações pessoais."},{h:"2. Dados",t:"Coletamos informações básicas exclusivamente para fins comerciais."},{h:"3. Uso",t:"Dados usados exclusivamente para comunicação sobre parcerias."},{h:"4. Terceiros",t:"Não transferimos suas informações a terceiros."},{h:"5. Segurança",t:"Implementamos medidas técnicas para proteger suas informações."},{h:"6. Contato",t:"Telegram @topallianceppp ou WhatsApp +37368429373."}]}
+  },
+  terms:{
+    en:{title:"Terms of Service",content:[{h:"⚠️ 18+ ONLY",t:"Services strictly for adults 18+."},{h:"1. Platform & Infrastructure Only",t:"Global Poker Union is a B2B technology and infrastructure provider for poker club owners and agents."},{h:"2. No Gambling Services",t:"We do not provide gambling services directly to end users."},{h:"3. Limitation of Liability",t:"Partners are solely responsible for compliance with local laws."}]},
+    ru:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только инфраструктура",t:"Мы — B2B поставщик технологий для владельцев покерных клубов."},{h:"2. Не предоставляем игорные услуги",t:"Мы не предоставляем игорные услуги напрямую."},{h:"3. Ответственность",t:"Партнёры несут ответственность за соблюдение законодательства."}]},
+    pt:{title:"Termos de Serviço",content:[{h:"⚠️ APENAS +18",t:"Serviços estritamente para adultos com 18+."},{h:"1. Apenas Infraestrutura B2B",t:"Somos um provedor B2B para donos de clubes de poker."},{h:"2. Sem Serviços de Jogo",t:"Não prestamos serviços de jogo a usuários finais."},{h:"3. Responsabilidade",t:"Parceiros são responsáveis pelo cumprimento das leis locais."}]}
+  },
+  responsible:{
+    en:{title:"Responsible Gaming",content:[{h:"Our Commitment",t:"We promote responsible gaming across our entire network."},{h:"18+ Policy",t:"All poker activities are strictly limited to adults 18+."},{h:"Play Responsibly",t:"Set personal limits and never play beyond your means."},{h:"Support",t:"If you have a gambling problem, please seek professional help."}]},
+    ru:{title:"Ответственная игра",content:[{h:"Наша позиция",t:"Мы продвигаем принципы ответственной игры."},{h:"Политика 18+",t:"Все активности строго для лиц от 18 лет."},{h:"Играйте ответственно",t:"Устанавливайте личные лимиты."},{h:"Помощь",t:"При проблемах обратитесь к специалистам."}]},
+    pt:{title:"Jogo Responsável",content:[{h:"Compromisso",t:"Promovemos práticas de jogo responsável."},{h:"Política +18",t:"Atividades estritamente para maiores de 18."},{h:"Responsabilidade",t:"Estabeleça limites pessoais."},{h:"Apoio",t:"Se tiver problemas, procure ajuda profissional."}]}
+  }
+};
+
+const FEAT={clubgg:[0,1,2,3],pp:[8,7,6,3],xp:[5,4,6,2]};
+let lang='en',curModal='privacy';
+
+function setLang(l){
+  lang=l;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');
+  const t=T[l];
+  const isRu=l==='ru';
+  const hf=isRu?"'Oswald',sans-serif":"'Bebas Neue',sans-serif";
+
+  document.getElementById('nav-join').textContent=t.nav_join;
+
+  const hl=document.getElementById('hero-headline');
+  hl.style.fontFamily=hf;
+  hl.style.letterSpacing=isRu?'1px':'2px';
+  const phrases={'en':'GAME','ru':'ИГРОЙ','pt':'O JOGO'};
+  const phrase=phrases[l];
+  hl.innerHTML=t.hero_headline.replace(phrase,`<span style="color:#CC0000">${phrase}</span>`);
+
+  document.getElementById('hero-sub').textContent=t.hero_sub;
+  document.getElementById('cta-owner').textContent=t.cta_owner;
+  document.getElementById('cta-explore').textContent=t.cta_explore;
+
+  document.querySelectorAll('.stat-label').forEach(el=>{const k=el.dataset.key;if(k&&t[k])el.textContent=t[k];});
+
+  const arrowSvg='<svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>';
+  const ulEl=document.getElementById('unions-label');
+  ulEl.innerHTML=arrowSvg+' '+t.unions_headline;
+  ulEl.style.display='flex';ulEl.style.alignItems='center';ulEl.style.justifyContent='center';ulEl.style.gap='8px';
+  const us=document.getElementById('unions-sub');
+  us.style.fontFamily=hf;
+  us.style.letterSpacing=isRu?'0px':'2px';
+  us.textContent=t.unions_sub;
+
+  document.querySelectorAll('.union-cta').forEach(b=>b.textContent=t.union_cta);
+  ['clubgg','pp','xp'].forEach(k=>{
+    document.getElementById('features-'+k).innerHTML=FEAT[k].map(fi=>`<li style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:14px;color:#999;line-height:1.5;"><span style="color:#CC0000;margin-top:2px;flex-shrink:0;">▸</span>${t.features[fi]}</li>`).join('');
+  });
+
+  const th=document.getElementById('trust-headline');
+  th.style.fontFamily=hf; th.style.letterSpacing=isRu?'0px':'2px';
+  th.textContent=t.trust_headline;
+  document.getElementById('trust-sub').textContent=t.trust_sub;
+
+  [1,2,3].forEach(i=>{
+    const tt=document.getElementById(`trust${i}-title`);
+    tt.style.fontFamily=hf; tt.style.letterSpacing=isRu?'1px':'2px';
+    tt.textContent=t[`trust_${i}_title`];
+    document.getElementById(`trust${i}-desc`).textContent=t[`trust_${i}_desc`];
+  });
+
+  const ch=document.getElementById('cta-headline');
+  ch.style.fontFamily=hf; ch.style.letterSpacing=isRu?'0px':'2px';
+  ch.textContent=t.cta_headline;
+  document.getElementById('cta-sub').textContent=t.cta_sub;
+
+  document.getElementById('footer-copy').textContent=`© ${new Date().getFullYear()} Global Poker Union. ${t.footer_rights}`;
+  document.getElementById('fp-privacy').textContent=t.fp_privacy;
+  document.getElementById('fp-terms').textContent=t.fp_terms;
+  document.getElementById('fp-responsible').textContent=t.fp_responsible;
+  document.getElementById('footer-disclaimer').textContent=t.footer_disclaimer;
+
+  const tabs={privacy:l==='ru'?'Конфиденциальность':l==='pt'?'Privacidade':'Privacy',terms:l==='ru'?'Условия':l==='pt'?'Termos':'Terms',responsible:l==='ru'?'Отв. игра':l==='pt'?'Jogo Resp.':'Resp. Gaming'};
+  Object.keys(tabs).forEach(k=>{const el=document.getElementById('tab-'+k);if(el)el.textContent=tabs[k];});
+  if(document.getElementById('modal').classList.contains('open'))renderModal();
+}
+
+function openModal(type){curModal=type;document.getElementById('modal').classList.add('open');renderModal();}
+function closeModal(e){if(e.target===document.getElementById('modal'))document.getElementById('modal').classList.remove('open');}
+function switchTab(type){curModal=type;renderModal();}
+function renderModal(){
+  const doc=LEGAL[curModal][lang];
+  document.getElementById('modal-title').textContent=doc.title;
+  document.getElementById('modal-content').innerHTML=doc.content.map(b=>`<div style="margin-bottom:20px;"><p style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:#CC0000;margin-bottom:8px;margin-top:28px;">${b.h}</p><p style="font-size:14px;color:#888;line-height:1.8;">${b.t}</p></div>`).join('');
+  document.querySelectorAll('.modal-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+curModal).classList.add('active');
+}
+
+window.addEventListener('scroll',()=>{
+  const nav=document.getElementById('navbar');
+  if(window.scrollY>50){nav.style.background='rgba(8,8,8,0.95)';nav.style.backdropFilter='blur(20px)';nav.style.borderBottom='1px solid #1a1a1a';}
+  else{nav.style.background='transparent';nav.style.backdropFilter='none';nav.style.borderBottom='none';}
+});
+
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+const cobs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'';
+    let v=0,step=target/60;
+    const tm=setInterval(()=>{v+=step;if(v>=target){el.textContent=target.toLocaleString()+suffix;clearInterval(tm);}else el.textContent=Math.floor(v).toLocaleString()+suffix;},16);
+    cobs.unobserve(el);
+  });
+},{threshold:0.3});
+document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
+
+setLang('en');
+</script>
+</body>
+</html>
