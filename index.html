@@ -25,6 +25,15 @@
   .union-card:hover{border-color:#CC0000;transform:translateY(-6px);box-shadow:0 20px 60px rgba(204,0,0,0.2);}
   .trust-card{background:#0f0f0f;border:1px solid #1a1a1a;transition:all 0.4s ease;border-radius:4px;padding:36px 28px;}
   .trust-card:hover{border-color:#CC0000;}
+
+  .floating-symbols{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+  .floating-symbols span{position:absolute;font-family:'Georgia',serif;color:#fff;opacity:0;animation:floatUp linear infinite;}
+  @keyframes floatUp{
+    0%{opacity:0;transform:translateY(100vh) rotate(0deg);}
+    10%{opacity:0.09;}
+    90%{opacity:0.09;}
+    100%{opacity:0;transform:translateY(-120px) rotate(360deg);}
+  }
   .section-label{font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:16px;}
   .id-badge{font-family:'Courier New',monospace;background:rgba(204,0,0,0.1);border:1px solid rgba(204,0,0,0.3);color:#CC0000;padding:3px 10px;border-radius:3px;font-size:13px;letter-spacing:2px;display:inline-block;margin-bottom:32px;}
   .lang-btn{background:transparent;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.2s;padding:4px 8px;color:#666;}
@@ -34,7 +43,7 @@
   .float-btn:hover{transform:scale(1.12);}
   .float-wa{bottom:96px;background:#25D366;}
   .float-tg{bottom:36px;background:#0088cc;}
-  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(204,0,0,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(204,0,0,0.03) 1px,transparent 1px);background-size:60px 60px;}
+  .hero-grid{display:none;}
   .hero-glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(204,0,0,0.08) 0%,transparent 70%);pointer-events:none;}
   .card-bg-suit{position:absolute;font-size:400px;opacity:0.015;right:-80px;bottom:-80px;line-height:1;pointer-events:none;user-select:none;color:#fff;}
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
@@ -77,6 +86,24 @@
 </a>
 
 <!-- NAV -->
+
+<div class="floating-symbols">
+  <span style="left:5%;font-size:42px;animation-duration:18s;animation-delay:0s;">♠</span>
+  <span style="left:12%;font-size:33px;animation-duration:22s;animation-delay:3s;">♦</span>
+  <span style="left:22%;font-size:48px;animation-duration:26s;animation-delay:7s;">♣</span>
+  <span style="left:33%;font-size:36px;animation-duration:20s;animation-delay:1s;">♥</span>
+  <span style="left:45%;font-size:39px;animation-duration:24s;animation-delay:5s;">♠</span>
+  <span style="left:55%;font-size:30px;animation-duration:19s;animation-delay:9s;">♦</span>
+  <span style="left:65%;font-size:45px;animation-duration:28s;animation-delay:2s;">♣</span>
+  <span style="left:75%;font-size:33px;animation-duration:21s;animation-delay:6s;">♥</span>
+  <span style="left:85%;font-size:42px;animation-duration:23s;animation-delay:4s;">♠</span>
+  <span style="left:93%;font-size:36px;animation-duration:17s;animation-delay:8s;">♦</span>
+  <span style="left:8%;font-size:30px;animation-duration:25s;animation-delay:11s;">♣</span>
+  <span style="left:28%;font-size:39px;animation-duration:30s;animation-delay:13s;">♥</span>
+  <span style="left:50%;font-size:45px;animation-duration:22s;animation-delay:15s;">♠</span>
+  <span style="left:70%;font-size:33px;animation-duration:27s;animation-delay:10s;">♦</span>
+  <span style="left:90%;font-size:42px;animation-duration:20s;animation-delay:12s;">♣</span>
+</div>
 <nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:900;background:transparent;transition:all 0.4s ease;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
   <div style="display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;">
     <svg width="35" height="26" viewBox="0 0 35 26" fill="none">
@@ -101,7 +128,7 @@
     <div class="hero-grid"></div>
     <div class="hero-glow"></div>
 </div>
-  <div id="hero-content" style="position:relative;max-width:900px;width:100%;text-align:center;">
+  <div id="hero-content" style="position:relative;z-index:1;max-width:900px;width:100%;text-align:center;">
     <p class="section-label fade-up" style="margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> <span id="label-hero">GLOBAL POKER UNION</span></p>
     <h1 class="fade-up d1 hero-headline" id="hero-headline" style="font-size:72px;color:#fff;margin-bottom:28px;font-family:'Bebas Neue',sans-serif;line-height:1.05;letter-spacing:2px;text-transform:uppercase;"></h1>
     <p class="fade-up d2" id="hero-sub" style="font-size:18px;color:#bbb;margin-bottom:48px;line-height:1.7;font-weight:300;"></p>
