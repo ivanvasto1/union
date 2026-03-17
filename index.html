@@ -6,6 +6,25 @@
 <title>TOP UNION — Global Poker Union</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 35 35'%3E%3Cpolygon points='14.9,2.8 20.2,13 14.9,23.2 9.6,13' fill='none' stroke='white' stroke-width='1.8'/%3E%3Cpolygon points='8,1 15,13 8,25 1,13' fill='%23CC0000'/%3E%3C/svg%3E"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+<!-- Meta Pixel Code | ID: 1612507613228174 -->
+<!-- Conversions API Token (серверные события): EAAVYF5YCbLwBQzOblzd5rDXEtzszgvYUSCkvYPt4KZCtP3WPwqxYkKKVxsOsIbBDKO61uBqY52zZByAqQlZBd42NREwGxgvV0P6ELeY7quNgiiAPVPNJo5GPFJmK2EPPur9MboU7aCF7NnHHuuZBWCGcICoQUiDT02MJhhS37ohwZCmLiEoEB0bZAy5ZALp8i7oHgZDZD -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1612507613228174');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
@@ -548,6 +567,24 @@ const cobs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 setLang('en');
+
+// Meta Pixel — отслеживание кликов по кнопкам и Telegram-ссылкам
+document.addEventListener('click', function(e) {
+  const el = e.target.closest('a, button');
+  if (!el) return;
+  const href = el.getAttribute('href') || '';
+  const isTelegram = href.includes('t.me') || href.includes('telegram');
+  const isButton = el.tagName === 'BUTTON';
+  const isLink = el.tagName === 'A';
+  if (isTelegram || isButton || isLink) {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Contact', {
+        content_name: el.textContent.trim().substring(0, 50) || href,
+        content_category: isTelegram ? 'Telegram' : (isButton ? 'Button' : 'Link')
+      });
+    }
+  }
+});
 </script>
 </body>
 </html>
