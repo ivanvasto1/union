@@ -567,29 +567,34 @@ document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 setLang('en');
 
-// Meta Pixel — Contact event fires ONLY for WhatsApp and Telegram links
+// Meta Pixel — Contact event fires ONLY for WhatsApp and Telegram (a links + button onclick)
 document.addEventListener('click', function (e) {
-  const el = e.target.closest('a');
+  const el = e.target.closest('a, button');
   if (!el) return;
   const href = (el.getAttribute('href') || '').toLowerCase();
+  const onclick = (el.getAttribute('onclick') || '').toLowerCase();
   const isWhatsApp =
     href.includes('api.whatsapp.com') ||
-    href.includes('wa.me');
+    href.includes('wa.me') ||
+    onclick.includes('api.whatsapp.com') ||
+    onclick.includes('wa.me');
   const isTelegram =
     href.includes('t.me') ||
-    href.includes('telegram.me');
+    href.includes('telegram.me') ||
+    onclick.includes('t.me') ||
+    onclick.includes('telegram.me');
   if (typeof fbq === 'undefined') return;
   if (isWhatsApp) {
     fbq('track', 'Contact', {
       channel: 'whatsapp',
-      content_name: 'WhatsApp Click',
+      content_name: (el.textContent || 'WhatsApp Click').trim().substring(0, 50),
       content_category: 'Messaging'
     });
   }
   if (isTelegram) {
     fbq('track', 'Contact', {
       channel: 'telegram',
-      content_name: 'Telegram Click',
+      content_name: (el.textContent || 'Telegram Click').trim().substring(0, 50),
       content_category: 'Messaging'
     });
   }
