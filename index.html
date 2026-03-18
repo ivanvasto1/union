@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 
 <!-- Meta Pixel Code | ID: 1612507613228174 -->
-<!-- Conversions API Token (серверные события): EAAVYF5YCbLwBQzOblzd5rDXEtzszgvYUSCkvYPt4KZCtP3WPwqxYkKKVxsOsIbBDKO61uBqY52zZByAqQlZBd42NREwGxgvV0P6ELeY7quNgiiAPVPNJo5GPFJmK2EPPur9MboU7aCF7NnHHuuZBWCGcICoQUiDT02MJhhS37ohwZCmLiEoEB0bZAy5ZALp8i7oHgZDZD -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -568,21 +567,31 @@ document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 setLang('en');
 
-// Meta Pixel — отслеживание кликов по кнопкам и Telegram-ссылкам
-document.addEventListener('click', function(e) {
-  const el = e.target.closest('a, button');
+// Meta Pixel — Contact event fires ONLY for WhatsApp and Telegram links
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('a');
   if (!el) return;
-  const href = el.getAttribute('href') || '';
-  const isTelegram = href.includes('t.me') || href.includes('telegram');
-  const isButton = el.tagName === 'BUTTON';
-  const isLink = el.tagName === 'A';
-  if (isTelegram || isButton || isLink) {
-    if (typeof fbq !== 'undefined') {
-      fbq('track', 'Contact', {
-        content_name: el.textContent.trim().substring(0, 50) || href,
-        content_category: isTelegram ? 'Telegram' : (isButton ? 'Button' : 'Link')
-      });
-    }
+  const href = (el.getAttribute('href') || '').toLowerCase();
+  const isWhatsApp =
+    href.includes('api.whatsapp.com') ||
+    href.includes('wa.me');
+  const isTelegram =
+    href.includes('t.me') ||
+    href.includes('telegram.me');
+  if (typeof fbq === 'undefined') return;
+  if (isWhatsApp) {
+    fbq('track', 'Contact', {
+      channel: 'whatsapp',
+      content_name: 'WhatsApp Click',
+      content_category: 'Messaging'
+    });
+  }
+  if (isTelegram) {
+    fbq('track', 'Contact', {
+      channel: 'telegram',
+      content_name: 'Telegram Click',
+      content_category: 'Messaging'
+    });
   }
 });
 </script>
