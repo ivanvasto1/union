@@ -102,6 +102,20 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
     .hero-h1{font-size:30px!important;}
     .four-grid{grid-template-columns:1fr!important;}
   }
+
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
+  .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
+  .modal-box{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:6px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
+  .modal-box::-webkit-scrollbar{width:3px;}
+  .modal-box::-webkit-scrollbar-thumb{background:#CC0000;}
+  .modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#888;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+  .modal-close:hover{background:#CC0000;color:#fff;}
+  .modal-tab{background:#1a1a1a;border:none;color:#555;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;transition:all 0.2s;}
+  .modal-tab.active{background:#CC0000;color:#fff;}
+  .footer-link{background:none;border:none;color:#444;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
+  .footer-link:hover{color:#CC0000;}
+  @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+  @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 </style>
 </head>
 <body>
@@ -384,17 +398,123 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
 <!-- ═══════════════════════════════════════ -->
 <!-- FOOTER                                 -->
 <!-- ═══════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer style="border-top:1px solid #1a1a1a;padding:40px 24px;text-align:center;">
   <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px;">
     <svg width="30" height="22" viewBox="0 0 35 26" fill="none"><polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="#444" stroke-width="1.8"/><polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/></svg>
     <span style="font-family:'Bebas Neue',sans-serif;letter-spacing:4px;color:#666;font-size:16px;">TOP UNION</span>
   </div>
-  <p style="font-size:12px;color:#444;margin-bottom:12px;">X Poker · PRIME · Club ID 7301</p>
-  <a href="/" style="font-size:12px;color:#555;text-decoration:none;border-bottom:1px solid #2a2a2a;padding-bottom:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#555'">← Back to TOP UNION</a>
-  <p style="font-size:11px;color:#333;margin-top:20px;">© 2026 TOP UNION. Platform & infrastructure provider only.</p>
+  <div style="font-size:13px;color:#666;margin-bottom:16px;">© 2026 TOP UNION. Platform & infrastructure provider only.</div>
+  <div style="display:flex;gap:16px;justify-content:center;margin-bottom:24px;">
+    <a href="https://t.me/TOP_UNION_X" target="_blank" style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:3px;color:#888;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888'">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      TELEGRAM
+    </a>
+    <a href="https://www.instagram.com/top_union_x" target="_blank" style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:3px;color:#888;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888'">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      INSTAGRAM
+    </a>
+  </div>
+  <div style="display:flex;gap:20px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;">
+    <button class="footer-link" onclick="openModal('privacy')">Privacy Policy</button>
+    <span style="color:#1e1e1e;">·</span>
+    <button class="footer-link" onclick="openModal('terms')">Terms of Service</button>
+    <span style="color:#1e1e1e;">·</span>
+    <button class="footer-link" onclick="openModal('responsible')">Responsible Gaming</button>
+  </div>
+  <div style="margin-bottom:12px;display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:11px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;">18+</span>
+    <span style="font-size:12px;color:#666;">Platform & infrastructure provider only.</span>
+  </div>
+  <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap;">
+    <span style="font-size:12px;color:#555;">ClubGG · Europa Party · ID 4453</span>
+    <span style="color:#444;">|</span>
+    <a href="/pppoker" style="font-size:12px;color:#555;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='#555'">PPPoker · Top Union · ID 3404</a>
+    <span style="color:#444;">|</span>
+    <a href="/x-poker" style="font-size:12px;color:#555;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X-Poker · Prime · ID 7301</a>
+  </div>
 </footer>
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
+    <div style="display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;">
+      <button class="modal-tab active" id="tab-privacy" onclick="switchTab('privacy')">Privacy</button>
+      <button class="modal-tab" id="tab-terms" onclick="switchTab('terms')">Terms</button>
+      <button class="modal-tab" id="tab-responsible" onclick="switchTab('responsible')">Resp. Gaming</button>
+    </div>
+    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
+    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:28px;"></div>
+    <div id="modal-content"></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#333;">© 2026 TOP UNION</div>
+  </div>
+</div>
 
 <script>
+const LEGAL={
+  privacy:{
+    en:{title:"Privacy Policy",content:[{h:"1. Introduction",t:"TOP UNION is committed to protecting your personal information."},{h:"2. Data We Collect",t:"We collect basic contact information you voluntarily provide, solely for establishing a business relationship."},{h:"3. How We Use Your Data",t:"Your data is used exclusively to communicate with you regarding partnership opportunities."},{h:"4. No Third-Party Sharing",t:"We do not sell, trade, or transfer your personal information to any third parties."},{h:"5. Data Security",t:"We implement appropriate technical measures to protect your personal information."},{h:"6. Contact",t:"Contact us via Telegram @topallianceppp or WhatsApp +37368429373."}]},
+    ru:{title:"Политика конфиденциальности",content:[{h:"1. Введение",t:"TOP UNION обязуется защищать вашу личную информацию."},{h:"2. Данные",t:"Мы собираем базовую контактную информацию исключительно для деловых отношений."},{h:"3. Использование",t:"Данные используются для связи по вопросам партнёрства."},{h:"4. Третьи лица",t:"Мы не передаём информацию третьим лицам."},{h:"5. Безопасность",t:"Применяем технические меры для защиты вашей информации."},{h:"6. Контакт",t:"Telegram @topallianceppp или WhatsApp +37368429373."}]},
+    pt:{title:"Política de Privacidade",content:[{h:"1. Introdução",t:"A TOP UNION protege suas informações pessoais."},{h:"2. Dados",t:"Coletamos informações básicas exclusivamente para fins comerciais."},{h:"3. Uso",t:"Dados usados exclusivamente para comunicação sobre parcerias."},{h:"4. Terceiros",t:"Não transferimos suas informações a terceiros."},{h:"5. Segurança",t:"Implementamos medidas técnicas para proteger suas informações."},{h:"6. Contato",t:"Telegram @topallianceppp ou WhatsApp +37368429373."}]}
+  },
+  terms:{
+    en:{title:"Terms of Service",content:[{h:"⚠️ 18+ ONLY",t:"Services strictly for adults 18+."},{h:"1. Platform & Infrastructure Only",t:"TOP UNION is a B2B technology and infrastructure provider for poker club owners and agents."},{h:"2. No Gambling Services",t:"We do not provide gambling services directly to end users."},{h:"3. Limitation of Liability",t:"Partners are solely responsible for compliance with local laws."}]},
+    ru:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только инфраструктура",t:"Мы — B2B поставщик технологий для владельцев покерных клубов."},{h:"2. Не предоставляем игорные услуги",t:"Мы не предоставляем игорные услуги напрямую."},{h:"3. Ответственность",t:"Партнёры несут ответственность за соблюдение законодательства."}]},
+    pt:{title:"Termos de Serviço",content:[{h:"⚠️ APENAS +18",t:"Serviços estritamente para adultos com 18+."},{h:"1. Apenas Infraestrutura B2B",t:"Somos um provedor B2B para donos de clubes de poker."},{h:"2. Sem Serviços de Jogo",t:"Não prestamos serviços de jogo a usuários finais."},{h:"3. Responsabilidade",t:"Parceiros são responsáveis pelo cumprimento das leis locais."}]}
+  },
+  responsible:{
+    en:{title:"Responsible Gaming",content:[{h:"Our Commitment",t:"We promote responsible gaming across our entire network."},{h:"18+ Policy",t:"All poker activities are strictly limited to adults 18+."},{h:"Play Responsibly",t:"Set personal limits and never play beyond your means."},{h:"Support",t:"If you have a gambling problem, please seek professional help."}]},
+    ru:{title:"Ответственная игра",content:[{h:"Наша позиция",t:"Мы продвигаем принципы ответственной игры."},{h:"Политика 18+",t:"Все активности строго для лиц от 18 лет."},{h:"Играйте ответственно",t:"Устанавливайте личные лимиты."},{h:"Помощь",t:"При проблемах обратитесь к специалистам."}]},
+    pt:{title:"Jogo Responsável",content:[{h:"Compromisso",t:"Promovemos práticas de jogo responsável."},{h:"Política +18",t:"Atividades estritamente para maiores de 18."},{h:"Responsabilidade",t:"Estabeleça limites pessoais."},{h:"Apoio",t:"Se tiver problemas, procure ajuda profissional."}]}
+  }
+};
+
+const FAQ={
+  en:{
+    headline:"FREQUENTLY ASKED QUESTIONS",
+    items:[
+      {q:"What is Top Union?",a:"Top Union is a global ecosystem that synchronizes independent gaming clubs into a unified network. We provide a shared liquidity pool, ensuring 24/7 table activity and massive prize guarantees that are typically out of reach for individual clubs."},
+      {q:"Why should my club join the union?",a:"The biggest challenge for small and mid-sized clubs is \"empty tables.\" By joining Top Union, you instantly gain access to thousands of active players worldwide. This keeps your games running around the clock, increases your club's turnover, and allows you to offer any stakes at any time."},
+      {q:"Will I remain the owner of my club?",a:"Absolutely. You maintain 100% ownership and full control over your player base and brand. Top Union acts as your technology and liquidity partner—we provide the traffic and infrastructure, while you continue to run your business autonomously."},
+      {q:"Is the partnership secure?",a:"Security and fair play are our top priorities. Our system uses advanced monitoring tools to ensure a transparent gaming environment. Plus, our dedicated support team is available 24/7 to resolve any technical or operational issues instantly."},
+      {q:"How do I get started?",a:"The integration process is seamless. Simply contact our managers via Telegram or WhatsApp, and we will help you set up your club within the union and start attracting traffic the same day."}
+    ]
+  },
+  ru:{
+    headline:"ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
+    items:[
+      {q:"Что такое Top Union?",a:"Top Union — глобальная экосистема, объединяющая независимые игровые клубы в единую сеть. Мы предоставляем общий пул ликвидности, обеспечивая активность столов 24/7 и крупные гарантии призовых, недоступные для отдельных клубов."},
+      {q:"Почему мой клуб должен вступить в союз?",a:"Главная проблема малых и средних клубов — «пустые столы». Вступив в Top Union, вы мгновенно получаете доступ к тысячам активных игроков по всему миру. Это обеспечивает круглосуточную игру, увеличивает оборот клуба и позволяет предлагать любые ставки в любое время."},
+      {q:"Останусь ли я владельцем своего клуба?",a:"Абсолютно. Вы сохраняете 100% собственности и полный контроль над своей базой игроков и брендом. Top Union выступает технологическим и ликвидностным партнёром — мы обеспечиваем трафик и инфраструктуру, пока вы управляете бизнесом самостоятельно."},
+      {q:"Безопасно ли партнёрство?",a:"Безопасность и честная игра — наши главные приоритеты. Система использует передовые инструменты мониторинга для прозрачной игровой среды. Наша поддержка доступна 24/7 для мгновенного решения любых технических и операционных вопросов."},
+      {q:"Как начать?",a:"Процесс интеграции прост. Свяжитесь с нашими менеджерами через Telegram или WhatsApp — мы поможем настроить клуб в союзе и начать привлекать трафик в тот же день."}
+    ]
+  },
+  pt:{
+    headline:"PERGUNTAS FREQUENTES",
+    items:[
+      {q:"O que é o Top Union?",a:"O Top Union é um ecossistema global que sincroniza clubes de jogos independentes em uma rede unificada. Fornecemos um pool de liquidez compartilhado, garantindo atividade 24/7 nas mesas e grandes premiações normalmente inacessíveis para clubes individuais."},
+      {q:"Por que meu clube deve entrar no union?",a:"O maior desafio para clubes pequenos e médios são as \"mesas vazias\". Ao entrar no Top Union, você tem acesso imediato a milhares de jogadores ativos em todo o mundo, mantendo os jogos funcionando 24/7 e aumentando o faturamento do seu clube."},
+      {q:"Vou continuar sendo dono do meu clube?",a:"Com certeza. Você mantém 100% da propriedade e controle total sobre sua base de jogadores e marca. O Top Union atua como parceiro de tecnologia e liquidez — fornecemos tráfego e infraestrutura enquanto você continua administrando seu negócio de forma autônoma."},
+      {q:"A parceria é segura?",a:"Segurança e jogo justo são nossas principais prioridades. Nosso sistema usa ferramentas avançadas de monitoramento para garantir um ambiente transparente. Nossa equipe de suporte está disponível 24/7 para resolver qualquer problema técnico ou operacional instantaneamente."},
+      {q:"Como começar?",a:"O processo de integração é simples. Basta contatar nossos gerentes pelo Telegram ou WhatsApp e ajudaremos a configurar seu clube na união e atrair tráfego no mesmo dia."}
+    ]
+  }
+};
+
+let lang="en",curModal="privacy";
+
+function openModal(type){curModal=type;document.getElementById('modal').classList.add('open');renderModal();}
+function closeModal(e){if(e.target===document.getElementById('modal'))document.getElementById('modal').classList.remove('open');}
+function switchTab(type){curModal=type;renderModal();}
+function renderModal(){
+  const doc=LEGAL[curModal][lang];
+  document.getElementById('modal-title').textContent=doc.title;
+  document.getElementById('modal-content').innerHTML=doc.content.map(b=>`<div style="margin-bottom:20px;"><p style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:#CC0000;margin-bottom:8px;margin-top:28px;">${b.h}</p><p style="font-size:14px;color:#888;line-height:1.8;">${b.t}</p></div>`).join('');
+  document.querySelectorAll('.modal-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+curModal).classList.add('active');
+}
+
 // Fade-up on scroll
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
