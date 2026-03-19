@@ -97,7 +97,8 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
   @media(max-width:768px){
     nav{padding:0 12px!important;}
-    .nav-xpoker-link{font-size:10px!important;padding:3px 6px!important;}
+    .nav-xpoker-link{display:none!important;}
+    .nav-join-btn{padding:8px 14px!important;font-size:11px!important;}
     .hero-headline{font-size:38px!important;}
     .unions-grid{grid-template-columns:1fr!important;}
     .trust-grid{grid-template-columns:1fr!important;}
@@ -168,7 +169,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
         <button class="lang-option" onclick="setLang('ru');closeLangDropdown()" id="opt-ru">RU</button>
       </div>
     </div>
-    <button class="btn-red" style="padding:8px 10px;font-size:11px;border-radius:2px;white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis;" onclick="window.open('https://wa.me/447865080609?text=Hi%20I%20saw%20your%20ad%20and%20want%20to%20join%20your%20union','_blank')" id="nav-join">JOIN NOW</button>
+    <button class="btn-red nav-join-btn" style="padding:10px 24px;font-size:14px;border-radius:2px;white-space:nowrap;" onclick="window.open('https://wa.me/447865080609?text=Hi%20I%20saw%20your%20ad%20and%20want%20to%20join%20your%20union','_blank')" id="nav-join">JOIN NOW</button>
   </div>
 </nav>
 
@@ -203,7 +204,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   <div style="max-width:1200px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:80px;">
       <p class="section-label fade-up" id="unions-label" style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:16px;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> CHOOSE YOUR PLATFORM</p>
-      <p id="unions-sub" class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,54px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.05;">Choose your platform. Join the network. Start earning.</p>
+      <p id="unions-sub" class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,2.5vw,36px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.05;">Choose your platform. Join the network. Start earning.</p>
     </div>
     <div class="unions-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
 
@@ -212,13 +213,13 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
         <div style="margin-bottom:28px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;color:#1aa3ff;text-transform:uppercase;border:1px solid #1aa3ff44;padding:5px 12px;display:inline-block;">X-POKER</span>
         </div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,5vw,64px);letter-spacing:1px;color:#fff;line-height:0.95;margin-bottom:24px;">PRIME</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3vw,40px);letter-spacing:1px;color:#fff;line-height:1.0;margin-bottom:20px;">PRIME</div>
         <div style="margin-bottom:36px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;color:#CC0000;border:1px solid #CC000066;padding:6px 16px;display:inline-block;">ID: 7301</span>
         </div>
         <ul id="features-xp" style="list-style:none;padding:0;margin:0 0 auto;flex:1;"></ul>
         <a href="https://wa.me/447865080609?text=Hi%20I%20saw%20your%20ad%20and%20want%20to%20join%20your%20union" target="_blank" class="union-cta" style="display:block;text-align:center;background:#CC0000;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:4px;padding:18px;border-radius:2px;text-decoration:none;transition:opacity 0.2s;margin-top:36px;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">JOIN UNION</a>
-        <a href="/x-poker" style="display:block;text-align:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;color:#555;text-decoration:none;margin-top:12px;padding:6px;transition:color 0.2s;text-transform:uppercase;" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X Poker full details →</a>
+        <a href="/x-poker" style="display:block;text-align:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;color:#555;text-decoration:none;margin-top:12px;padding:6px;transition:color 0.2s;text-transform:uppercase;" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X Poker<br>full details →</a>
       </div>
 
       <!-- PPPoker -->
@@ -226,7 +227,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
         <div style="margin-bottom:28px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;color:#22c55e;text-transform:uppercase;border:1px solid #22c55e44;padding:5px 12px;display:inline-block;">PPPOKER</span>
         </div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,5vw,64px);letter-spacing:1px;color:#fff;line-height:0.95;margin-bottom:24px;">TOP UNION</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3vw,40px);letter-spacing:1px;color:#fff;line-height:1.0;margin-bottom:20px;">TOP UNION</div>
         <div style="margin-bottom:36px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;color:#CC0000;border:1px solid #CC000066;padding:6px 16px;display:inline-block;">ID: 3404</span>
         </div>
@@ -239,7 +240,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
         <div style="margin-bottom:28px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;color:#CC0000;text-transform:uppercase;border:1px solid #CC000044;padding:5px 12px;display:inline-block;">CLUB GG</span>
         </div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,5vw,64px);letter-spacing:1px;color:#fff;line-height:0.95;margin-bottom:24px;">EUROPA PARTY</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3vw,40px);letter-spacing:1px;color:#fff;line-height:1.0;margin-bottom:20px;">EUROPA PARTY</div>
         <div style="margin-bottom:36px;">
           <span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;color:#CC0000;border:1px solid #CC000066;padding:6px 16px;display:inline-block;">ID: 4453</span>
         </div>
@@ -412,7 +413,7 @@ const T={
   en:{
     nav_join:"JOIN NOW",
     hero_headline:"THE GLOBAL POKER UNION THAT RUNS THE GAME",
-    hero_sub:"Increase your club's revenue with access to a global liquidity network of 80+ clubs.",
+    hero_sub:"More active tables, more hands played, and more consistent game flow for your club.",
     cta_owner:"JOIN AS A CLUB OWNER",cta_explore:"EXPLORE THE NETWORK",
     stat_clubs:"Active Clubs",stat_players:"Players",stat_platforms:"Platforms",stat_uptime:"Uptime",
     label_hero:"GLOBAL POKER UNION",label_press_en:'AS SEEN IN',label_trust:"TRUST & SECURITY",label_cta:"GET STARTED",unions_headline:"CHOOSE YOUR PLATFORM",unions_sub:"Choose your platform. Join the network. Start earning.",
