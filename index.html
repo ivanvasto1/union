@@ -65,6 +65,16 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   .lang-btn{background:transparent;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.2s;padding:4px 8px;color:#666;}
   .lang-btn.active{color:#CC0000;}
   .lang-btn:hover:not(.active){color:#999;}
+  .lang-dropdown{position:relative;}
+  .lang-trigger{display:flex;align-items:center;gap:5px;background:transparent;border:1px solid #222;border-radius:2px;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;padding:5px 10px;color:#888;transition:all 0.2s;}
+  .lang-trigger:hover{border-color:#444;color:#fff;}
+  .lang-trigger svg{transition:transform 0.2s;}
+  .lang-dropdown.open .lang-trigger svg{transform:rotate(180deg);}
+  .lang-menu{position:absolute;top:calc(100% + 6px);right:0;background:#0f0f0f;border:1px solid #222;border-radius:2px;overflow:hidden;min-width:70px;z-index:999;opacity:0;pointer-events:none;transform:translateY(-4px);transition:all 0.18s ease;}
+  .lang-dropdown.open .lang-menu{opacity:1;pointer-events:auto;transform:translateY(0);}
+  .lang-option{display:block;width:100%;background:transparent;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;padding:9px 14px;color:#666;text-align:left;transition:all 0.15s;}
+  .lang-option:hover{background:#1a1a1a;color:#fff;}
+  .lang-option.active{color:#CC0000;}
   .float-btn{position:fixed;right:24px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:1000;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(0,0,0,0.4);}
   .float-btn:hover{transform:scale(1.12);}
   .float-wa{bottom:96px;background:#25D366;}
@@ -87,7 +97,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
   @media(max-width:768px){
     nav{padding:0 12px!important;}
-    .lang-btn{padding:3px 5px!important;font-size:10px!important;}
+    .nav-xpoker-link{font-size:10px!important;padding:3px 6px!important;}
     .hero-headline{font-size:38px!important;}
     .unions-grid{grid-template-columns:1fr!important;}
     .trust-grid{grid-template-columns:1fr!important;}
@@ -146,10 +156,17 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
     <span style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;color:#fff;white-space:nowrap;">TOP UNION</span>
   </div>
   <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
-    <div style="display:flex;align-items:center;gap:4px;border-left:1px solid #1a1a1a;padding-left:16px;">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-      <button class="lang-btn" onclick="setLang('ru')">RU</button>
+    <a href="/x-poker" class="nav-xpoker-link" style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;color:#666;text-decoration:none;padding:4px 8px;border-right:1px solid #1a1a1a;margin-right:4px;white-space:nowrap;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#666'">X POKER</a>
+    <div class="lang-dropdown" id="langDropdown">
+      <button class="lang-trigger" onclick="toggleLangDropdown()" id="lang-trigger-btn">
+        <span id="lang-current">EN</span>
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-menu">
+        <button class="lang-option active" onclick="setLang('en');closeLangDropdown()" id="opt-en">EN</button>
+        <button class="lang-option" onclick="setLang('pt');closeLangDropdown()" id="opt-pt">PT</button>
+        <button class="lang-option" onclick="setLang('ru');closeLangDropdown()" id="opt-ru">RU</button>
+      </div>
     </div>
     <button class="btn-red" style="padding:8px 10px;font-size:11px;border-radius:2px;white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis;" onclick="window.open('https://wa.me/447865080609?text=Hi%20I%20saw%20your%20ad%20and%20want%20to%20join%20your%20union','_blank')" id="nav-join">JOIN NOW</button>
   </div>
@@ -201,6 +218,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
         </div>
         <ul id="features-xp" style="list-style:none;padding:0;margin:0 0 auto;flex:1;"></ul>
         <a href="https://wa.me/447865080609?text=Hi%20I%20saw%20your%20ad%20and%20want%20to%20join%20your%20union" target="_blank" class="union-cta" style="display:block;text-align:center;background:#CC0000;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:4px;padding:18px;border-radius:2px;text-decoration:none;transition:opacity 0.2s;margin-top:36px;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">JOIN UNION</a>
+        <a href="/x-poker" style="display:block;text-align:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;color:#555;text-decoration:none;margin-top:12px;padding:6px;transition:color 0.2s;text-transform:uppercase;" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X Poker full details →</a>
       </div>
 
       <!-- PPPoker -->
@@ -369,7 +387,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
     <span style="color:#444;">|</span>
     <span style="font-size:12px;color:#555;">PPPoker · Top Union · ID 3404</span>
     <span style="color:#444;">|</span>
-    <span style="font-size:12px;color:#555;">X-Poker · Prime · ID 7301</span>
+    <a href="/x-poker" style="font-size:12px;color:#555;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X-Poker · Prime · ID 7301</a>
   </div>
 </footer>
 
@@ -394,7 +412,7 @@ const T={
   en:{
     nav_join:"JOIN NOW",
     hero_headline:"THE GLOBAL POKER UNION THAT RUNS THE GAME",
-    hero_sub:"Increase your club's revenue by 50+% with our global liquidity network.",
+    hero_sub:"Increase your club's revenue with access to a global liquidity network of 80+ clubs.",
     cta_owner:"JOIN AS A CLUB OWNER",cta_explore:"EXPLORE THE NETWORK",
     stat_clubs:"Active Clubs",stat_players:"Players",stat_platforms:"Platforms",stat_uptime:"Uptime",
     label_hero:"GLOBAL POKER UNION",label_press_en:'AS SEEN IN',label_trust:"TRUST & SECURITY",label_cta:"GET STARTED",unions_headline:"CHOOSE YOUR PLATFORM",unions_sub:"Choose your platform. Join the network. Start earning.",
@@ -404,7 +422,7 @@ const T={
     trust_1_title:"Certified RNG",trust_1_desc:"Every hand is provably fair. Certified random number generators with 24/7 monitoring.",
     trust_2_title:"Weekly Reports",trust_2_desc:"Full financial transparency. Detailed weekly settlements for all partners.",
     trust_3_title:"Anti-Fraud System",trust_3_desc:"Anti-bot and anti-fraud technology running around the clock.",
-    cta_headline:"READY TO SCALE YOUR POKER BUSINESS?",cta_sub:"Join 80+ club owners who already trust TOP UNION.",
+    cta_headline:"READY TO SCALE YOUR POKER BUSINESS?",cta_sub:"80+ club owners are already active in the TOP UNION network.",
     footer_rights:"All rights reserved.",
     trust_stat_players:"Players",trust_stat_clubs:"Clubs",trust_stat_platforms:"Platforms",trust_stat_tournaments:"Weekly Tournaments",trust_stat_transparency:"Transparency",
     fp_privacy:"Privacy Policy",fp_terms:"Terms of Service",fp_responsible:"Responsible Gaming",
@@ -431,7 +449,7 @@ const T={
     trust_1_title:"Сертифицированный ГСЧ",trust_1_desc:"Каждая раздача честна и проверяема. Сертифицированные ГСЧ с круглосуточным мониторингом.",
     trust_2_title:"Еженедельные отчёты",trust_2_desc:"Полная финансовая прозрачность. Детальные еженедельные расчёты для всех партнёров.",
     trust_3_title:"Антифрод система",trust_3_desc:"Антибот и антифрод технологии работают круглосуточно.",
-    cta_headline:"ГОТОВЫ МАСШТАБИРОВАТЬ ПОКЕРНЫЙ БИЗНЕС?",cta_sub:"Присоединяйтесь к 80+ владельцам клубов, которые уже доверяют TOP UNION.",
+    cta_headline:"ГОТОВЫ МАСШТАБИРОВАТЬ ПОКЕРНЫЙ БИЗНЕС?",cta_sub:"Более 80 владельцев клубов уже работают в сети TOP UNION.",
     footer_rights:"Все права защищены.",
     trust_stat_players:"Игроков",trust_stat_clubs:"Клубов",trust_stat_platforms:"Платформы",trust_stat_tournaments:"Еженедельные турниры",trust_stat_transparency:"Прозрачность",
     fp_privacy:"Политика конфиденциальности",fp_terms:"Условия использования",fp_responsible:"Ответственная игра",
@@ -458,7 +476,7 @@ const T={
     trust_1_title:"GNA Certificado",trust_1_desc:"Cada mão é comprovadamente justa. GNA certificados com monitoramento 24/7.",
     trust_2_title:"Relatórios Semanais",trust_2_desc:"Transparência financeira total. Liquidações semanais detalhadas para todos os parceiros.",
     trust_3_title:"Sistema Antifraude",trust_3_desc:"Tecnologia antibot e antifraude funcionando 24 horas por dia.",
-    cta_headline:"PRONTO PARA ESCALAR SEU NEGÓCIO DE POKER?",cta_sub:"Junte-se a mais de 80 donos de clube que já confiam no TOP UNION.",
+    cta_headline:"PRONTO PARA ESCALAR SEU NEGÓCIO DE POKER?",cta_sub:"Mais de 80 donos de clube já estão ativos na rede TOP UNION.",
     footer_rights:"Todos os direitos reservados.",
     trust_stat_players:"Jogadores",trust_stat_clubs:"Clubes",trust_stat_platforms:"Plataformas",trust_stat_tournaments:"Torneios Semanais",trust_stat_transparency:"Transparência",
     fp_privacy:"Política de Privacidade",fp_terms:"Termos de Serviço",fp_responsible:"Jogo Responsável",
@@ -528,10 +546,27 @@ const FAQ={
 const FEAT={clubgg:[0,1,2,3],pp:[8,7,6,3],xp:[5,4,6,2]};
 let lang='en',curModal='privacy';
 
+function toggleLangDropdown(){
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+function closeLangDropdown(){
+  document.getElementById('langDropdown').classList.remove('open');
+}
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e){
+  const dd = document.getElementById('langDropdown');
+  if(dd && !dd.contains(e.target)) closeLangDropdown();
+});
+
 function setLang(l){
   lang=l;
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
-  document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');
+  // Sync dropdown
+  const trigger = document.getElementById('lang-current');
+  if(trigger) trigger.textContent = l.toUpperCase();
+  ['en','pt','ru'].forEach(code => {
+    const opt = document.getElementById('opt-'+code);
+    if(opt) opt.classList.toggle('active', code === l);
+  });
   const t=T[l];
   const isRu=l==='ru';
   const hf=isRu?"'Oswald',sans-serif":"'Bebas Neue',sans-serif";
