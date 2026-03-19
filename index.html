@@ -51,7 +51,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   .btn-outline:hover{border-color:#CC0000;color:#CC0000;}
   .union-card{background:#0a0a0a;border:1px solid #1a1a1a;transition:border-color 0.3s ease,transform 0.3s ease;cursor:pointer;border-radius:4px;padding:44px 40px;position:relative;overflow:hidden;}
   .union-card:hover{border-color:#CC0000;transform:translateY(-6px);box-shadow:0 20px 60px rgba(204,0,0,0.2);}
-  .trust-card{background:#0f0f0f;border:1px solid #1a1a1a;transition:all 0.4s ease;border-radius:4px;padding:36px 28px;}
+  .trust-card{background:#0f0f0f;border:1px solid #1a1a1a;transition:all 0.4s ease;border-radius:4px;padding:36px 28px;display:flex;flex-direction:column;}
   .trust-card:hover{border-color:#CC0000;}
   .floating-symbols{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
   .floating-symbols span{position:absolute;font-family:'Georgia',serif;color:#fff;opacity:0;animation:floatUp linear infinite;}
@@ -265,7 +265,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
       <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);">$30 000</div><div class="stat-label" data-key="trust_stat_tournaments" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
       <div style="background:#0a0a0a;padding:40px 20px;text-align:center;"><div style="font-family:'Bebas Neue',sans-serif;color:#FFD700;font-size:clamp(28px,4vw,54px);" class="counter" data-target="100" data-suffix="%">0%</div><div class="stat-label" data-key="trust_stat_transparency" style="color:#444;font-size:12px;letter-spacing:2px;margin-top:8px;text-transform:uppercase;"></div></div>
     </div>
-    <div class="trust-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+    <div class="trust-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;">
       <div class="trust-card fade-up d2">
         <div style="margin-bottom:20px;"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="10" y="18" width="20" height="16" rx="2" stroke="#CC0000" stroke-width="1.5"/><path d="M14 18V13a6 6 0 0 1 12 0v5" stroke="#CC0000" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="26" r="2.5" fill="#CC0000"/><line x1="20" y1="28.5" x2="20" y2="31" stroke="#CC0000" stroke-width="1.5" stroke-linecap="round"/></svg></div>
         <h4 id="trust1-title" style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:12px;"></h4>
@@ -301,7 +301,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   <div style="max-width:1100px;margin:0 auto;">
 
     <!-- Header row -->
-    <div class="fade-up" style="display:flex;align-items:flex-start;justify-content:space-between;gap:48px;flex-wrap:wrap;margin-bottom:48px;">
+    <div class="fade-up" style="display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;margin-bottom:48px;">
       <div style="flex:1;min-width:260px;">
         <p class="section-label" style="margin-bottom:14px;display:flex;align-items:center;gap:8px;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> <span id="label-partner">PARTNER PROGRAM</span></p>
         <h2 id="partner-headline" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,3vw,40px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.1;margin-bottom:16px;"></h2>
