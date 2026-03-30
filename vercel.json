@@ -7,6 +7,14 @@
     {
       "source": "/pppoker",
       "destination": "/pppoker.html"
+    },
+    {
+      "source": "/clubgg",
+      "destination": "/clubgg.html"
+    },
+    {
+      "source": "/how-to-get-more-players-poker-club",
+      "destination": "/how-to-get-more-players-poker-club.html"
     }
   ],
   "headers": [
