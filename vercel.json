@@ -27,6 +27,10 @@
     {
       "source": "/ru/x-poker",
       "destination": "/ru-x-poker.html"
+    },
+    {
+      "source": "/ru/clubgg",
+      "destination": "/ru-clubgg.html"
     }
   ],
   "headers": [
