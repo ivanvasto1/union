@@ -19,6 +19,10 @@
     {
       "source": "/poker-agent-partner",
       "destination": "/poker-agent-partner.html"
+    },
+    {
+      "source": "/ru/pppoker",
+      "destination": "/ru-pppoker.html"
     }
   ],
   "headers": [
