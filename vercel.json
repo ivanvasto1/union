@@ -23,6 +23,10 @@
     {
       "source": "/ru/pppoker",
       "destination": "/ru-pppoker.html"
+    },
+    {
+      "source": "/ru/x-poker",
+      "destination": "/ru-x-poker.html"
     }
   ],
   "headers": [
