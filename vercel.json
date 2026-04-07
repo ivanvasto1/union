@@ -31,6 +31,10 @@
     {
       "source": "/ru/clubgg",
       "destination": "/ru-clubgg.html"
+    },
+    {
+      "source": "/pt/pppoker",
+      "destination": "/pt-pppoker.html"
     }
   ],
   "headers": [
