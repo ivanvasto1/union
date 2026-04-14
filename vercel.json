@@ -39,6 +39,10 @@
     {
       "source": "/pt/x-poker",
       "destination": "/pt-x-poker.html"
+    },
+    {
+      "source": "/pt/clubgg",
+      "destination": "/pt-clubgg.html"
     }
   ],
   "headers": [
