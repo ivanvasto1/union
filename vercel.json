@@ -5,6 +5,10 @@
       "destination": "/x-poker.html"
     },
     {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
       "source": "/pppoker",
       "destination": "/pppoker.html"
     },
