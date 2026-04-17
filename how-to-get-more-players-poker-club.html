@@ -192,6 +192,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
   @media(max-width:768px){
+    .stats-4-grid{grid-template-columns:1fr 1fr!important;}
     .hero-h1{font-size:36px!important;}
     .cta-row{flex-direction:column!important;align-items:stretch!important;}
     .cta-row a{justify-content:center;}
@@ -589,7 +590,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
     </div>
 
     <!-- Stats bar -->
-    <div class="four-grid fade-up" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
+    <div class="four-grid fade-up" class="stats-4-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,48px);color:#FFD700;" class="counter" data-target="80" data-suffix="+">0+</div>
         <div style="font-size:11px;color:#555;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Clubs</div>
