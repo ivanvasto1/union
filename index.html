@@ -423,14 +423,14 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
   <div style="max-width:900px;margin:0 auto;">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;" class="about-grid">
       <div>
-        <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:13px;text-transform:uppercase;margin-bottom:16px;">ABOUT TOP UNION</p>
-        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,3vw,38px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.1;margin-bottom:20px;">The Global Poker Club Network</h2>
-        <p style="font-size:14px;color:#888;line-height:1.8;margin-bottom:16px;">TOP UNION is a B2B poker infrastructure provider connecting independent poker clubs into a shared liquidity network. We operate across PPPoker, X Poker and ClubGG — three of the largest private poker club platforms in the world.</p>
-        <p style="font-size:14px;color:#888;line-height:1.8;margin-bottom:16px;">Our network spans 80+ clubs and 170,000+ players, ensuring active tables 24/7 at all stakes. Club owners retain full ownership and control — we provide the network layer and liquidity.</p>
-        <p style="font-size:14px;color:#888;line-height:1.8;">Weekly settlements, transparent reporting, and dedicated support are standard across all partnerships.</p>
+        <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:13px;text-transform:uppercase;margin-bottom:16px;" id="about-label">ABOUT TOP UNION</p>
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,3vw,38px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.1;margin-bottom:20px;" id="about-headline">The Global Poker Club Network</h2>
+        <p style="font-size:14px;color:#888;line-height:1.8;margin-bottom:16px;" id="about-p1">TOP UNION is a B2B poker infrastructure provider connecting independent poker clubs into a shared liquidity network. We operate across PPPoker, X Poker and ClubGG — three of the largest private poker club platforms in the world.</p>
+        <p style="font-size:14px;color:#888;line-height:1.8;margin-bottom:16px;" id="about-p2">Our network spans 80+ clubs and 170,000+ players, ensuring active tables 24/7 at all stakes. Club owners retain full ownership and control — we provide the network layer and liquidity.</p>
+        <p style="font-size:14px;color:#888;line-height:1.8;" id="about-p3">Weekly settlements, transparent reporting, and dedicated support are standard across all partnerships.</p>
       </div>
       <div>
-        <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:13px;text-transform:uppercase;margin-bottom:16px;">CONTACT</p>
+        <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:13px;text-transform:uppercase;margin-bottom:16px;" id="about-contact">CONTACT</p>
         <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:28px;">
           <div style="margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #111;">
             <div style="font-size:12px;color:#555;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Telegram</div>
@@ -454,7 +454,7 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
           </div>
         </div>
         <div style="margin-top:16px;">
-          <a href="/about" style="font-size:12px;color:#444;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">Read more about TOP UNION →</a>
+          <a href="/about" id="about-read-more" style="font-size:12px;color:#444;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">Read more about TOP UNION →</a>
         </div>
       </div>
     </div>
@@ -553,7 +553,14 @@ const T={
     partner2_title:"WE HANDLE THE REST",partner2_desc:"We take care of the pitch, onboarding, and setup.",
     partner3_title:"GET PAID WEEKLY",partner3_desc:"Earn recurring commission when the club becomes active.",
     partner_cta:"REFER A CLUB",
-    hero_partner_link:"Know a club owner? Become a partner"
+    hero_partner_link:"Know a club owner? Become a partner",
+    about_label:"ABOUT TOP UNION",
+    about_headline:"The Global Poker Club Network",
+    about_p1:"TOP UNION is a B2B poker infrastructure provider connecting independent poker clubs into a shared liquidity network. We operate across PPPoker, X Poker and ClubGG — three of the largest private poker club platforms in the world.",
+    about_p2:"Our network spans 80+ clubs and 170,000+ players, ensuring active tables 24/7 at all stakes. Club owners retain full ownership and control — we provide the network layer and liquidity.",
+    about_p3:"Weekly settlements, transparent reporting, and dedicated support are standard across all partnerships.",
+    about_contact:"CONTACT",
+    about_read_more:"Read more about TOP UNION →"
   },
   ru:{
     nav_join:"ВСТУПИТЬ",
@@ -583,7 +590,14 @@ const T={
     partner2_title:"МЫ ВСЁ БЕРЁМ НА СЕБЯ",partner2_desc:"Мы сами проводим презентацию, подключение и запуск.",
     partner3_title:"ПОЛУЧАЙТЕ ВЫПЛАТЫ",partner3_desc:"Получайте регулярную комиссию, когда клуб становится активным.",
     partner_cta:"ПОРЕКОМЕНДОВАТЬ КЛУБ",
-    hero_partner_link:"Знаете владельца клуба? Станьте партнёром"
+    hero_partner_link:"Знаете владельца клуба? Станьте партнёром",
+    about_label:"О TOP UNION",
+    about_headline:"Глобальная сеть покерных клубов",
+    about_p1:"TOP UNION — B2B провайдер покерной инфраструктуры, объединяющий независимые покерные клубы в общую сеть ликвидности. Мы работаем на PPPoker, X Poker и ClubGG — трёх крупнейших платформах для частных покерных клубов.",
+    about_p2:"Наша сеть объединяет 80+ клубов и 170 000+ игроков, обеспечивая активные столы 24/7 на всех лимитах. Владельцы клубов сохраняют полный контроль — мы предоставляем сетевой слой и ликвидность.",
+    about_p3:"Еженедельные выплаты, прозрачная отчётность и выделенная поддержка — стандарт для всех партнёров.",
+    about_contact:"КОНТАКТЫ",
+    about_read_more:"Подробнее о TOP UNION →"
   },
   pt:{
     nav_join:"ENTRAR",
@@ -613,7 +627,14 @@ const T={
     partner2_title:"NÓS CUIDAMOS DO RESTO",partner2_desc:"Nós fazemos o pitch, onboarding e setup.",
     partner3_title:"RECEBA SEMANALMENTE",partner3_desc:"Receba comissão recorrente quando o clube ficar ativo.",
     partner_cta:"INDICAR UM CLUBE",
-    hero_partner_link:"Conhece um dono de clube? Torne-se parceiro"
+    hero_partner_link:"Conhece um dono de clube? Torne-se parceiro",
+    about_label:"SOBRE TOP UNION",
+    about_headline:"A Rede Global de Clubes de Poker",
+    about_p1:"TOP UNION é um provedor B2B de infraestrutura de poker que conecta clubes independentes em uma rede de liquidez compartilhada. Operamos no PPPoker, X Poker e ClubGG — três das maiores plataformas privadas de poker do mundo.",
+    about_p2:"Nossa rede abrange 80+ clubes e 170.000+ jogadores, garantindo mesas ativas 24/7 em todos os limites. Os donos de clubes mantêm controle total — nós fornecemos a camada de rede e liquidez.",
+    about_p3:"Pagamentos semanais, relatórios transparentes e suporte dedicado são padrão em todas as parcerias.",
+    about_contact:"CONTATO",
+    about_read_more:"Saiba mais sobre a TOP UNION →"
   }
 };
 
@@ -750,6 +771,32 @@ function setLang(l){
   _s('xpoker-details', t.xpoker_details);
   _s('pppoker-details', t.pppoker_details);
   _s('clubgg-details', t.clubgg_details);
+
+  // About section translations
+  _s('about-label', t.about_label);
+  const ah = document.getElementById('about-headline');
+  if(ah){ah.style.fontFamily=hf;ah.style.letterSpacing=isRu?'1px':'2px';ah.textContent=t.about_headline;}
+  _s('about-p1', t.about_p1);
+  _s('about-p2', t.about_p2);
+  _s('about-p3', t.about_p3);
+  _s('about-contact', t.about_contact);
+  _s('about-read-more', t.about_read_more);
+
+  // Smart platform links — point to language versions
+  const pfx = l==='ru' ? '/ru' : l==='pt' ? '/pt' : '';
+  const xpEl = document.getElementById('xpoker-details');
+  const ppEl = document.getElementById('pppoker-details');
+  const cgEl = document.getElementById('clubgg-details');
+  if(xpEl) xpEl.href = pfx + '/x-poker';
+  if(ppEl) ppEl.href = pfx + '/pppoker';
+  if(cgEl) cgEl.href = pfx + '/clubgg';
+  // Also update nav links
+  document.querySelectorAll('.nav-xpoker-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if(!href) return;
+    const base = href.replace(/^\/(ru|pt)\//, '/').replace(/^\//, '');
+    a.href = pfx ? pfx + '/' + base : '/' + base;
+  });
 
   // FAQ
   const faq=FAQ[l];
