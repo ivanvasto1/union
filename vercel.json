@@ -47,6 +47,22 @@
     {
       "source": "/pt/clubgg",
       "destination": "/pt-clubgg.html"
+    },
+    {
+      "source": "/ru",
+      "destination": "/ru-index.html"
+    },
+    {
+      "source": "/ru/",
+      "destination": "/ru-index.html"
+    },
+    {
+      "source": "/pt",
+      "destination": "/pt-index.html"
+    },
+    {
+      "source": "/pt/",
+      "destination": "/pt-index.html"
     }
   ],
   "headers": [
