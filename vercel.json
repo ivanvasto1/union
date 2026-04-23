@@ -63,6 +63,14 @@
     {
       "source": "/pt/",
       "destination": "/pt-index.html"
+    },
+    {
+      "source": "/ru/poker-agent-partner",
+      "destination": "/ru-poker-agent-partner.html"
+    },
+    {
+      "source": "/ru/how-to-get-more-players-poker-club",
+      "destination": "/ru-how-to-get-more-players-poker-club.html"
     }
   ],
   "headers": [
