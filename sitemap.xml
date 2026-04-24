@@ -126,4 +126,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://topunion.club/pt/how-to-get-more-players-poker-club</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/how-to-get-more-players-poker-club"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/how-to-get-more-players-poker-club"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/how-to-get-more-players-poker-club"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topunion.club/pt/poker-agent-partner</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/poker-agent-partner"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/poker-agent-partner"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/poker-agent-partner"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
