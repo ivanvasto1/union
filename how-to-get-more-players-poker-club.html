@@ -275,6 +275,19 @@ src="https://www.facebook.com/tr?id=1612507613228174&ev=PageView&noscript=1"
 
   </div>
 </section>
+<!-- TRUST STRIP -->
+<div style="background:#0d0d0d;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:18px 24px;">
+  <div style="display:flex;gap:32px;align-items:center;justify-content:center;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇺🇸 USA</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇧🇷 BRAZIL</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇷🇺 RUSSIA</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇹🇭 THAILAND</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇵🇭 PHILIPPINES</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇰🇿 KAZAKHSTAN</div>
+    <div style="display:flex;align-items:center;gap:8px;color:#555;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#CC0000;flex-shrink:0;display:inline-block;"></span>🇺🇦 UKRAINE</div>
+  </div>
+</div>
+
 
 <!-- ═══════════════════════════════════════ -->
 <!-- TABLE OF CONTENTS                      -->
@@ -918,6 +931,46 @@ document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 // Pixel
 document.addEventListener('click',function(e){const el=e.target.closest('a,button');if(!el)return;const href=(el.getAttribute('href')||'').toLowerCase();const isWA=href.includes('api.whatsapp.com')||href.includes('wa.me');const isTG=href.includes('t.me')||href.includes('telegram.me');if(typeof fbq==='undefined')return;if(isWA)fbq('track','Contact',{channel:'whatsapp',content_name:'WhatsApp Click',content_category:'Messaging'});if(isTG)fbq('track','Contact',{channel:'telegram',content_name:'Telegram Click',content_category:'Messaging'});});
+
+// ── PROGRESS BAR ──
+const progressBar = document.createElement('div');
+progressBar.style.cssText = 'position:fixed;top:0;left:0;height:3px;background:#CC0000;z-index:9999;width:0%;transition:width 0.1s linear;';
+document.body.appendChild(progressBar);
+window.addEventListener('scroll', () => {
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+  progressBar.style.width = pct + '%';
+});
+
+// ── ANCHOR DOTS NAV ──
+const navEl = document.createElement('div');
+navEl.innerHTML = `<div id="anav-wrap" style="position:fixed;left:20px;top:50%;transform:translateY(-50%);z-index:900;display:flex;flex-direction:column;gap:14px;">
+  <a href="#why-empty" class="adot" title="Why Empty Tables" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#organic" class="adot" title="Organic Methods" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#paid" class="adot" title="Paid Acquisition" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#limits" class="adot" title="Why Methods Fail" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#liquidity" class="adot" title="The Real Solution" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#comparison" class="adot" title="All Methods Ranked" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+  <a href="#cta" class="adot" title="Get Started" style="width:8px;height:8px;border-radius:50%;background:#333;display:block;transition:all 0.25s;"></a>
+</div>`;
+document.body.appendChild(navEl);
+if (window.innerWidth < 1100) document.getElementById('anav-wrap').style.display = 'none';
+
+const adots = document.querySelectorAll('.adot');
+const secIds = ['why-empty','organic','paid','limits','liquidity','comparison','cta'];
+const ioNav = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const i = secIds.indexOf(entry.target.id);
+      adots.forEach((d, j) => {
+        d.style.background = j === i ? '#CC0000' : '#333';
+        d.style.transform = j === i ? 'scale(1.6)' : 'scale(1)';
+      });
+    }
+  });
+}, {threshold: 0.35});
+secIds.forEach(id => { const el = document.getElementById(id); if (el) ioNav.observe(el); });
+
 </script>
 </body>
 </html>
