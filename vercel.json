@@ -91,6 +91,10 @@
     {
       "source": "/es/x-poker",
       "destination": "/es-x-poker.html"
+    },
+    {
+      "source": "/es/pppoker",
+      "destination": "/es-pppoker.html"
     }
   ],
   "headers": [
