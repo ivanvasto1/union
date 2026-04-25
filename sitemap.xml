@@ -169,4 +169,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://topunion.club/es/clubgg</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/clubgg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/clubgg"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/clubgg"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/clubgg"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

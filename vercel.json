@@ -95,6 +95,10 @@
     {
       "source": "/es/pppoker",
       "destination": "/es-pppoker.html"
+    },
+    {
+      "source": "/es/clubgg",
+      "destination": "/es-clubgg.html"
     }
   ],
   "headers": [
