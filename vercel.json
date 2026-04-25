@@ -87,6 +87,10 @@
     {
       "source": "/es/",
       "destination": "/es-index.html"
+    },
+    {
+      "source": "/es/x-poker",
+      "destination": "/es-x-poker.html"
     }
   ],
   "headers": [
