@@ -79,6 +79,14 @@
     {
       "source": "/pt/how-to-get-more-players-poker-club",
       "destination": "/pt-how-to-get-more-players-poker-club.html"
+    },
+    {
+      "source": "/es",
+      "destination": "/es-index.html"
+    },
+    {
+      "source": "/es/",
+      "destination": "/es-index.html"
     }
   ],
   "headers": [

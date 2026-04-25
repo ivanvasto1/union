@@ -142,4 +142,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://topunion.club/es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
