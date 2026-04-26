@@ -117,6 +117,14 @@
       "destination": "/es-poker-agent-partner.html"
     },
     {
+      "source": "/ru/about",
+      "destination": "/ru-about.html"
+    },
+    {
+      "source": "/pt/about",
+      "destination": "/pt-about.html"
+    },
+    {
       "source": "/es/about",
       "destination": "/es-about.html"
     },
