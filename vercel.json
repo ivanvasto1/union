@@ -107,6 +107,22 @@
     {
       "source": "/es/poker-agent-partner",
       "destination": "/es-poker-agent-partner.html"
+    },
+    {
+      "source": "/es/about",
+      "destination": "/es-about.html"
+    },
+    {
+      "source": "/top-union-vs-primetime-vs-pppfish",
+      "destination": "/top-union-vs-primetime-vs-pppfish.html"
+    },
+    {
+      "source": "/best-poker-unions-2026",
+      "destination": "/best-poker-unions-2026.html"
+    },
+    {
+      "source": "/how-to-join-x-poker-union",
+      "destination": "/how-to-join-x-poker-union.html"
     }
   ],
   "headers": [
