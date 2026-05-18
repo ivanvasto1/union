@@ -1,8 +1,24 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "ref"
+        }
+      ],
+      "destination": "https://topunion.club/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
-      "has": [{"type": "host", "value": "www.topunion.club"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.topunion.club"
+        }
+      ],
       "destination": "https://topunion.club/:path*",
       "permanent": true
     }
