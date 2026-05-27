@@ -25,6 +25,14 @@
   ],
   "rewrites": [
     {
+      "source": "/join-x-poker-union",
+      "destination": "/join-x-poker-union.html"
+    },
+    {
+      "source": "/join-pppoker-union",
+      "destination": "/join-pppoker-union.html"
+    },
+    {
       "source": "/x-poker",
       "destination": "/x-poker.html"
     },
