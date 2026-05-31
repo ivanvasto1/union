@@ -258,4 +258,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url><loc>https://topunion.club/ru/join-x-poker-union</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://topunion.club/ru/join-pppoker-union</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
