@@ -1,0 +1,382 @@
+const T={
+  en:{
+    nav_join:"JOIN NOW",
+    hero_headline:"THE GLOBAL POKER UNION THAT RUNS THE GAME",
+    hero_sub:"More active tables, more hands played, and more consistent game flow for your club.",
+    cta_owner:"JOIN AS A CLUB OWNER",cta_explore:"EXPLORE THE NETWORK",
+    stat_clubs:"Active Clubs",stat_players:"Players",stat_platforms:"Platforms",stat_uptime:"Uptime",
+    label_hero:"TOP UNION",label_press_en:'AS SEEN IN',label_trust:"TRUST & SECURITY",label_cta:"GET STARTED",unions_headline:"CHOOSE YOUR PLATFORM",unions_sub:"Choose your platform. Join the network. Start earning.",
+    union_cta:"JOIN UNION",
+    xpoker_details:"X Poker full details →",
+    pppoker_details:"PPPoker full details →",
+    clubgg_details:"ClubGG full details →",
+    features:["Premium traffic pool","Dedicated support team","Certified fair play","Weekly settlements","24/7 live tables","Fast-growing community","Flexible rake structure","Anti-bot protection","Largest agent network"],
+    trust_headline:"BUILT ON TRUST. BACKED BY NUMBERS.",trust_sub:"Every number here represents a real club owner, a real player, a real partnership.",
+    trust_1_title:"Certified RNG",trust_1_desc:"Every hand is provably fair. Certified random number generators with 24/7 monitoring.",
+    trust_2_title:"Weekly Reports",trust_2_desc:"Full financial transparency. Detailed weekly settlements for all partners.",
+    trust_3_title:"Anti-Fraud System",trust_3_desc:"Anti-bot and anti-fraud technology running around the clock.",
+    cta_headline:"READY TO SCALE YOUR POKER BUSINESS?",cta_sub:"80+ club owners are already active in the TOP UNION network.",
+    footer_rights:"All rights reserved.",
+    trust_stat_players:"Players",trust_stat_clubs:"Clubs",trust_stat_platforms:"Platforms",trust_stat_tournaments:"Weekly Tournaments",trust_stat_transparency:"Transparency",
+    fp_privacy:"Privacy Policy",fp_terms:"Terms of Service",fp_responsible:"Responsible Gaming",
+    footer_disclaimer:"Platform & infrastructure provider only",
+    label_partner:"PARTNER PROGRAM",
+    partner_headline:"KNOW A CLUB OWNER? GET PAID WEEKLY.",
+    partner_sub:"Introduce a poker club to TOP UNION. We handle the onboarding, you earn recurring weekly commission.",
+    partner1_title:"INTRODUCE A CLUB",partner1_desc:"Introduce a club owner or manager.",
+    partner2_title:"WE HANDLE THE REST",partner2_desc:"We take care of the pitch, onboarding, and setup.",
+    partner3_title:"GET PAID WEEKLY",partner3_desc:"Earn recurring commission when the club becomes active.",
+    partner_cta:"REFER A CLUB",
+    hero_partner_link:"Know a club owner? Become a partner",
+    about_label:"ABOUT TOP UNION",
+    about_headline:"The Global Poker Club Network",
+    about_p1:"TOP UNION is a B2B poker infrastructure provider connecting independent poker clubs into a shared liquidity network. We operate across PPPoker, X Poker and ClubGG — three of the largest private poker club platforms in the world.",
+    about_p2:"Our network spans 80+ clubs and 170,000+ players, ensuring active tables 24/7 at all stakes. Club owners retain full ownership and control — we provide the network layer and liquidity.",
+    about_p3:"Weekly settlements, transparent reporting, and dedicated support are standard across all partnerships.",
+    about_contact:"CONTACT",
+    about_read_more:"Read more about TOP UNION →"
+  },
+  ru:{
+    nav_join:"ВСТУПИТЬ",
+    hero_headline:"ПОКЕРНЫЙ СОЮЗ, КОТОРЫЙ УПРАВЛЯЕТ ИГРОЙ",
+    hero_sub:"Больше активных столов, больше сыгранных раздач и стабильный игровой поток для вашего клуба.",
+    cta_owner:"СТАТЬ ПАРТНЁРОМ",cta_explore:"УЗНАТЬ БОЛЬШЕ",
+    stat_clubs:"Активных клубов",stat_players:"Игроков",stat_platforms:"Платформы",stat_uptime:"Аптайм",
+    label_hero:"TOP UNION",label_press_ru:'О НАС ПИШУТ',label_trust:"ДОВЕРИЕ И БЕЗОПАСНОСТЬ",label_cta:"НАЧАТЬ",unions_headline:"ВЫБЕРИТЕ ПЛАТФОРМУ",unions_sub:"ВЫБЕРИТЕ ПЛАТФОРМУ. ВСТУПИТЕ В СОЮЗ. ЗАРАБАТЫВАЙТЕ.",
+    union_cta:"ВСТУПИТЬ В СОЮЗ",
+    xpoker_details:"X Poker подробнее →",
+    pppoker_details:"PPPoker подробнее →",
+    clubgg_details:"ClubGG подробнее →",
+    features:["Премиум трафик-пул","Выделенная поддержка","Сертифицированная честность","Еженедельные расчёты","Столы 24/7","Быстрорастущее сообщество","Гибкий рейк","Антибот защита","Крупнейшая сеть агентов"],
+    trust_headline:"ПОСТРОЕНО НА ДОВЕРИИ. ПОДТВЕРЖДЕНО ЦИФРАМИ.",trust_sub:"Каждая цифра — это реальный клуб, реальный игрок, реальное партнёрство.",
+    trust_1_title:"Сертифицированный ГСЧ",trust_1_desc:"Каждая раздача честна и проверяема. Сертифицированные ГСЧ с круглосуточным мониторингом.",
+    trust_2_title:"Еженедельные отчёты",trust_2_desc:"Полная финансовая прозрачность. Детальные еженедельные расчёты для всех партнёров.",
+    trust_3_title:"Антифрод система",trust_3_desc:"Антибот и антифрод технологии работают круглосуточно.",
+    cta_headline:"ГОТОВЫ МАСШТАБИРОВАТЬ ПОКЕРНЫЙ БИЗНЕС?",cta_sub:"Более 80 владельцев клубов уже работают в сети TOP UNION.",
+    footer_rights:"Все права защищены.",
+    trust_stat_players:"Игроков",trust_stat_clubs:"Клубов",trust_stat_platforms:"Платформы",trust_stat_tournaments:"Еженедельные турниры",trust_stat_transparency:"Прозрачность",
+    fp_privacy:"Политика конфиденциальности",fp_terms:"Условия использования",fp_responsible:"Ответственная игра",
+    footer_disclaimer:"Только платформа и инфраструктура для клубов",
+    label_partner:"ПАРТНЁРСКАЯ ПРОГРАММА",
+    partner_headline:"ЗНАЕТЕ ВЛАДЕЛЬЦА КЛУБА? ПОЛУЧАЙТЕ ВЫПЛАТЫ ЕЖЕНЕДЕЛЬНО.",
+    partner_sub:"Познакомьте покер-клуб с TOP UNION. Мы берём на себя подключение, а вы получаете регулярную еженедельную комиссию.",
+    partner1_title:"ПОЗНАКОМЬТЕ С КЛУБОМ",partner1_desc:"Передайте контакт владельца или менеджера клуба.",
+    partner2_title:"МЫ ВСЁ БЕРЁМ НА СЕБЯ",partner2_desc:"Мы сами проводим презентацию, подключение и запуск.",
+    partner3_title:"ПОЛУЧАЙТЕ ВЫПЛАТЫ",partner3_desc:"Получайте регулярную комиссию, когда клуб становится активным.",
+    partner_cta:"ПОРЕКОМЕНДОВАТЬ КЛУБ",
+    hero_partner_link:"Знаете владельца клуба? Станьте партнёром",
+    about_label:"О TOP UNION",
+    about_headline:"Глобальная сеть покерных клубов",
+    about_p1:"TOP UNION — B2B провайдер покерной инфраструктуры, объединяющий независимые покерные клубы в общую сеть ликвидности. Мы работаем на PPPoker, X Poker и ClubGG — трёх крупнейших платформах для частных покерных клубов.",
+    about_p2:"Наша сеть объединяет 80+ клубов и 170 000+ игроков, обеспечивая активные столы 24/7 на всех лимитах. Владельцы клубов сохраняют полный контроль — мы предоставляем сетевой слой и ликвидность.",
+    about_p3:"Еженедельные выплаты, прозрачная отчётность и выделенная поддержка — стандарт для всех партнёров.",
+    about_contact:"КОНТАКТЫ",
+    about_read_more:"Подробнее о TOP UNION →"
+  },
+  pt:{
+    nav_join:"ENTRAR",
+    hero_headline:"A UNIÃO GLOBAL DE POKER QUE DOMINA O JOGO",
+    hero_sub:"Mais mesas ativas, mais mãos jogadas e um fluxo de jogo mais consistente para o seu clube.",
+    cta_owner:"ENTRAR COMO DONO DE CLUBE",cta_explore:"EXPLORAR A REDE",
+    stat_clubs:"Clubes Ativos",stat_players:"Jogadores",stat_platforms:"Plataformas",stat_uptime:"Disponibilidade",
+    label_hero:"UNIÃO GLOBAL",label_press_pt:'FALARAM SOBRE NÓS',label_trust:"CONFIANÇA E SEGURANÇA",label_cta:"COMEÇAR",unions_headline:"ESCOLHA SUA PLATAFORMA",unions_sub:"Escolha sua plataforma. Entre na rede. Comece a lucrar.",
+    union_cta:"ENTRAR NA UNIÃO",
+    xpoker_details:"X Poker detalhes →",
+    pppoker_details:"PPPoker detalhes →",
+    clubgg_details:"ClubGG detalhes →",
+    features:["Pool de tráfego premium","Equipe de suporte dedicada","Jogo justo certificado","Liquidações semanais","Mesas ao vivo 24/7","Comunidade em crescimento","Rake flexível","Proteção antibot","Maior rede de agentes"],
+    trust_headline:"CONSTRUÍDO NA CONFIANÇA. RESPALDADO POR NÚMEROS.",trust_sub:"Cada número representa um clube real, um jogador real, uma parceria real.",
+    trust_1_title:"GNA Certificado",trust_1_desc:"Cada mão é comprovadamente justa. GNA certificados com monitoramento 24/7.",
+    trust_2_title:"Relatórios Semanais",trust_2_desc:"Transparência financeira total. Liquidações semanais detalhadas para todos os parceiros.",
+    trust_3_title:"Sistema Antifraude",trust_3_desc:"Tecnologia antibot e antifraude funcionando 24 horas por dia.",
+    cta_headline:"PRONTO PARA ESCALAR SEU NEGÓCIO DE POKER?",cta_sub:"Mais de 80 donos de clube já estão ativos na rede TOP UNION.",
+    footer_rights:"Todos os direitos reservados.",
+    trust_stat_players:"Jogadores",trust_stat_clubs:"Clubes",trust_stat_platforms:"Plataformas",trust_stat_tournaments:"Torneios Semanais",trust_stat_transparency:"Transparência",
+    fp_privacy:"Política de Privacidade",fp_terms:"Termos de Serviço",fp_responsible:"Jogo Responsável",
+    footer_disclaimer:"Apenas plataforma e infraestrutura para clubes",
+    label_partner:"PROGRAMA DE PARCERIA",
+    partner_headline:"CONHECE UM DONO DE CLUBE? RECEBA TODA SEMANA.",
+    partner_sub:"Apresente um clube de poker ao TOP UNION. Nós cuidamos do onboarding e você recebe comissão recorrente semanal.",
+    partner1_title:"APRESENTE UM CLUBE",partner1_desc:"Apresente um dono ou gerente de clube.",
+    partner2_title:"NÓS CUIDAMOS DO RESTO",partner2_desc:"Nós fazemos o pitch, onboarding e setup.",
+    partner3_title:"RECEBA SEMANALMENTE",partner3_desc:"Receba comissão recorrente quando o clube ficar ativo.",
+    partner_cta:"INDICAR UM CLUBE",
+    hero_partner_link:"Conhece um dono de clube? Torne-se parceiro",
+    about_label:"SOBRE TOP UNION",
+    about_headline:"A Rede Global de Clubes de Poker",
+    about_p1:"TOP UNION é um provedor B2B de infraestrutura de poker que conecta clubes independentes em uma rede de liquidez compartilhada. Operamos no PPPoker, X Poker e ClubGG — três das maiores plataformas privadas de poker do mundo.",
+    about_p2:"Nossa rede abrange 80+ clubes e 170.000+ jogadores, garantindo mesas ativas 24/7 em todos os limites. Os donos de clubes mantêm controle total — nós fornecemos a camada de rede e liquidez.",
+    about_p3:"Pagamentos semanais, relatórios transparentes e suporte dedicado são padrão em todas as parcerias.",
+    about_contact:"CONTATO",
+    about_read_more:"Saiba mais sobre a TOP UNION →"
+  }
+};
+
+const LEGAL={
+  privacy:{
+    en:{title:"Privacy Policy",content:[{h:"1. Introduction",t:"TOP UNION is committed to protecting your personal information."},{h:"2. Data We Collect",t:"We collect basic contact information you voluntarily provide, solely for establishing a business relationship."},{h:"3. How We Use Your Data",t:"Your data is used exclusively to communicate with you regarding partnership opportunities."},{h:"4. No Third-Party Sharing",t:"We do not sell, trade, or transfer your personal information to any third parties."},{h:"5. Data Security",t:"We implement appropriate technical measures to protect your personal information."},{h:"6. Contact",t:"Contact us via Telegram @topunionalex or WhatsApp +37368429373."}]},
+    ru:{title:"Политика конфиденциальности",content:[{h:"1. Введение",t:"TOP UNION обязуется защищать вашу личную информацию."},{h:"2. Данные",t:"Мы собираем базовую контактную информацию исключительно для деловых отношений."},{h:"3. Использование",t:"Данные используются для связи по вопросам партнёрства."},{h:"4. Третьи лица",t:"Мы не передаём информацию третьим лицам."},{h:"5. Безопасность",t:"Применяем технические меры для защиты вашей информации."},{h:"6. Контакт",t:"Telegram @topunionalex или WhatsApp +37368429373."}]},
+    pt:{title:"Política de Privacidade",content:[{h:"1. Introdução",t:"A TOP UNION protege suas informações pessoais."},{h:"2. Dados",t:"Coletamos informações básicas exclusivamente para fins comerciais."},{h:"3. Uso",t:"Dados usados exclusivamente para comunicação sobre parcerias."},{h:"4. Terceiros",t:"Não transferimos suas informações a terceiros."},{h:"5. Segurança",t:"Implementamos medidas técnicas para proteger suas informações."},{h:"6. Contato",t:"Telegram @topunionalex ou WhatsApp +37368429373."}]}
+  },
+  terms:{
+    en:{title:"Terms of Service",content:[{h:"⚠️ 18+ ONLY",t:"Services strictly for adults 18+."},{h:"1. Platform & Infrastructure Only",t:"TOP UNION is a B2B technology and infrastructure provider for poker club owners and agents."},{h:"2. No Gambling Services",t:"We do not provide gambling services directly to end users."},{h:"3. Limitation of Liability",t:"Partners are solely responsible for compliance with local laws."}]},
+    ru:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только инфраструктура",t:"Мы — B2B поставщик технологий для владельцев покерных клубов."},{h:"2. Не предоставляем игорные услуги",t:"Мы не предоставляем игорные услуги напрямую."},{h:"3. Ответственность",t:"Партнёры несут ответственность за соблюдение законодательства."}]},
+    pt:{title:"Termos de Serviço",content:[{h:"⚠️ APENAS +18",t:"Serviços estritamente para adultos com 18+."},{h:"1. Apenas Infraestrutura B2B",t:"Somos um provedor B2B para donos de clubes de poker."},{h:"2. Sem Serviços de Jogo",t:"Não prestamos serviços de jogo a usuários finais."},{h:"3. Responsabilidade",t:"Parceiros são responsáveis pelo cumprimento das leis locais."}]}
+  },
+  responsible:{
+    en:{title:"Responsible Gaming",content:[{h:"Our Commitment",t:"We promote responsible gaming across our entire network."},{h:"18+ Policy",t:"All poker activities are strictly limited to adults 18+."},{h:"Play Responsibly",t:"Set personal limits and never play beyond your means."},{h:"Support",t:"If you have a gambling problem, please seek professional help."}]},
+    ru:{title:"Ответственная игра",content:[{h:"Наша позиция",t:"Мы продвигаем принципы ответственной игры."},{h:"Политика 18+",t:"Все активности строго для лиц от 18 лет."},{h:"Играйте ответственно",t:"Устанавливайте личные лимиты."},{h:"Помощь",t:"При проблемах обратитесь к специалистам."}]},
+    pt:{title:"Jogo Responsável",content:[{h:"Compromisso",t:"Promovemos práticas de jogo responsável."},{h:"Política +18",t:"Atividades estritamente para maiores de 18."},{h:"Responsabilidade",t:"Estabeleça limites pessoais."},{h:"Apoio",t:"Se tiver problemas, procure ajuda profissional."}]}
+  }
+};
+
+const FAQ={
+  en:{
+    headline:"FREQUENTLY ASKED QUESTIONS",
+    items:[
+      {q:"What is Top Union?",a:"Top Union is a global ecosystem that synchronizes independent gaming clubs into a unified network. We provide a shared liquidity pool, ensuring 24/7 table activity and massive prize guarantees that are typically out of reach for individual clubs."},
+      {q:"Why should my club join the union?",a:"The biggest challenge for small and mid-sized clubs is \"empty tables.\" By joining Top Union, you instantly gain access to thousands of active players worldwide. This keeps your games running around the clock, increases your club's turnover, and allows you to offer any stakes at any time."},
+      {q:"Will I remain the owner of my club?",a:"Absolutely. You maintain 100% ownership and full control over your player base and brand. Top Union acts as your technology and liquidity partner—we provide the traffic and infrastructure, while you continue to run your business autonomously."},
+      {q:"Is the partnership secure?",a:"Security and fair play are our top priorities. Our system uses advanced monitoring tools to ensure a transparent gaming environment. Plus, our dedicated support team is available 24/7 to resolve any technical or operational issues instantly."},
+      {q:"How do I get started?",a:"The integration process is seamless. Simply contact our managers via Telegram or WhatsApp, and we will help you set up your club within the union and start attracting traffic the same day."}
+    ]
+  },
+  ru:{
+    headline:"ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
+    items:[
+      {q:"Что такое Top Union?",a:"Top Union — глобальная экосистема, объединяющая независимые игровые клубы в единую сеть. Мы предоставляем общий пул ликвидности, обеспечивая активность столов 24/7 и крупные гарантии призовых, недоступные для отдельных клубов."},
+      {q:"Почему мой клуб должен вступить в союз?",a:"Главная проблема малых и средних клубов — «пустые столы». Вступив в Top Union, вы мгновенно получаете доступ к тысячам активных игроков по всему миру. Это обеспечивает круглосуточную игру, увеличивает оборот клуба и позволяет предлагать любые ставки в любое время."},
+      {q:"Останусь ли я владельцем своего клуба?",a:"Абсолютно. Вы сохраняете 100% собственности и полный контроль над своей базой игроков и брендом. Top Union выступает технологическим и ликвидностным партнёром — мы обеспечиваем трафик и инфраструктуру, пока вы управляете бизнесом самостоятельно."},
+      {q:"Безопасно ли партнёрство?",a:"Безопасность и честная игра — наши главные приоритеты. Система использует передовые инструменты мониторинга для прозрачной игровой среды. Наша поддержка доступна 24/7 для мгновенного решения любых технических и операционных вопросов."},
+      {q:"Как начать?",a:"Процесс интеграции прост. Свяжитесь с нашими менеджерами через Telegram или WhatsApp — мы поможем настроить клуб в союзе и начать привлекать трафик в тот же день."}
+    ]
+  },
+  pt:{
+    headline:"PERGUNTAS FREQUENTES",
+    items:[
+      {q:"O que é o Top Union?",a:"O Top Union é um ecossistema global que sincroniza clubes de jogos independentes em uma rede unificada. Fornecemos um pool de liquidez compartilhado, garantindo atividade 24/7 nas mesas e grandes premiações normalmente inacessíveis para clubes individuais."},
+      {q:"Por que meu clube deve entrar no union?",a:"O maior desafio para clubes pequenos e médios são as \"mesas vazias\". Ao entrar no Top Union, você tem acesso imediato a milhares de jogadores ativos em todo o mundo, mantendo os jogos funcionando 24/7 e aumentando o faturamento do seu clube."},
+      {q:"Vou continuar sendo dono do meu clube?",a:"Com certeza. Você mantém 100% da propriedade e controle total sobre sua base de jogadores e marca. O Top Union atua como parceiro de tecnologia e liquidez — fornecemos tráfego e infraestrutura enquanto você continua administrando seu negócio de forma autônoma."},
+      {q:"A parceria é segura?",a:"Segurança e jogo justo são nossas principais prioridades. Nosso sistema usa ferramentas avançadas de monitoramento para garantir um ambiente transparente. Nossa equipe de suporte está disponível 24/7 para resolver qualquer problema técnico ou operacional instantaneamente."},
+      {q:"Como começar?",a:"O processo de integração é simples. Basta contatar nossos gerentes pelo Telegram ou WhatsApp e ajudaremos a configurar seu clube na união e atrair tráfego no mesmo dia."}
+    ]
+  }
+};
+
+const FEAT={clubgg:[0,1,2,3],pp:[8,7,6,3],xp:[5,4,6,2]};
+let lang='en',curModal='privacy';
+
+function toggleLangDropdown(){
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+function closeLangDropdown(){
+  document.getElementById('langDropdown').classList.remove('open');
+}
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e){
+  const dd = document.getElementById('langDropdown');
+  if(dd && !dd.contains(e.target)) closeLangDropdown();
+});
+
+function setLang(l){
+  lang=l;
+  // Sync dropdown
+  const trigger = document.getElementById('lang-current');
+  if(trigger) trigger.textContent = l.toUpperCase();
+  ['en','pt','ru'].forEach(code => {
+    const opt = document.getElementById('opt-'+code);
+    if(opt) opt.classList.toggle('active', code === l);
+  });
+  const t=T[l];
+  const isRu=l==='ru';
+  const hf=isRu?"'Oswald',sans-serif":"'Bebas Neue',sans-serif";
+  const _s=(id,val)=>{const e=document.getElementById(id);if(e)e.textContent=val;};
+  const _sf=(id,val,fam,ls)=>{const e=document.getElementById(id);if(e){e.style.fontFamily=fam;e.style.letterSpacing=ls;e.textContent=val;}};
+  _s('nav-join',t.nav_join);
+  const hl=document.getElementById('hero-headline');
+  if(hl){hl.style.fontFamily=hf;hl.style.letterSpacing=isRu?'1px':'2px';
+  const phrases={'en':'GAME','ru':'ИГРОЙ','pt':'O JOGO'};
+  const phrase=phrases[l];
+  hl.innerHTML=t.hero_headline.replace(phrase,`<span style="color:#CC0000">${phrase}</span>`);}
+  _s('hero-sub',t.hero_sub);
+  _s('cta-owner',t.cta_owner);
+  _s('cta-explore',t.cta_explore);
+  document.querySelectorAll('.stat-label').forEach(el=>{const k=el.dataset.key;if(k&&t[k])el.textContent=t[k];});
+  const arrowSvg='<svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>';
+  const lph=document.getElementById('label-press-hero');if(lph)lph.textContent=l==='ru'?t.label_press_ru:l==='pt'?t.label_press_pt:t.label_press_en;
+  _s('label-hero',t.label_hero);
+  _s('label-trust',t.label_trust);
+  _s('label-cta',t.label_cta);
+  const ulEl=document.getElementById('unions-label');
+  if(ulEl){ulEl.innerHTML=arrowSvg+' '+t.unions_headline;ulEl.style.display='flex';ulEl.style.alignItems='center';ulEl.style.justifyContent='center';ulEl.style.gap='8px';}
+  const us=document.getElementById('unions-sub');
+  if(us){us.style.fontFamily=hf;us.style.letterSpacing=isRu?'0px':'2px';us.textContent=t.unions_sub;}
+  document.querySelectorAll('.union-cta').forEach(b=>b.textContent=t.union_cta);
+  ['clubgg','pp','xp'].forEach(k=>{
+    const fel=document.getElementById('features-'+k);if(fel)fel.innerHTML=FEAT[k].map(fi=>`<li style="display:flex;align-items:flex-start;gap:12px;margin-bottom:18px;font-size:15px;color:#888;line-height:1.6;font-family:'Montserrat',sans-serif;font-weight:400;"><span style="color:#CC0000;margin-top:4px;flex-shrink:0;font-size:10px;">▸</span>${t.features[fi]}</li>`).join('');
+  });
+  _sf('trust-headline',t.trust_headline,hf,isRu?'0px':'2px');
+  _s('trust-sub',t.trust_sub);
+  [1,2,3].forEach(i=>{
+    _sf(`trust${i}-title`,t[`trust_${i}_title`],hf,isRu?'1px':'2px');
+    _s(`trust${i}-desc`,t[`trust_${i}_desc`]);
+  });
+  _sf('cta-headline',t.cta_headline,hf,isRu?'0px':'2px');
+  _s('cta-sub',t.cta_sub);
+  _s('footer-copy',`© ${new Date().getFullYear()} TOP UNION. ${t.footer_rights}`);
+  _s('fp-privacy',t.fp_privacy);
+  _s('fp-terms',t.fp_terms);
+  _s('fp-responsible',t.fp_responsible);
+  _s('footer-disclaimer',t.footer_disclaimer);
+
+  // Partner Program section
+  _s('label-partner', t.label_partner);
+  const ph = document.getElementById('partner-headline');
+  if(ph){ph.style.fontFamily=hf;ph.style.letterSpacing=isRu?'0px':'2px';ph.textContent=t.partner_headline;}
+  _s('partner-sub', t.partner_sub);
+  _sf('partner1-title', t.partner1_title, hf, isRu?'1px':'2px');
+  _s('partner1-desc', t.partner1_desc);
+  _sf('partner2-title', t.partner2_title, hf, isRu?'1px':'2px');
+  _s('partner2-desc', t.partner2_desc);
+  _sf('partner3-title', t.partner3_title, hf, isRu?'1px':'2px');
+  _s('partner3-desc', t.partner3_desc);
+  _s('partner-cta', t.partner_cta);
+  _s('hero-partner-link', t.hero_partner_link);
+  _s('xpoker-details', t.xpoker_details);
+  _s('pppoker-details', t.pppoker_details);
+  _s('clubgg-details', t.clubgg_details);
+
+  // About section translations
+  _s('about-label', t.about_label);
+  const ah = document.getElementById('about-headline');
+  if(ah){ah.style.fontFamily=hf;ah.style.letterSpacing=isRu?'1px':'2px';ah.textContent=t.about_headline;}
+  _s('about-p1', t.about_p1);
+  _s('about-p2', t.about_p2);
+  _s('about-p3', t.about_p3);
+  _s('about-contact', t.about_contact);
+  _s('about-read-more', t.about_read_more);
+
+  // Smart platform links — point to language versions
+  const pfx = l==='ru' ? '/ru' : l==='pt' ? '/pt' : '';
+  const xpEl = document.getElementById('xpoker-details');
+  const ppEl = document.getElementById('pppoker-details');
+  const cgEl = document.getElementById('clubgg-details');
+  if(xpEl) xpEl.href = pfx + '/x-poker';
+  if(ppEl) ppEl.href = pfx + '/pppoker';
+  if(cgEl) cgEl.href = pfx + '/clubgg';
+  // Also update nav links
+  document.querySelectorAll('.nav-xpoker-link').forEach(a => {
+    const href = a.getAttribute('href');
+    if(!href) return;
+    const base = href.replace(/^\/(ru|pt)\//, '/').replace(/^\//, '');
+    a.href = pfx ? pfx + '/' + base : '/' + base;
+  });
+
+  // FAQ
+  const faq=FAQ[l];
+  const fh=document.getElementById('faq-headline');
+  if(fh){fh.style.fontFamily=hf;fh.textContent=faq.headline;}
+  _s('label-faq','FAQ');
+  const fl=document.getElementById('faq-list');
+  if(fl){
+    fl.innerHTML=faq.items.map((item,i)=>`
+      <div class="faq-item" style="border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;background:#0d0d0d;transition:border-color 0.3s;">
+        <button onclick="toggleFaq(${i})" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:24px 28px;background:transparent;border:none;cursor:pointer;text-align:left;gap:16px;">
+          <span style="font-family:${hf};font-size:18px;letter-spacing:${isRu?'0px':'1px'};color:#fff;font-weight:700;line-height:1.3;">${item.q}</span>
+          <span id="faq-icon-${i}" style="flex-shrink:0;width:28px;height:28px;border:1px solid #2a2a2a;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:#CC0000;font-size:18px;line-height:1;">+</span>
+        </button>
+        <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.16,1,0.3,1);">
+          <p style="padding:0 28px 24px;font-size:15px;color:#999;line-height:1.8;font-family:'Montserrat',sans-serif;font-weight:400;">${item.a}</p>
+        </div>
+      </div>`).join('');
+  }
+  const tabs={privacy:l==='ru'?'Конфиденциальность':l==='pt'?'Privacidade':'Privacy',terms:l==='ru'?'Условия':l==='pt'?'Termos':'Terms',responsible:l==='ru'?'Отв. игра':l==='pt'?'Jogo Resp.':'Resp. Gaming'};
+  Object.keys(tabs).forEach(k=>{const el=document.getElementById('tab-'+k);if(el)el.textContent=tabs[k];});
+  if(document.getElementById('modal').classList.contains('open'))renderModal();
+}
+
+function toggleFaq(i){
+  const body=document.getElementById('faq-body-'+i);
+  const icon=document.getElementById('faq-icon-'+i);
+  const item=body.closest('.faq-item');
+  const isOpen=body.style.maxHeight&&body.style.maxHeight!=='0px';
+  // Close all
+  document.querySelectorAll('.faq-item').forEach((el,idx)=>{
+    document.getElementById('faq-body-'+idx).style.maxHeight='0px';
+    document.getElementById('faq-icon-'+idx).textContent='+';
+    document.getElementById('faq-icon-'+idx).style.transform='rotate(0deg)';
+    el.style.borderColor='#1a1a1a';
+  });
+  if(!isOpen){
+    body.style.maxHeight=body.scrollHeight+'px';
+    icon.textContent='−';
+    icon.style.transform='rotate(180deg)';
+    item.style.borderColor='#CC000066';
+  }
+}
+
+function openModal(type){curModal=type;document.getElementById('modal').classList.add('open');renderModal();}
+function closeModal(e){if(e.target===document.getElementById('modal'))document.getElementById('modal').classList.remove('open');}
+function switchTab(type){curModal=type;renderModal();}
+function renderModal(){
+  const doc=LEGAL[curModal][lang];
+  document.getElementById('modal-title').textContent=doc.title;
+  document.getElementById('modal-content').innerHTML=doc.content.map(b=>`<div style="margin-bottom:20px;"><p style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:#CC0000;margin-bottom:8px;margin-top:28px;">${b.h}</p><p style="font-size:14px;color:#888;line-height:1.8;">${b.t}</p></div>`).join('');
+  document.querySelectorAll('.modal-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+curModal).classList.add('active');
+}
+
+window.addEventListener('scroll',()=>{
+  const nav=document.getElementById('navbar');
+  if(window.scrollY>50){nav.style.background='rgba(8,8,8,0.95)';nav.style.backdropFilter='blur(20px)';nav.style.borderBottom='1px solid #1a1a1a';}
+  else{nav.style.background='transparent';nav.style.backdropFilter='none';nav.style.borderBottom='none';}
+});
+
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+const cobs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'';
+    let v=0,step=target/60;
+    const tm=setInterval(()=>{v+=step;if(v>=target){el.textContent=target.toLocaleString()+suffix;clearInterval(tm);}else el.textContent=Math.floor(v).toLocaleString()+suffix;},16);
+    cobs.unobserve(el);
+  });
+},{threshold:0.3});
+document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
+
+setLang('en');
+
+// Meta Pixel — Contact event fires ONLY for WhatsApp and Telegram (a links + button onclick)
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('a, button');
+  if (!el) return;
+  const href = (el.getAttribute('href') || '').toLowerCase();
+  const onclick = (el.getAttribute('onclick') || '').toLowerCase();
+  const isWhatsApp =
+    href.includes('api.whatsapp.com') ||
+    href.includes('wa.me') ||
+    onclick.includes('api.whatsapp.com') ||
+    onclick.includes('wa.me');
+  const isTelegram =
+    href.includes('t.me') ||
+    href.includes('telegram.me') ||
+    onclick.includes('t.me') ||
+    onclick.includes('telegram.me');
+  if (typeof fbq === 'undefined') return;
+  if (isWhatsApp) {
+    fbq('track', 'Contact', {
+      channel: 'whatsapp',
+      content_name: (el.textContent || 'WhatsApp Click').trim().substring(0, 50),
+      content_category: 'Messaging'
+    });
+  }
+  if (isTelegram) {
+    fbq('track', 'Contact', {
+      channel: 'telegram',
+      content_name: (el.textContent || 'Telegram Click').trim().substring(0, 50),
+      content_category: 'Messaging'
+    });
+  }
+});
