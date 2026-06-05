@@ -7,8 +7,9 @@
     <loc>https://topunion.club/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,13 +17,15 @@
     <loc>https://topunion.club/ru/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -30,6 +33,7 @@
     <loc>https://topunion.club/es/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -39,8 +43,9 @@
     <loc>https://topunion.club/x-poker</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/x-poker"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/x-poker"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/x-poker"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/x-poker"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/x-poker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,13 +53,15 @@
     <loc>https://topunion.club/ru/x-poker</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/x-poker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/x-poker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/x-poker</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/x-poker"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/x-poker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/x-poker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -62,6 +69,7 @@
     <loc>https://topunion.club/es/x-poker</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/x-poker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/x-poker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -71,8 +79,9 @@
     <loc>https://topunion.club/pppoker</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/pppoker"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/pppoker"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/pppoker"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/pppoker"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/pppoker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -80,13 +89,15 @@
     <loc>https://topunion.club/ru/pppoker</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/pppoker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/pppoker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/pppoker</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/pppoker"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/pppoker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/pppoker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -94,6 +105,7 @@
     <loc>https://topunion.club/es/pppoker</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/pppoker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/pppoker"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,8 +115,9 @@
     <loc>https://topunion.club/clubgg</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/clubgg"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/clubgg"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/clubgg"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/clubgg"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/clubgg"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -112,13 +125,15 @@
     <loc>https://topunion.club/ru/clubgg</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/clubgg"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/clubgg"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/clubgg</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/clubgg"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/clubgg"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/clubgg"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -126,6 +141,7 @@
     <loc>https://topunion.club/es/clubgg</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/clubgg"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/clubgg"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -135,6 +151,7 @@
     <loc>https://topunion.club/join-x-poker-union</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/join-x-poker-union"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/join-x-poker-union"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -142,6 +159,7 @@
     <loc>https://topunion.club/ru/join-x-poker-union</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/join-x-poker-union"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/join-x-poker-union"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -149,6 +167,7 @@
     <loc>https://topunion.club/join-pppoker-union</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/join-pppoker-union"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/join-pppoker-union"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -156,6 +175,7 @@
     <loc>https://topunion.club/ru/join-pppoker-union</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/join-pppoker-union"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/join-pppoker-union"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -163,6 +183,7 @@
   <!-- HOW-TO PAGES -->
   <url>
     <loc>https://topunion.club/how-to-join-x-poker-union</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -170,8 +191,9 @@
     <loc>https://topunion.club/how-to-get-more-players-poker-club</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/how-to-get-more-players-poker-club"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/how-to-get-more-players-poker-club"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/how-to-get-more-players-poker-club"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/how-to-get-more-players-poker-club"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/how-to-get-more-players-poker-club"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -179,13 +201,15 @@
     <loc>https://topunion.club/ru/how-to-get-more-players-poker-club</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/how-to-get-more-players-poker-club"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/how-to-get-more-players-poker-club"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/how-to-get-more-players-poker-club</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/how-to-get-more-players-poker-club"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/how-to-get-more-players-poker-club"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/how-to-get-more-players-poker-club"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -193,6 +217,7 @@
     <loc>https://topunion.club/es/how-to-get-more-players-poker-club</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/how-to-get-more-players-poker-club"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/how-to-get-more-players-poker-club"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -202,8 +227,9 @@
     <loc>https://topunion.club/poker-agent-partner</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/poker-agent-partner"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/poker-agent-partner"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/poker-agent-partner"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/poker-agent-partner"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/poker-agent-partner"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -211,13 +237,15 @@
     <loc>https://topunion.club/ru/poker-agent-partner</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/poker-agent-partner"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/poker-agent-partner"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/poker-agent-partner</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/poker-agent-partner"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/poker-agent-partner"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/poker-agent-partner"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -225,6 +253,7 @@
     <loc>https://topunion.club/es/poker-agent-partner</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/poker-agent-partner"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/poker-agent-partner"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -234,8 +263,9 @@
     <loc>https://topunion.club/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/about"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/about"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/about"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/about"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -243,13 +273,15 @@
     <loc>https://topunion.club/ru/about</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://topunion.club/ru/about"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/about"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://topunion.club/pt/about</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://topunion.club/pt/about"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/about"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -257,6 +289,7 @@
     <loc>https://topunion.club/es/about</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://topunion.club/es/about"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://topunion.club/about"/>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -264,11 +297,13 @@
   <!-- SEO PAGES -->
   <url>
     <loc>https://topunion.club/best-poker-unions-2026</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topunion.club/top-union-vs-primetime-vs-pppfish</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
