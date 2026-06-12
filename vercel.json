@@ -1,17 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "has": [
-        {
-          "type": "query",
-          "key": "ref"
-        }
-      ],
-      "destination": "https://topunion.club/",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "has": [
         {
