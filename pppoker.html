@@ -99,15 +99,15 @@
   .fade-up{opacity:0;transform:translateY(40px);transition:all 0.8s cubic-bezier(0.16,1,0.3,1);}
   .fade-up.in{opacity:1;transform:translateY(0);}
   .d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.35s;}.d4{transition-delay:0.5s;}
-  .btn-red{display:inline-flex;align-items:center;gap:12px;background:#CC0000;color:#fff;border:none;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:18px;padding:18px 44px;border-radius:2px;text-decoration:none;transition:all 0.3s ease;white-space:nowrap;}
+  .btn-red{display:inline-flex;align-items:center;gap:12px;background:#CC0000;color:#fff;border:none;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:20px;padding:18px 44px;border-radius:2px;text-decoration:none;transition:all 0.3s ease;white-space:nowrap;}
   .btn-red:hover{background:#FF1A1A;transform:translateY(-2px);box-shadow:0 8px 30px rgba(204,0,0,0.4);}
-  .btn-outline{display:inline-flex;align-items:center;gap:12px;background:transparent;color:#fff;border:1px solid #444;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:18px;padding:18px 44px;border-radius:2px;text-decoration:none;transition:all 0.3s ease;white-space:nowrap;}
+  .btn-outline{display:inline-flex;align-items:center;gap:12px;background:transparent;color:#fff;border:1px solid #444;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:20px;padding:18px 44px;border-radius:2px;text-decoration:none;transition:all 0.3s ease;white-space:nowrap;}
   .btn-outline:hover{border-color:#CC0000;color:#CC0000;}
   .float-btn{position:fixed;right:24px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:1000;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(0,0,0,0.4);}
   .float-btn:hover{transform:scale(1.12);}
   .float-wa{bottom:96px;background:#25D366;}
   .float-tg{bottom:36px;background:#0088cc;}
-  .section-label{font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:13px;text-transform:uppercase;}
+  .section-label{font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:14px;text-transform:uppercase;}
   .floating-symbols{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
   .floating-symbols span{position:absolute;font-family:'Georgia',serif;color:#fff;opacity:0;animation:floatUp linear infinite;}
   @keyframes floatUp{
@@ -118,11 +118,11 @@
   }
   .value-item{display:flex;align-items:flex-start;gap:14px;padding:20px 0;border-bottom:1px solid #111;}
   .value-item:last-child{border-bottom:none;}
-  .step-card{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;}
-  .stat-box{background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:32px 20px;text-align:center;}
+  .step-card{background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;}
+  .stat-box{background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 20px;text-align:center;}
   .objection-box{background:#0d0d0d;border:1px solid #1a1a1a;border-left:3px solid #CC0000;border-radius:4px;padding:32px 36px;}
   @media(max-width:768px){
-    .hero-h1{font-size:38px!important;}
+    .hero-h1{font-size:42px!important;}
     .cta-row{flex-direction:column!important;align-items:stretch!important;}
     .cta-row a{justify-content:center;}
     .three-grid{grid-template-columns:1fr!important;}
@@ -140,14 +140,14 @@
 
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
   .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
-  .modal-box{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:6px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
+  .modal-box{background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
   .modal-box::-webkit-scrollbar{width:3px;}
   .modal-box::-webkit-scrollbar-thumb{background:#CC0000;}
-  .modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#888;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+  .modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#999;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
   .modal-close:hover{background:#CC0000;color:#fff;}
-  .modal-tab{background:#1a1a1a;border:none;color:#999;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;transition:all 0.2s;}
+  .modal-tab{background:#1a1a1a;border:none;color:#999;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;transition:all 0.2s;}
   .modal-tab.active{background:#CC0000;color:#fff;}
-  .footer-link{background:none;border:none;color:#888;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
+  .footer-link{background:none;border:none;color:#999;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
   .footer-link:hover{color:#CC0000;}
   @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
@@ -170,7 +170,7 @@
   <span style="left:5%;font-size:55px;animation-duration:18s;animation-delay:0s;">♠</span>
   <span style="left:22%;font-size:40px;animation-duration:26s;animation-delay:7s;">♣</span>
   <span style="left:45%;font-size:50px;animation-duration:24s;animation-delay:5s;">♠</span>
-  <span style="left:70%;font-size:38px;animation-duration:27s;animation-delay:10s;color:#CC0000;">♦</span>
+  <span style="left:70%;font-size:42px;animation-duration:27s;animation-delay:10s;color:#CC0000;">♦</span>
   <span style="left:88%;font-size:52px;animation-duration:20s;animation-delay:12s;">♣</span>
   <span style="left:33%;font-size:42px;animation-duration:20s;animation-delay:1s;color:#CC0000;">♥</span>
 </div>
@@ -205,12 +205,12 @@
       PPPoker Club No Players?<br/><span style="color:#CC0000;">Get Access to 40+ Active Tables</span>
     </h1>
 
-    <p class="fade-up d2" style="font-size:18px;color:#bbb;margin-bottom:48px;line-height:1.7;font-weight:300;max-width:600px;margin-left:auto;margin-right:auto;">
+    <p class="fade-up d2" style="font-size:20px;color:#ccc;margin-bottom:48px;line-height:1.7;font-weight:300;max-width:600px;margin-left:auto;margin-right:auto;">
       For PPPoker club owners struggling with empty tables and low player activity.
     </p>
 
-    <p class="fade-up d2" style="font-size:15px;color:#888;margin-bottom:12px;letter-spacing:0.5px;">You keep full control of your club and your players.</p>
-    <p class="fade-up d2" style="font-size:11px;color:#888;margin-bottom:32px;margin-top:20px;letter-spacing:1px;">40+ active tables · 80+ clubs · Weekly settlements · No lock-in</p>
+    <p class="fade-up d2" style="font-size:16px;color:#999;margin-bottom:12px;letter-spacing:0.5px;">You keep full control of your club and your players.</p>
+    <p class="fade-up d2" style="font-size:12px;color:#999;margin-bottom:32px;margin-top:20px;letter-spacing:1px;">40+ active tables · 80+ clubs · Weekly settlements · No lock-in</p>
     <div class="fade-up d3 cta-row" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
       <a href="https://t.me/topunionalex" target="_blank" class="btn-red" aria-label="Contact TOP UNION on Telegram">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
@@ -228,7 +228,7 @@
 <!-- ═══════════════════════════════════════ -->
 <!-- PROBLEM + SOLUTION                     -->
 <!-- ═══════════════════════════════════════ -->
-<section style="padding:100px 24px;background:#050505;">
+<section style="padding:80px 24px;background:#080808;">
   <div style="max-width:1000px;margin:0 auto;">
 
     <div style="text-align:center;margin-bottom:64px;">
@@ -242,19 +242,19 @@
     </div>
 
     <div class="three-grid fade-up d2" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
-      <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
+      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;color:#CC0000;line-height:1;margin-bottom:16px;">01</div>
-        <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:10px;">NO GAMES WITHOUT REGULARS</p>
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:10px;">NO GAMES WITHOUT REGULARS</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">PPPoker clubs with under 200 active members face the same issue: when regulars are offline, tables go dark. Players stop logging in.</p>
       </div>
-      <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
+      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;color:#CC0000;line-height:1;margin-bottom:16px;">02</div>
-        <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:10px;">IT'S A POOL SIZE PROBLEM</p>
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:10px;">IT'S A POOL SIZE PROBLEM</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">PPPoker's club model means you compete with hundreds of other clubs for the same players. Isolated pools lose. Shared networks win.</p>
       </div>
-      <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
+      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 28px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;color:#CC0000;line-height:1;margin-bottom:16px;">03</div>
-        <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:10px;">THE FIX IS THE NETWORK</p>
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:10px;">THE FIX IS THE NETWORK</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">TOP UNION connects your PPPoker club to a shared pool across 80+ clubs. 40+ active tables at any stake, at any hour.</p>
       </div>
     </div>
@@ -265,7 +265,7 @@
 <!-- ═══════════════════════════════════════ -->
 <!-- VALUE SECTION                          -->
 <!-- ═══════════════════════════════════════ -->
-<section style="padding:100px 24px;background:#080808;">
+<section style="padding:80px 24px;background:#080808;">
   <div style="max-width:1000px;margin:0 auto;">
 
     <div style="text-align:center;margin-bottom:64px;">
@@ -283,7 +283,7 @@
       <div class="value-item">
         <svg style="flex-shrink:0;margin-top:2px;" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
         <div>
-          <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:4px;">TABLES STAY ACTIVE 24/7</p>
+          <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:4px;">TABLES STAY ACTIVE 24/7</p>
           <p style="font-size:14px;color:#999;line-height:1.6;">Not just during peak hours — your players always find a game.</p>
         </div>
       </div>
@@ -291,7 +291,7 @@
       <div class="value-item">
         <svg style="flex-shrink:0;margin-top:2px;" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
         <div>
-          <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:4px;">PLAYERS STOP LEAVING</p>
+          <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:4px;">PLAYERS STOP LEAVING</p>
           <p style="font-size:14px;color:#999;line-height:1.6;">Immediate action at any stake — they stop migrating to other apps.</p>
         </div>
       </div>
@@ -299,7 +299,7 @@
       <div class="value-item">
         <svg style="flex-shrink:0;margin-top:2px;" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
         <div>
-          <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:4px;">RAKE INCREASES</p>
+          <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:4px;">RAKE INCREASES</p>
           <p style="font-size:14px;color:#999;line-height:1.6;">More PPPoker hands played means more rake — without spending on player acquisition.</p>
         </div>
       </div>
@@ -307,7 +307,7 @@
       <div class="value-item">
         <svg style="flex-shrink:0;margin-top:2px;" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
         <div>
-          <p style="font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;color:#fff;margin-bottom:4px;">YOUR CLUB STAYS YOURS</p>
+          <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:4px;">YOUR CLUB STAYS YOURS</p>
           <p style="font-size:14px;color:#999;line-height:1.6;">Your club, your players, your brand — nothing changes on your end.</p>
         </div>
       </div>
@@ -320,7 +320,7 @@
 <!-- ═══════════════════════════════════════ -->
 <!-- HOW IT WORKS                           -->
 <!-- ═══════════════════════════════════════ -->
-<section style="padding:100px 24px;background:#050505;">
+<section style="padding:80px 24px;background:#080808;">
   <div style="max-width:1000px;margin:0 auto;">
 
     <div style="text-align:center;margin-bottom:64px;">
@@ -363,19 +363,19 @@
     <div class="four-grid fade-up" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:#FFD700;" class="counter" data-target="80" data-suffix="+">0+</div>
-        <div style="font-size:11px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Clubs</div>
+        <div style="font-size:12px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Clubs</div>
       </div>
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:#FFD700;" class="counter" data-target="170000" data-suffix="+">0+</div>
-        <div style="font-size:11px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Players</div>
+        <div style="font-size:12px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Players</div>
       </div>
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:#FFD700;">40+</div>
-        <div style="font-size:11px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Active Tables</div>
+        <div style="font-size:12px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Active Tables</div>
       </div>
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:#FFD700;">$30K</div>
-        <div style="font-size:11px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Weekly Tournaments</div>
+        <div style="font-size:12px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Weekly Tournaments</div>
       </div>
     </div>
   </div>
@@ -384,16 +384,16 @@
 <!-- ═══════════════════════════════════════ -->
 <!-- OBJECTION HANDLING                     -->
 <!-- ═══════════════════════════════════════ -->
-<section style="padding:80px 24px;background:#050505;">
+<section style="padding:80px 24px;background:#080808;">
   <div style="max-width:900px;margin:0 auto;">
-    <div class="fade-up objection-grid" style="display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:center;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:52px 56px;">
+    <div class="fade-up objection-grid" style="display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:52px 56px;">
       <div class="objection-divider" style="border-right:1px solid #1a1a1a;padding-right:48px;">
-        <p style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:#CC0000;margin-bottom:16px;text-transform:uppercase;">Most Asked Question</p>
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:#CC0000;margin-bottom:16px;text-transform:uppercase;">Most Asked Question</p>
         <h3 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,2.5vw,34px);color:#fff;letter-spacing:1px;text-transform:uppercase;line-height:1.1;">"Will I lose control of my players?"</h3>
       </div>
       <div>
-        <p style="font-size:17px;color:#bbb;line-height:1.8;margin-bottom:16px;">You won't. Your club stays yours — players, brand, management.</p>
-        <p style="font-size:15px;color:#999;line-height:1.7;">TOP UNION is the infrastructure. You run the business exactly as you do today.</p>
+        <p style="font-size:16px;color:#ccc;line-height:1.8;margin-bottom:16px;">You won't. Your club stays yours — players, brand, management.</p>
+        <p style="font-size:16px;color:#999;line-height:1.7;">TOP UNION is the infrastructure. You run the business exactly as you do today.</p>
       </div>
     </div>
   </div>
@@ -438,57 +438,57 @@
 <!-- ═══════════════════════════════════════ -->
 
 <!-- PPPoker DEEP CONTENT SECTION -->
-<section style="padding:100px 24px;background:#080808;border-top:1px solid #111;">
+<section style="padding:80px 24px;background:#080808;border-top:1px solid #111;">
   <div style="max-width:860px;margin:0 auto;">
 
     <div style="margin-bottom:64px;">
-      <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:11px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+      <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:12px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px;">
         <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
         ABOUT PPPOKER
       </p>
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,44px);color:#fff;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;font-weight:400;">What Is a PPPoker Union?</h2>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">A PPPoker union is a B2B network that connects independent PPPoker clubs into a shared player pool. PPPoker Club ID 3404 — TOP UNION's club identifier — gives partner clubs direct access to one of the largest active liquidity networks on the PPPoker platform.</p>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">PPPoker operates on a private club model: each club owner recruits their own players and manages their own community. The limitation is that isolated clubs can only run games when their own members are online. A PPPoker union solves this by connecting multiple clubs into one shared player pool — so tables fill regardless of which club's members are logged in.</p>
-      <p style="font-size:15px;color:#888;line-height:1.85;">When you join the TOP UNION PPPoker network, your club gains access to 170,000+ active players across 80+ partner clubs. Your members stop waiting for games and start playing — at any stake level, at any hour.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">A PPPoker union is a B2B network that connects independent PPPoker clubs into a shared player pool. PPPoker Club ID 3404 — TOP UNION's club identifier — gives partner clubs direct access to one of the largest active liquidity networks on the PPPoker platform.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">PPPoker operates on a private club model: each club owner recruits their own players and manages their own community. The limitation is that isolated clubs can only run games when their own members are online. A PPPoker union solves this by connecting multiple clubs into one shared player pool — so tables fill regardless of which club's members are logged in.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;">When you join the TOP UNION PPPoker network, your club gains access to 170,000+ active players across 80+ partner clubs. Your members stop waiting for games and start playing — at any stake level, at any hour.</p>
     </div>
 
     <div style="margin-bottom:64px;">
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,44px);color:#fff;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;font-weight:400;">How to Join the PPPoker Union</h2>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">Joining the TOP UNION PPPoker network requires no technical work from the club owner. The process takes 24–48 hours from first contact to live integration:</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">Joining the TOP UNION PPPoker network requires no technical work from the club owner. The process takes 24–48 hours from first contact to live integration:</p>
       <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:24px;">
-        <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
+        <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
           <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;margin-bottom:8px;">STEP 1 — CONTACT US</p>
-          <p style="font-size:14px;color:#888;line-height:1.7;margin:0;">Send your PPPoker Club ID via Telegram or WhatsApp. We'll show you live traffic data — active tables, stakes, peak hours — before any commitment.</p>
+          <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">Send your PPPoker Club ID via Telegram or WhatsApp. We'll show you live traffic data — active tables, stakes, peak hours — before any commitment.</p>
         </div>
-        <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
+        <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
           <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;margin-bottom:8px;">STEP 2 — AGREE ON TERMS</p>
-          <p style="font-size:14px;color:#888;line-height:1.7;margin:0;">TOP UNION charges 7% commission on rake — one of the lowest rates in the PPPoker union market. No setup fees, no lock-in contracts, weekly settlements.</p>
+          <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">TOP UNION charges 7% commission on rake — one of the lowest rates in the PPPoker union market. No setup fees, no lock-in contracts, weekly settlements.</p>
         </div>
-        <div style="background:#0a0a0a;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
+        <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-left:3px solid #CC0000;padding:20px 24px;border-radius:2px;">
           <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;margin-bottom:8px;">STEP 3 — GO LIVE</p>
-          <p style="font-size:14px;color:#888;line-height:1.7;margin:0;">Our team handles the PPPoker Club ID configuration. Your tables start filling within hours of integration. Full control of your club remains with you.</p>
+          <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">Our team handles the PPPoker Club ID configuration. Your tables start filling within hours of integration. Full control of your club remains with you.</p>
         </div>
       </div>
     </div>
 
     <div style="margin-bottom:64px;">
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,44px);color:#fff;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;font-weight:400;">PPPoker Commission Rates: What to Expect</h2>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">Commission rates in the PPPoker union market vary significantly — from 7% at the competitive end to 20% or higher at established networks that rely on brand recognition rather than economics.</p>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">At $20,000 in monthly rake, the difference between a 7% and 15% commission is <strong style="color:#e8e8e8;">$19,200 per year</strong>. That's money that stays in your club instead of going to the union. TOP UNION's 7% flat rate is one of the most competitive structures available for PPPoker clubs in 2026.</p>
-      <p style="font-size:15px;color:#888;line-height:1.85;">Settlement is weekly. Reports include rake breakdown by table and by session — full transparency, no opaque totals.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">Commission rates in the PPPoker union market vary significantly — from 7% at the competitive end to 20% or higher at established networks that rely on brand recognition rather than economics.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">At $20,000 in monthly rake, the difference between a 7% and 15% commission is <strong style="color:#e8e8e8;">$19,200 per year</strong>. That's money that stays in your club instead of going to the union. TOP UNION's 7% flat rate is one of the most competitive structures available for PPPoker clubs in 2026.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;">Settlement is weekly. Reports include rake breakdown by table and by session — full transparency, no opaque totals.</p>
     </div>
 
     <div>
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,44px);color:#fff;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;font-weight:400;">PPPoker Club ID 3404 — TOP UNION Network</h2>
-      <p style="font-size:15px;color:#888;line-height:1.85;margin-bottom:18px;">TOP UNION operates on PPPoker under <strong style="color:#e8e8e8;">Club ID 3404</strong>. This identifier connects partner clubs to the TOP UNION liquidity pool on the PPPoker platform. When evaluating PPPoker unions, always ask for the Club ID — it's how you verify the network is real and operational.</p>
-      <p style="font-size:15px;color:#888;line-height:1.85;">Beyond PPPoker, TOP UNION also operates on X Poker (Union ID 7301) and ClubGG (Union ID 4453). Multi-platform clubs get access to diverse player demographics and protection against platform-specific disruptions.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;">TOP UNION operates on PPPoker under <strong style="color:#e8e8e8;">Club ID 3404</strong>. This identifier connects partner clubs to the TOP UNION liquidity pool on the PPPoker platform. When evaluating PPPoker unions, always ask for the Club ID — it's how you verify the network is real and operational.</p>
+      <p style="font-size:16px;color:#999;line-height:1.85;">Beyond PPPoker, TOP UNION also operates on X Poker (Union ID 7301) and ClubGG (Union ID 4453). Multi-platform clubs get access to diverse player demographics and protection against platform-specific disruptions.</p>
     </div>
 
   </div>
 </section>
 
 <!-- FAQ -->
-<section style="padding:100px 24px;background:#050505;">
+<section style="padding:80px 24px;background:#080808;">
   <div style="max-width:760px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:64px;">
       <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;">
@@ -523,7 +523,7 @@
 </section>
 
 <!-- RELATED GUIDES -->
-<section style="padding:80px 24px;background:#050505;border-top:1px solid #1a1a1a;">
+<section style="padding:80px 24px;background:#080808;border-top:1px solid #1a1a1a;">
   <div style="max-width:900px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:40px;">
       <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:12px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px;">
@@ -533,21 +533,21 @@
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,54px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.05;">Club Owner Guides</h2>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <a href="/join-pppoker-union" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #CC000044;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC0000'" onmouseout="this.style.borderColor='#CC000044'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#CC0000;">Join PPPoker Union as Club Owner →</span>
+      <a href="/join-pppoker-union" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #CC000044;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC0000'" onmouseout="this.style.borderColor='#CC000044'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#CC0000;">Join PPPoker Union as Club Owner →</span>
       </a>
       
-      <a href="/top-union-vs-primetime-vs-pppfish" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">TOP UNION vs PrimeTime vs PPPFish →</span>
+      <a href="/top-union-vs-primetime-vs-pppfish" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">TOP UNION vs PrimeTime vs PPPFish →</span>
       </a>
-      <a href="/best-poker-unions-2026" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">Best Poker Unions 2026 →</span>
+      <a href="/best-poker-unions-2026" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">Best Poker Unions 2026 →</span>
       </a>
-      <a href="/how-to-get-more-players-poker-club" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">How to Get More Players →</span>
+      <a href="/how-to-get-more-players-poker-club" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">How to Get More Players →</span>
       </a>
-      <a href="/poker-agent-partner" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">Poker Agent Program →</span>
+      <a href="/poker-agent-partner" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">Poker Agent Program →</span>
       </a>
     </div>
   </div>
@@ -555,17 +555,17 @@
 <!-- SEO CONTENT SECTION -->
 <section style="padding:80px 24px;background:#060606;border-top:1px solid #111;">
   <div style="max-width:800px;margin:0 auto;">
-    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:#fff;letter-spacing:2px;margin-bottom:24px;">Running a PPPoker Club? Here's What You Need to Know About Unions</h2>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:20px;">PPPoker was built around a club-and-union structure that gives independent club owners real control over their games. Unlike traditional poker platforms where the house sets the rules, PPPoker lets you configure your own rake, schedule your own games, and manage your own player base — but only if you have the traffic to fill your tables.</p>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:20px;">That's the central challenge for most PPPoker club owners: getting enough active players across enough time zones to keep games running consistently. A club with 50 registered members might only have 8–12 online at peak hours — not enough for a sustainable poker ecosystem. Joining a PPPoker union solves this by connecting your club to a shared player pool.</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;letter-spacing:2px;margin-bottom:24px;">Running a PPPoker Club? Here's What You Need to Know About Unions</h2>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:20px;">PPPoker was built around a club-and-union structure that gives independent club owners real control over their games. Unlike traditional poker platforms where the house sets the rules, PPPoker lets you configure your own rake, schedule your own games, and manage your own player base — but only if you have the traffic to fill your tables.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:20px;">That's the central challenge for most PPPoker club owners: getting enough active players across enough time zones to keep games running consistently. A club with 50 registered members might only have 8–12 online at peak hours — not enough for a sustainable poker ecosystem. Joining a PPPoker union solves this by connecting your club to a shared player pool.</p>
     <h3 style="font-family:'Bebas Neue',sans-serif;font-size:24px;color:#fff;letter-spacing:2px;margin:32px 0 16px;">How PPPoker Club Unions Actually Work</h3>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:20px;">A PPPoker union is a network of clubs operating under one umbrella Club ID. Members of all clubs in the union see each other's games and can join the same tables. For your players, the experience is seamless — they play as normal, just against a much larger field. For you as a club owner, your games now have 5–10× more traffic, which means more tables running, higher rake volume, and fewer complaints about dead lobbies.</p>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:20px;">TOP UNION operates on PPPoker under Club ID 3404. We connect 80+ clubs across Europe, Latin America, and Asia, giving member clubs access to 170,000+ registered players. The average member club sees a significant increase in active table count within the first two weeks of joining.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:20px;">A PPPoker union is a network of clubs operating under one umbrella Club ID. Members of all clubs in the union see each other's games and can join the same tables. For your players, the experience is seamless — they play as normal, just against a much larger field. For you as a club owner, your games now have 5–10× more traffic, which means more tables running, higher rake volume, and fewer complaints about dead lobbies.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:20px;">TOP UNION operates on PPPoker under Club ID 3404. We connect 80+ clubs across Europe, Latin America, and Asia, giving member clubs access to 170,000+ registered players. The average member club sees a significant increase in active table count within the first two weeks of joining.</p>
     <h3 style="font-family:'Bebas Neue',sans-serif;font-size:24px;color:#fff;letter-spacing:2px;margin:32px 0 16px;">What Club Owners Ask Before Joining</h3>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">Do I keep control of my club?</strong> Yes. Your club remains yours — you set your own buy-in levels, manage your own chip balances, and handle your own players. The union provides the shared liquidity layer without overriding your club settings.</p>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">How does commission work?</strong> TOP UNION charges a 7% commission on rake generated by your players in the union pool. There are no flat monthly fees, no setup costs, and no minimum volume requirements. You only pay when your players are active.</p>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">Is there a minimum club size?</strong> No minimum. Whether you have 10 active players or 500, you can join. Smaller clubs benefit the most from union liquidity since they have the most to gain from shared traffic.</p>
-    <p style="font-size:15px;color:#aaa;line-height:1.8;margin-bottom:20px;"><strong style="color:#ddd;">How fast can I get started?</strong> Setup typically takes 24–48 hours. You'll need to contact us via WhatsApp or Telegram, complete a brief onboarding, and we'll link your club to the union network.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">Do I keep control of my club?</strong> Yes. Your club remains yours — you set your own buy-in levels, manage your own chip balances, and handle your own players. The union provides the shared liquidity layer without overriding your club settings.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">How does commission work?</strong> TOP UNION charges a 7% commission on rake generated by your players in the union pool. There are no flat monthly fees, no setup costs, and no minimum volume requirements. You only pay when your players are active.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:12px;"><strong style="color:#ddd;">Is there a minimum club size?</strong> No minimum. Whether you have 10 active players or 500, you can join. Smaller clubs benefit the most from union liquidity since they have the most to gain from shared traffic.</p>
+    <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:20px;"><strong style="color:#ddd;">How fast can I get started?</strong> Setup typically takes 24–48 hours. You'll need to contact us via WhatsApp or Telegram, complete a brief onboarding, and we'll link your club to the union network.</p>
   </div>
 </section>
 <!-- FOOTER -->
@@ -574,15 +574,15 @@
     <svg width="30" height="22" viewBox="0 0 35 26" fill="none"><polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="#444" stroke-width="1.8"/><polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/></svg>
     <span style="font-family:'Bebas Neue',sans-serif;letter-spacing:4px;color:#999;font-size:16px;">TOP UNION</span>
   </div>
-  <div style="font-size:13px;color:#999;margin-bottom:16px;">© 2026 TOP UNION. Platform & infrastructure provider only.</div>
+  <div style="font-size:14px;color:#999;margin-bottom:16px;">© 2026 TOP UNION. Platform & infrastructure provider only.</div>
 <div style="display:flex;gap:12px;justify-content:center;margin-bottom:24px;">
-    <a href="https://t.me/TOP_UNION_X" target="_blank" title="Telegram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc';this.style.background='#001a26'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION Telegram">
+    <a href="https://t.me/TOP_UNION_X" target="_blank" title="Telegram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc';this.style.background='#001a26'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION Telegram">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
     </a>
-    <a href="https://www.instagram.com/top_union_x" target="_blank" title="Instagram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C';this.style.background='#1a0010'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION Instagram">
+    <a href="https://www.instagram.com/top_union_x" target="_blank" title="Instagram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C';this.style.background='#1a0010'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION Instagram">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
     </a>
-    <a href="https://www.linkedin.com/company/top-union" target="_blank" title="LinkedIn" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0077b5';this.style.color='#0077b5';this.style.background='#001526'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION LinkedIn">
+    <a href="https://www.linkedin.com/company/top-union" target="_blank" title="LinkedIn" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0077b5';this.style.color='#0077b5';this.style.background='#001526'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION LinkedIn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a>
   </div>
@@ -594,16 +594,16 @@
     <button class="footer-link" onclick="openModal('responsible')">Responsible Gaming</button>
   </div>
   <div style="margin-bottom:12px;display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;">
-    <span style="font-size:11px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;">18+</span>
+    <span style="font-size:12px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;">18+</span>
     <span style="font-size:12px;color:#999;">Platform & infrastructure provider only.</span>
   </div>
   <div style="margin-bottom:10px;display:flex;gap:0;justify-content:center;align-items:center;flex-wrap:wrap;row-gap:8px;">
-    <span style="font-size:12px;color:#888;letter-spacing:1px;">PPPoker · ID 3404</span>
-    <span style="color:#777;margin:0 12px;">·</span>
-    <a href="/x-poker" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#555'">X Poker · ID 7301</a> &nbsp;·&nbsp; <a href="/clubgg" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#555'">ClubGG · ID 4453</a>
+    <span style="font-size:12px;color:#999;letter-spacing:1px;">PPPoker · ID 3404</span>
+    <span style="color:#666;margin:0 12px;">·</span>
+    <a href="/x-poker" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#666'">X Poker · ID 7301</a> &nbsp;·&nbsp; <a href="/clubgg" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#666'">ClubGG · ID 4453</a>
   </div>
   <div style="display:flex;gap:0;justify-content:center;align-items:center;flex-wrap:wrap;row-gap:8px;">
-    <a href="/how-to-get-more-players-poker-club" style="color:#888;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">How to Get More Players →</a> &nbsp;·&nbsp; <a href="/poker-agent-partner" style="color:#888;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">Become a Partner →</a> &nbsp;·&nbsp; <a href="/about" style="color:#888;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">About TOP UNION →</a>
+    <a href="/how-to-get-more-players-poker-club" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">How to Get More Players →</a> &nbsp;·&nbsp; <a href="/poker-agent-partner" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">Become a Partner →</a> &nbsp;·&nbsp; <a href="/about" style="color:#999;text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s;" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">About TOP UNION →</a>
   </div>
 </footer>
 <!-- MODAL -->
@@ -615,10 +615,10 @@
       <button class="modal-tab" id="tab-terms" onclick="switchTab('terms')">Terms</button>
       <button class="modal-tab" id="tab-responsible" onclick="switchTab('responsible')">Resp. Gaming</button>
     </div>
-    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
-    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:28px;"></div>
+    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
+    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:24px;"></div>
     <div id="modal-content"></div>
-    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#777;">© 2026 TOP UNION</div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#666;">© 2026 TOP UNION</div>
   </div>
 </div>
 
@@ -648,7 +648,7 @@ function switchTab(type){curModal=type;renderModal();}
 function renderModal(){
   const doc=LEGAL[curModal][lang];
   document.getElementById('modal-title').textContent=doc.title;
-  document.getElementById('modal-content').innerHTML=doc.content.map(b=>`<div style="margin-bottom:20px;"><p style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:#CC0000;margin-bottom:8px;margin-top:28px;">${b.h}</p><p style="font-size:14px;color:#888;line-height:1.8;">${b.t}</p></div>`).join('');
+  document.getElementById('modal-content').innerHTML=doc.content.map(b=>`<div style="margin-bottom:20px;"><p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:#CC0000;margin-bottom:8px;margin-top:24px;">${b.h}</p><p style="font-size:14px;color:#999;line-height:1.8;">${b.t}</p></div>`).join('');
   document.querySelectorAll('.modal-tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+curModal).classList.add('active');
 }

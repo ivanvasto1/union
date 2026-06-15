@@ -20,7 +20,7 @@
 <style>
 :root{
   --red:#CC0000;--red2:#FF2020;
-  --bg:#080808;--bg2:#0a0a0a;--bg3:#0d0d0d;
+  --bg:#080808;--bg2:#0d0d0d;--bg3:#0d0d0d;
   --border:#1c1c1c;--border2:#252525;
   --text:#e8e8e8;--muted:#666;--dim:#333;
   --green:#22c55e;--blue:#38bdf8;--gold:#f59e0b;
@@ -39,11 +39,11 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:900;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;background:rgba(8,8,8,0.95);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.nav-logo span{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:4px;color:#fff;}
+.nav-logo span{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:4px;color:#fff;}
 .nav-right{display:flex;align-items:center;gap:20px;}
 .nav-link{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:1px;transition:color 0.2s;}
 .nav-link:hover{color:var(--text);}
-.nav-cta{font-family:'Bebas Neue',sans-serif;letter-spacing:3px;font-size:13px;background:var(--red);color:#fff;padding:8px 22px;border-radius:2px;text-decoration:none;transition:background 0.2s;}
+.nav-cta{font-family:'Bebas Neue',sans-serif;letter-spacing:3px;font-size:14px;background:var(--red);color:#fff;padding:8px 22px;border-radius:2px;text-decoration:none;transition:background 0.2s;}
 .nav-cta:hover{background:var(--red2);}
 
 /* LAYOUT */
@@ -52,19 +52,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;height:60px;display:flex;ali
 
 /* SIDEBAR TOC */
 .toc-sidebar{position:sticky;top:80px;height:fit-content;align-self:start;}
-.toc-label{font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:11px;color:var(--muted);margin-bottom:16px;}
-.toc-sidebar a{display:block;font-size:13px;color:var(--muted);text-decoration:none;padding:7px 0 7px 14px;border-left:1px solid var(--border);transition:all 0.2s;line-height:1.4;}
+.toc-label{font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:12px;color:var(--muted);margin-bottom:16px;}
+.toc-sidebar a{display:block;font-size:14px;color:var(--muted);text-decoration:none;padding:7px 0 7px 14px;border-left:1px solid var(--border);transition:all 0.2s;line-height:1.4;}
 .toc-sidebar a:hover,.toc-sidebar a.active{color:var(--text);border-left-color:var(--red);}
 .toc-sidebar a.active{color:var(--red);}
 
 /* HERO */
 .article-body{min-width:0;}
-.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Bebas Neue',sans-serif;letter-spacing:5px;font-size:11px;color:var(--red);margin-bottom:20px;}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Bebas Neue',sans-serif;letter-spacing:5px;font-size:12px;color:var(--red);margin-bottom:20px;}
 .hero-kicker::before{content:'';display:block;width:24px;height:1px;background:var(--red);}
 h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,64px);letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:20px;line-height:1.05;font-weight:400;}
 h1 em{color:var(--red);font-style:normal;}
 .hero-meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--muted);padding-bottom:32px;border-bottom:1px solid var(--border);margin-bottom:48px;flex-wrap:wrap;}
-.meta-tag{background:var(--bg2);border:1px solid var(--border);padding:3px 10px;border-radius:2px;font-size:11px;letter-spacing:1px;}
+.meta-tag{background:var(--bg2);border:1px solid var(--border);padding:3px 10px;border-radius:2px;font-size:12px;letter-spacing:1px;}
 .dot{width:3px;height:3px;border-radius:50%;background:var(--dim);}
 
 /* QUICK STATS BAR */
@@ -75,19 +75,19 @@ h1 em{color:var(--red);font-style:normal;}
 .qs-label{font-size:10px;letter-spacing:2px;color:var(--muted);font-family:'Bebas Neue',sans-serif;}
 
 /* SECTIONS */
-.section-kicker{font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:11px;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.section-kicker{font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:12px;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:12px;}
 .section-kicker::after{content:'';flex:1;height:1px;background:var(--border);}
 h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,2.5vw,36px);color:#fff;font-weight:400;margin-bottom:18px;line-height:1.2;}
-h3{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:18px;margin:36px 0 12px;}
-p{font-size:15px;color:#999;line-height:1.85;margin-bottom:18px;}
-.lead{font-size:17px;color:#bbb;line-height:1.8;}
+h3{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:20px;margin:36px 0 12px;}
+p{font-size:16px;color:#999;line-height:1.85;margin-bottom:18px;}
+.lead{font-size:16px;color:#ccc;line-height:1.8;}
 strong{color:var(--text);}
 a{color:var(--red);text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* COMPARISON TABLE */
-.compare-table{width:100%;border-collapse:collapse;margin:28px 0;font-size:13px;}
-.compare-table th{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:11px;color:var(--muted);padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);background:var(--bg2);}
+.compare-table{width:100%;border-collapse:collapse;margin:28px 0;font-size:14px;}
+.compare-table th{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:12px;color:var(--muted);padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);background:var(--bg2);}
 .compare-table td{padding:14px 16px;border-bottom:1px solid var(--border);color:#999;vertical-align:middle;}
 .compare-table tr:hover td{background:rgba(255,255,255,0.01);}
 .compare-table .col-name{color:var(--text);font-weight:600;}
@@ -95,10 +95,10 @@ a:hover{text-decoration:underline;}
 .badge-best{display:inline-block;background:var(--red);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:10px;letter-spacing:2px;padding:2px 8px;border-radius:2px;margin-left:8px;vertical-align:middle;}
 .val-green{color:var(--green);}
 .val-yellow{color:var(--gold);}
-.val-dim{color:#555;}
+.val-dim{color:#666;}
 
 /* RANK CARDS */
-.rank-card{border:1px solid var(--border);border-radius:6px;padding:36px 32px;margin:28px 0;position:relative;overflow:hidden;transition:border-color 0.3s;}
+.rank-card{border:1px solid var(--border);border-radius:4px;padding:36px 32px;margin:28px 0;position:relative;overflow:hidden;transition:border-color 0.3s;}
 .rank-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity 0.3s;}
 .rank-card:hover{border-color:var(--border2);}
 .rank-card.rank-1{border-left:3px solid var(--red);}
@@ -107,13 +107,13 @@ a:hover{text-decoration:underline;}
 .rank-ghost-num{position:absolute;right:24px;top:12px;font-family:'Bebas Neue',sans-serif;font-size:100px;line-height:1;color:var(--border);pointer-events:none;transition:color 0.3s;}
 .rank-card.rank-1 .rank-ghost-num{color:rgba(204,0,0,0.08);}
 .rank-badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;}
-.rank-badge-num{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;padding:4px 12px;border-radius:2px;}
+.rank-badge-num{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;padding:4px 12px;border-radius:2px;}
 .rank-1 .rank-badge-num{background:var(--red);color:#fff;}
 .rank-2 .rank-badge-num,.rank-3 .rank-badge-num{background:var(--bg2);border:1px solid var(--border2);color:var(--muted);}
-.rank-for{font-size:11px;color:var(--muted);letter-spacing:2px;font-family:'Bebas Neue',sans-serif;}
-.rank-card h3{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:0;text-transform:none;margin-top:8px;margin-bottom:12px;}
+.rank-for{font-size:12px;color:var(--muted);letter-spacing:2px;font-family:'Bebas Neue',sans-serif;}
+.rank-card h3{font-family:'Bebas Neue',sans-serif;font-size:20px;font-weight:400;letter-spacing:0;text-transform:none;margin-top:8px;margin-bottom:12px;}
 .rank-1 h3{color:#fff;}
-.rank-2 h3,.rank-3 h3{color:#bbb;}
+.rank-2 h3,.rank-3 h3{color:#ccc;}
 
 /* STATS ROW */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:20px 0 0;}
@@ -122,14 +122,14 @@ a:hover{text-decoration:underline;}
 .stat-value{font-size:14px;color:var(--text);font-weight:500;}
 .stat-value.good{color:var(--green);}
 .stat-value.warn{color:var(--gold);}
-.stat-value.dim{color:#888;}
+.stat-value.dim{color:#999;}
 
 /* CALLOUTS */
 .callout{border-radius:4px;padding:20px 24px;margin:28px 0;}
 .callout-insight{background:#0d0d00;border:1px solid #2a2500;border-left:3px solid var(--gold);}
 .callout-tip{background:#000d08;border:1px solid #002a18;border-left:3px solid var(--green);}
 .callout-red{background:#0d0000;border:1px solid #2a0000;border-left:3px solid var(--red);}
-.callout p{margin:0;font-size:14px;color:#aaa;line-height:1.7;}
+.callout p{margin:0;font-size:14px;color:#999;line-height:1.7;}
 .callout-label{font-family:'Bebas Neue',sans-serif;letter-spacing:3px;font-size:10px;margin-bottom:8px;}
 .callout-insight .callout-label{color:var(--gold);}
 .callout-tip .callout-label{color:var(--green);}
@@ -138,11 +138,11 @@ a:hover{text-decoration:underline;}
 /* CHECKLIST */
 .check-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
 .check-item{display:flex;gap:14px;align-items:flex-start;}
-.check-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:11px;font-weight:700;}
+.check-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:12px;font-weight:700;}
 .check-yes{background:rgba(34,197,94,0.12);color:var(--green);}
-.check-no{background:rgba(100,100,100,0.1);color:#888;}
+.check-no{background:rgba(100,100,100,0.1);color:#999;}
 .check-text strong{color:var(--text);font-size:14px;display:block;margin-bottom:2px;}
-.check-text span{font-size:13px;color:var(--muted);}
+.check-text span{font-size:14px;color:var(--muted);}
 
 /* FAQ */
 .faq-item{border-bottom:1px solid var(--border);padding:22px 0;}
@@ -151,15 +151,15 @@ a:hover{text-decoration:underline;}
 .faq-a{font-size:14px;color:var(--muted);line-height:1.7;}
 
 /* CTA BLOCK */
-.article-cta{background:linear-gradient(135deg,#100000,#0a0a0a);border:1px solid #2d0000;border-radius:6px;padding:48px 40px;text-align:center;margin:48px 0;position:relative;overflow:hidden;}
+.article-cta{background:linear-gradient(135deg,#100000,#0d0d0d);border:1px solid #2d0000;border-radius:4px;padding:48px 40px;text-align:center;margin:48px 0;position:relative;overflow:hidden;}
 .article-cta::before{content:'JOIN';position:absolute;right:-20px;bottom:-30px;font-family:'Bebas Neue',sans-serif;font-size:180px;color:rgba(204,0,0,0.04);line-height:1;pointer-events:none;}
 .article-cta h3{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;font-weight:400;margin-bottom:12px;}
-.article-cta p{color:#777;font-size:15px;max-width:440px;margin:0 auto 24px;}
+.article-cta p{color:#666;font-size:16px;max-width:440px;margin:0 auto 24px;}
 .btn{display:inline-flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;letter-spacing:3px;font-size:14px;padding:14px 32px;border-radius:2px;text-decoration:none;transition:all 0.25s;}
 .btn-primary{background:var(--red);color:#fff;}
 .btn-primary:hover{background:var(--red2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(204,0,0,0.3);text-decoration:none;}
 .btn-ghost{background:transparent;color:#999;border:1px solid var(--border2);}
-.btn-ghost:hover{border-color:#555;color:var(--text);text-decoration:none;}
+.btn-ghost:hover{border-color:#666;color:var(--text);text-decoration:none;}
 
 /* PILLS */
 .link-pills{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0;}
@@ -173,14 +173,14 @@ a:hover{text-decoration:underline;}
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px);}
 .modal-overlay.open{display:flex;animation:fadeIn 0.2s ease;}
-.modal-box{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:6px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
+.modal-box{background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;max-width:680px;width:100%;max-height:80vh;overflow-y:auto;padding:48px;position:relative;animation:slideUp 0.3s cubic-bezier(0.16,1,0.3,1);}
 .modal-box::-webkit-scrollbar{width:3px;}
 .modal-box::-webkit-scrollbar-thumb{background:#CC0000;}
-.modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#888;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+.modal-close{position:absolute;top:20px;right:20px;background:#1a1a1a;border:none;color:#999;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
 .modal-close:hover{background:#CC0000;color:#fff;}
-.modal-tab{background:#1a1a1a;border:none;color:#999;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;transition:all 0.2s;}
+.modal-tab{background:#1a1a1a;border:none;color:#999;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;transition:all 0.2s;}
 .modal-tab.active{background:#CC0000;color:#fff;}
-.footer-link{background:none;border:none;color:#888;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
+.footer-link{background:none;border:none;color:#999;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
 .footer-link:hover{color:#CC0000;}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
@@ -191,12 +191,12 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px;}
 .footer-logo span{font-family:'Bebas Neue',sans-serif;letter-spacing:4px;color:#999;font-size:16px;}
 .footer-social{display:flex;gap:12px;justify-content:center;margin-bottom:24px;}
-.social-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:3px;color:#888;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;}
+.social-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;color:#999;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:1px;transition:all 0.3s ease;}
 .footer-legal{display:flex;gap:20px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;}
 .footer-disclaimer{margin-bottom:12px;display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;}
-.age-badge{font-size:11px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;}
+.age-badge{font-size:12px;background:#1a0000;color:#CC0000;border:1px solid #330000;padding:3px 10px;border-radius:2px;letter-spacing:2px;font-weight:700;}
 .footer-platforms{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;}
-.footer-platforms a{font-size:12px;color:#555;text-decoration:none;transition:color 0.2s;}
+.footer-platforms a{font-size:12px;color:#666;text-decoration:none;transition:color 0.2s;}
 .footer-platforms a:hover{color:var(--text);}
 .footer-nav{display:flex;flex-direction:column;gap:6px;align-items:center;margin-top:12px;}
 .footer-nav a{font-size:12px;color:#444;text-decoration:none;transition:color 0.2s;}
@@ -628,7 +628,7 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 </div>
 
 <!-- RELATED GUIDES -->
-<section style="padding:80px 24px;background:#050505;border-top:1px solid #1a1a1a;">
+<section style="padding:80px 24px;background:#080808;border-top:1px solid #1a1a1a;">
   <div style="max-width:900px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:40px;">
       <p style="font-family:'Bebas Neue',sans-serif;color:#CC0000;letter-spacing:4px;font-size:12px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px;">
@@ -638,27 +638,27 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,54px);color:#fff;letter-spacing:2px;text-transform:uppercase;line-height:1.05;">Club Owner Guides</h2>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <a href="/join-x-poker-union" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #CC000044;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC0000'" onmouseout="this.style.borderColor='#CC000044'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#CC0000;">Join X Poker Union →</span>
+      <a href="/join-x-poker-union" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #CC000044;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC0000'" onmouseout="this.style.borderColor='#CC000044'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#CC0000;">Join X Poker Union →</span>
       </a>
-      <a href="/join-pppoker-union" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">Join PPPoker Union →</span>
+      <a href="/join-pppoker-union" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">Join PPPoker Union →</span>
       </a>
       
-      <a href="/pppoker" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">PPPoker Club Overview →</span>
+      <a href="/pppoker" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">PPPoker Club Overview →</span>
       </a>
-      <a href="/x-poker" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">X Poker Union Overview →</span>
+      <a href="/x-poker" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">X Poker Union Overview →</span>
       </a>
-      <a href="/clubgg" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">ClubGG Union Overview →</span>
+      <a href="/clubgg" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">ClubGG Union Overview →</span>
       </a>
-      <a href="/top-union-vs-primetime-vs-pppfish" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">TOP UNION vs PrimeTime vs PPPFish →</span>
+      <a href="/top-union-vs-primetime-vs-pppfish" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">TOP UNION vs PrimeTime vs PPPFish →</span>
       </a>
-      <a href="/how-to-get-more-players-poker-club" style="display:flex;align-items:center;gap:8px;background:#0a0a0a;border:1px solid #1a1a1a;border-radius:4px;padding:14px 18px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
-        <span style="font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;color:#fff;">How to Get More Players →</span>
+      <a href="/how-to-get-more-players-poker-club" style="display:flex;align-items:center;gap:8px;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:12px 16px;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#CC000055'" onmouseout="this.style.borderColor='#1a1a1a'">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;color:#fff;">How to Get More Players →</span>
       </a>
     </div>
   </div>
@@ -672,15 +672,15 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
         <svg width="30" height="22" viewBox="0 0 35 26" fill="none"><polygon points="14.9,2.8 20.2,13 14.9,23.2 9.6,13" fill="none" stroke="#444" stroke-width="1.8"/><polygon points="8,1 15,13 8,25 1,13" fill="#CC0000"/></svg>
         <span>TOP UNION</span>
       </div>
-      <div id="footer-copy" style="font-size:13px;color:#999;margin-bottom:16px;"></div>
+      <div id="footer-copy" style="font-size:14px;color:#999;margin-bottom:16px;"></div>
       <div style="display:flex;gap:12px;justify-content:center;margin-bottom:24px;">
-    <a href="https://t.me/TOP_UNION_X" target="_blank" title="Telegram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc';this.style.background='#001a26'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION Telegram">
+    <a href="https://t.me/TOP_UNION_X" target="_blank" title="Telegram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0088cc';this.style.color='#0088cc';this.style.background='#001a26'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION Telegram">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
     </a>
-    <a href="https://www.instagram.com/top_union_x" target="_blank" title="Instagram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C';this.style.background='#1a0010'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION Instagram">
+    <a href="https://www.instagram.com/top_union_x" target="_blank" title="Instagram" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#E1306C';this.style.color='#E1306C';this.style.background='#1a0010'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION Instagram">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
     </a>
-    <a href="https://www.linkedin.com/company/top-union" target="_blank" title="LinkedIn" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0f0f0f;border:1px solid #1a1a1a;border-radius:50%;color:#888;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0077b5';this.style.color='#0077b5';this.style.background='#001526'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#888';this.style.background='#0f0f0f'" aria-label="TOP UNION LinkedIn">
+    <a href="https://www.linkedin.com/company/top-union" target="_blank" title="LinkedIn" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:50%;color:#999;text-decoration:none;transition:all 0.3s ease;flex-shrink:0;" onmouseover="this.style.borderColor='#0077b5';this.style.color='#0077b5';this.style.background='#001526'" onmouseout="this.style.borderColor='#1a1a1a';this.style.color='#999';this.style.background='#0d0d0d'" aria-label="TOP UNION LinkedIn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a>
   </div>
@@ -696,11 +696,11 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
         <span style="font-size:12px;color:#999;">Platform &amp; infrastructure provider only</span>
       </div>
       <div class="footer-platforms">
-        <a href="/clubgg" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#555'">ClubGG · Europa Party · ID 4453</a>
-        <span style="color:#888;">|</span>
-        <a href="/pppoker" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='#555'">PPPoker · Top Union · ID 3404</a>
-        <span style="color:#888;">|</span>
-        <a href="/x-poker" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#555'">X-Poker · Prime · ID 7301</a>
+        <a href="/clubgg" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#666'">ClubGG · Europa Party · ID 4453</a>
+        <span style="color:#999;">|</span>
+        <a href="/pppoker" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='#666'">PPPoker · Top Union · ID 3404</a>
+        <span style="color:#999;">|</span>
+        <a href="/x-poker" onmouseover="this.style.color='#1aa3ff'" onmouseout="this.style.color='#666'">X-Poker · Prime · ID 7301</a>
       </div>
       <div class="footer-nav">
         <a href="/how-to-get-more-players-poker-club" onmouseover="this.style.color='#CC0000'" onmouseout="this.style.color='#444'">How to Get More Players for Your Poker Club →</a>
@@ -720,10 +720,10 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
       <button class="modal-tab" id="tab-terms" onclick="switchTab('terms')">Terms</button>
       <button class="modal-tab" id="tab-responsible" onclick="switchTab('responsible')">Resp. Gaming</button>
     </div>
-    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
-    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:28px;"></div>
+    <h2 id="modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:8px;"></h2>
+    <div style="width:40px;height:2px;background:#CC0000;margin-bottom:24px;"></div>
     <div id="modal-content"></div>
-    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#777;">© 2026 TOP UNION</div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid #1a1a1a;font-size:12px;color:#666;">© 2026 TOP UNION</div>
   </div>
 </div>
 
