@@ -198,9 +198,14 @@
   .floating-symbols{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
   .floating-symbols span{position:absolute;font-family:'Georgia',serif;color:#fff;opacity:0;animation:floatUp linear infinite;}
   @keyframes floatUp{0%{opacity:0;transform:translateY(100vh) rotate(0deg);}10%{opacity:0.104;}90%{opacity:0.104;}100%{opacity:0;transform:translateY(-120px) rotate(360deg);}}
+
+  /* Fallback: if JS fails, content stays visible */
+  .no-js .fade-up{opacity:1!important;transform:none!important;}
+  @media (prefers-reduced-motion: reduce){.fade-up{opacity:1!important;transform:none!important;transition:none!important;}}
 </style>
 
   <meta name='dmca-site-verification' content='eUtKZWcvWnMvRlRwZkJ6RzZrN250QT090'/>
+<noscript><style>.fade-up{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
 <body>
 
@@ -315,7 +320,7 @@
     <div style="text-align:center;margin-bottom:64px;">
       <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;">
         <svg style="flex-shrink:0;display:block;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-        THE ROOT CAUSE
+        ROOT CAUSE
       </p>
       <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,3.5vw,42px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.1;">
         Why Your Tables Are Empty Even With Active Players
@@ -504,7 +509,7 @@
     <div style="text-align:center;margin-bottom:64px;">
       <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;">
         <svg style="flex-shrink:0;display:block;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-        THE HONEST TRUTH
+        REALITY CHECK
       </p>
       <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,3.5vw,42px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.1;">
         Why Every Method Hits a Hard Ceiling
@@ -551,7 +556,7 @@
     <div style="text-align:center;margin-bottom:64px;">
       <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;">
         <svg style="flex-shrink:0;display:block;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-        THE REAL SOLUTION
+        THE SOLUTION
       </p>
       <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,3.5vw,42px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.1;">
         How Liquidity Networks Actually Solve the Problem
@@ -614,7 +619,7 @@
     <div style="text-align:center;margin-bottom:64px;">
       <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;">
         <svg style="flex-shrink:0;display:block;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-        THE BREAKDOWN
+        COMPARISON
       </p>
       <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,3.5vw,42px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;">All Methods Ranked</h2>
     </div>
@@ -750,7 +755,7 @@
 
     <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap;">
       <svg style="flex-shrink:0;display:block;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-      NEXT STEP
+      GET STARTED
     </p>
 
     <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,4vw,52px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.1;margin-bottom:20px;">
@@ -782,7 +787,7 @@
   <div style="max-width:860px;margin:0 auto;">
     <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;gap:8px;">
       <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-      THE MATH
+      BY THE NUMBERS
     </p>
     <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,52px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.05;margin-bottom:20px;">What the Numbers Actually Look Like</h2>
     <p class="fade-up d2" style="font-size:16px;color:#999;line-height:1.8;margin-bottom:48px;max-width:640px;">Here's the real difference between running an isolated club versus joining a liquidity network — based on actual activity data from our network.</p>
@@ -869,7 +874,7 @@
   <div style="max-width:760px;margin:0 auto;">
     <p class="section-label fade-up" style="margin-bottom:20px;display:flex;align-items:center;gap:8px;">
       <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg>
-      HOW TO JOIN
+      NEXT STEPS
     </p>
     <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,52px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;line-height:1.05;margin-bottom:20px;">How to Join a Poker Union as a Club Owner</h2>
     <p class="fade-up d2" style="font-size:16px;color:#999;line-height:1.8;margin-bottom:48px;">The process of joining TOP UNION takes less than 24 hours. Here's exactly what happens step by step.</p>
