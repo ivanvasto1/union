@@ -202,6 +202,12 @@
   /* Fallback: if JS fails, content stays visible */
   .no-js .fade-up{opacity:1!important;transform:none!important;}
   @media (prefers-reduced-motion: reduce){.fade-up{opacity:1!important;transform:none!important;transition:none!important;}}
+
+  /* UI: method card depth + hover */
+  .method-card{transition:transform 0.25s cubic-bezier(0.16,1,0.3,1),box-shadow 0.25s ease,border-color 0.25s ease;}
+  .method-card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.4);}
+  /* UI: subtle gradient on cards */
+  .card-gradient{background:linear-gradient(160deg,#0d0d0d 0%,#0a0a0a 100%);}
 </style>
 
   <meta name='dmca-site-verification' content='eUtKZWcvWnMvRlRwZkJ6RzZrN250QT090'/>
@@ -247,7 +253,7 @@
 <!-- ═══════════════════════════════════════ -->
 <section style="position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;padding:96px 24px 80px;">
   <div style="position:absolute;inset:0;overflow:hidden;">
-    <div style="position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(204,0,0,0.05) 0%,transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(204,0,0,0.08) 0%,rgba(204,0,0,0.02) 40%,transparent 70%);pointer-events:none;"></div>
   </div>
   <div style="position:relative;z-index:1;max-width:860px;width:100%;text-align:center;">
 
@@ -264,9 +270,9 @@
     </p>
 
     <div class="fade-up d3" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
-      <span style="font-size:12px;background:#111;border:1px solid #1a1a1a;color:#999;padding:4px 12px;border-radius:2px;letter-spacing:1px;">10 MIN READ</span>
-      <span style="font-size:12px;background:#111;border:1px solid #1a1a1a;color:#999;padding:4px 12px;border-radius:2px;letter-spacing:1px;">UPDATED 2026</span>
-      <span style="font-size:12px;background:#111;border:1px solid #1a1a1a;color:#999;padding:4px 12px;border-radius:2px;letter-spacing:1px;">ALL PLATFORMS</span>
+      <span style="font-size:12px;background:#0d0d0d;border:1px solid #222;color:#aaa;padding:5px 14px;border-radius:2px;letter-spacing:1.5px;font-weight:500;">10 MIN READ</span>
+      <span style="font-size:12px;background:#0d0d0d;border:1px solid #222;color:#aaa;padding:5px 14px;border-radius:2px;letter-spacing:1.5px;font-weight:500;">UPDATED 2026</span>
+      <span style="font-size:12px;background:#0d0d0d;border:1px solid #222;color:#aaa;padding:5px 14px;border-radius:2px;letter-spacing:1.5px;font-weight:500;">ALL PLATFORMS</span>
     </div>
 
   </div>
@@ -334,17 +340,17 @@
     </div>
 
     <div class="three-grid fade-up d3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:0 auto;">
-      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
+      <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;color:#CC0000;line-height:1;margin-bottom:12px;">01</div>
         <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:8px;">TIMEZONE PROBLEM</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">Players in different time zones can't play each other. Your 100-player club may only have 8–10 people online at any given hour.</p>
       </div>
-      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
+      <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;color:#CC0000;line-height:1;margin-bottom:12px;">02</div>
         <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:8px;">STAKE COVERAGE</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">Players want different stakes. A micro-stakes player and a high-roller can both be online but there's no table for either because volume is too thin.</p>
       </div>
-      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
+      <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;color:#CC0000;line-height:1;margin-bottom:12px;">03</div>
         <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:8px;">THE LOOP PROBLEM</p>
         <p style="font-size:14px;color:#999;line-height:1.6;">Players log in, find no action, and leave. Next time they hesitate to log in at all. Empty tables breed more empty tables over time.</p>
@@ -524,7 +530,7 @@
     </div>
 
     <div class="two-grid fade-up d3" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:720px;margin:0 auto;">
-      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
+      <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:#999;margin-bottom:16px;text-transform:uppercase;">What you're doing</p>
         <ul style="list-style:none;padding:0;">
           <li style="font-size:14px;color:#999;line-height:1.7;padding:6px 0;border-bottom:1px solid #0d0d0d;display:flex;gap:10px;"><span style="color:#666;">—</span> Adding 10 players via referrals</li>
@@ -533,7 +539,7 @@
           <li style="font-size:14px;color:#999;line-height:1.7;padding:6px 0;display:flex;gap:10px;"><span style="color:#666;">—</span> Posting on social media</li>
         </ul>
       </div>
-      <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
+      <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <p style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:#CC0000;margin-bottom:16px;text-transform:uppercase;">What you actually need</p>
         <ul style="list-style:none;padding:0;">
           <li style="font-size:14px;color:#999;line-height:1.7;padding:6px 0;border-bottom:1px solid #0d0d0d;display:flex;gap:10px;"><svg style="flex-shrink:0;margin-top:4px;" width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M0 0L10 6L0 12V0Z" fill="#CC0000"/></svg> 170,000+ players available 24/7</li>
@@ -882,7 +888,7 @@
     <div style="display:flex;flex-direction:column;gap:0;">
 
       <div style="display:flex;gap:24px;padding:28px 0;border-bottom:1px solid #111;">
-        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000015;border:1px solid #CC000033;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">1</div>
+        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000018;border:1px solid #CC000044;border-radius:12px;box-shadow:0 0 20px #CC000010;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">1</div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;color:#fff;margin-bottom:8px;">Contact us with your Club ID</div>
           <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">Send your Club ID (PPPoker, X Poker or ClubGG) via Telegram or WhatsApp. Tell us your platform, current club size, and what stakes you run. No commitment at this stage — just information exchange.</p>
@@ -890,7 +896,7 @@
       </div>
 
       <div style="display:flex;gap:24px;padding:28px 0;border-bottom:1px solid #111;">
-        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000015;border:1px solid #CC000033;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">2</div>
+        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000018;border:1px solid #CC000044;border-radius:12px;box-shadow:0 0 20px #CC000010;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">2</div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;color:#fff;margin-bottom:8px;">We show you live network traffic</div>
           <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">Within 24 hours we send you real screenshots of active tables in our network — at the stakes you care about, at different hours. You see exactly what your players will have access to before deciding anything.</p>
@@ -898,7 +904,7 @@
       </div>
 
       <div style="display:flex;gap:24px;padding:28px 0;border-bottom:1px solid #111;">
-        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000015;border:1px solid #CC000033;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">3</div>
+        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000018;border:1px solid #CC000044;border-radius:12px;box-shadow:0 0 20px #CC000010;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">3</div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;color:#fff;margin-bottom:8px;">Review terms and commission structure</div>
           <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">We explain our 7% commission structure, weekly settlement schedule, and what's expected from both sides. No hidden fees. You keep full ownership of your club, players, and brand — we just provide the network layer.</p>
@@ -906,7 +912,7 @@
       </div>
 
       <div style="display:flex;gap:24px;padding:28px 0;border-bottom:1px solid #111;">
-        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000015;border:1px solid #CC000033;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">4</div>
+        <div style="flex-shrink:0;width:48px;height:48px;background:#CC000018;border:1px solid #CC000044;border-radius:12px;box-shadow:0 0 20px #CC000010;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:#CC0000;">4</div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;color:#fff;margin-bottom:8px;">Technical setup — handled by us</div>
           <p style="font-size:14px;color:#999;line-height:1.7;margin:0;">Our team handles everything on the platform side. On PPPoker, your club joins under Club ID 3404. On X Poker, under Union ID 7301. On ClubGG, under Union ID 4453. Zero technical work required from you or your players.</p>
