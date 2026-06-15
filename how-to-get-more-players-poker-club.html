@@ -196,8 +196,8 @@
   }
 
   .floating-symbols{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
-  .floating-symbols span{position:absolute;bottom:-60px;color:rgba(255,255,255,0.04);animation:float linear infinite;font-family:serif;}
-  @keyframes float{0%{transform:translateY(0) rotate(0deg);opacity:0;}10%{opacity:1;}90%{opacity:1;}100%{transform:translateY(-110vh) rotate(360deg);opacity:0;}}
+  .floating-symbols span{position:absolute;font-family:'Georgia',serif;color:#fff;opacity:0;animation:floatUp linear infinite;}
+  @keyframes floatUp{0%{opacity:0;transform:translateY(100vh) rotate(0deg);}10%{opacity:0.104;}90%{opacity:0.104;}100%{opacity:0;transform:translateY(-120px) rotate(360deg);}}
 </style>
 
   <meta name='dmca-site-verification' content='eUtKZWcvWnMvRlRwZkJ6RzZrN250QT090'/>
