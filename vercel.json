@@ -168,6 +168,18 @@
     {
       "source": "/poker-club-economics",
       "destination": "/poker-club-economics.html"
+    },
+    {
+      "source": "/ru/poker-club-economics",
+      "destination": "/ru-poker-club-economics.html"
+    },
+    {
+      "source": "/es/poker-club-economics",
+      "destination": "/es-poker-club-economics.html"
+    },
+    {
+      "source": "/pt/poker-club-economics",
+      "destination": "/pt-poker-club-economics.html"
     }
   ],
   "headers": [
