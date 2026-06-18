@@ -184,6 +184,18 @@
     {
       "source": "/why-poker-clubs-die",
       "destination": "/why-poker-clubs-die.html"
+    },
+    {
+      "source": "/ru/why-poker-clubs-die",
+      "destination": "/ru-why-poker-clubs-die.html"
+    },
+    {
+      "source": "/es/why-poker-clubs-die",
+      "destination": "/es-why-poker-clubs-die.html"
+    },
+    {
+      "source": "/pt/why-poker-clubs-die",
+      "destination": "/pt-why-poker-clubs-die.html"
     }
   ],
   "headers": [
