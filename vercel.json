@@ -180,6 +180,10 @@
     {
       "source": "/pt/poker-club-economics",
       "destination": "/pt-poker-club-economics.html"
+    },
+    {
+      "source": "/why-poker-clubs-die",
+      "destination": "/why-poker-clubs-die.html"
     }
   ],
   "headers": [
