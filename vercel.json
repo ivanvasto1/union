@@ -10,6 +10,36 @@
       ],
       "destination": "https://topunion.club/:path*",
       "permanent": true
+    },
+    {
+      "source": "/es/best-poker-unions-2026",
+      "destination": "/best-poker-unions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/pt/best-poker-unions-2026",
+      "destination": "/best-poker-unions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/ru/best-poker-unions-2026",
+      "destination": "/best-poker-unions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/es/how-to-join-x-poker-union",
+      "destination": "/how-to-join-x-poker-union",
+      "permanent": true
+    },
+    {
+      "source": "/pt/how-to-join-x-poker-union",
+      "destination": "/how-to-join-x-poker-union",
+      "permanent": true
+    },
+    {
+      "source": "/ru/how-to-join-x-poker-union",
+      "destination": "/how-to-join-x-poker-union",
+      "permanent": true
     }
   ],
   "rewrites": [
