@@ -222,6 +222,22 @@
     {
       "source": "/pt/why-poker-clubs-die",
       "destination": "/pt-why-poker-clubs-die.html"
+    },
+    {
+      "source": "/how-to-start-poker-club",
+      "destination": "/how-to-start-poker-club.html"
+    },
+    {
+      "source": "/ru/how-to-start-poker-club",
+      "destination": "/ru-how-to-start-poker-club.html"
+    },
+    {
+      "source": "/es/how-to-start-poker-club",
+      "destination": "/es-how-to-start-poker-club.html"
+    },
+    {
+      "source": "/pt/how-to-start-poker-club",
+      "destination": "/pt-how-to-start-poker-club.html"
     }
   ],
   "headers": [
