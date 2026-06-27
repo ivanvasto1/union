@@ -238,6 +238,10 @@
     {
       "source": "/pt/how-to-start-poker-club",
       "destination": "/pt-how-to-start-poker-club.html"
+    },
+    {
+      "source": "/rake-calculator",
+      "destination": "/rake-calculator.html"
     }
   ],
   "headers": [
