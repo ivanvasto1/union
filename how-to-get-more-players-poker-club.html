@@ -208,6 +208,11 @@
   .method-card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.4);}
   /* UI: subtle gradient on cards */
   .card-gradient{background:linear-gradient(160deg,#0d0d0d 0%,#0a0a0a 100%);}
+
+  .agent-earnings-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  @media(max-width:600px){
+    .agent-earnings-grid{grid-template-columns:1fr;gap:12px;}
+  }
 </style>
 
   <meta name='dmca-site-verification' content='eUtKZWcvWnMvRlRwZkJ6RzZrN250QT090'/>
@@ -339,7 +344,7 @@
       <p style="margin-bottom:32px;">This is a structural problem, not a marketing problem. And understanding that difference is the key to picking the right solution.</p>
     </div>
 
-    <div class="three-grid fade-up d3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:0 auto;">
+    <div class="three-grid fade-up d3" style="display:grid;gap:16px;max-width:860px;margin:0 auto;">
       <div class="method-card card-gradient" style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;color:#CC0000;line-height:1;margin-bottom:12px;">01</div>
         <p style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;margin-bottom:8px;">TIMEZONE PROBLEM</p>
@@ -575,7 +580,7 @@
     </div>
 
     <!-- How it works steps -->
-    <div class="three-grid fade-up d3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:64px;">
+    <div class="three-grid fade-up d3" style="display:grid;gap:20px;margin-bottom:64px;">
       <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:32px 24px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;color:#CC0000;line-height:1;margin-bottom:16px;">01</div>
         <h3 style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:#fff;text-transform:uppercase;margin-bottom:10px;">Your Club Connects</h3>
@@ -594,7 +599,7 @@
     </div>
 
     <!-- Stats bar -->
-    <div class="four-grid fade-up" class="stats-4-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
+    <div class="four-grid fade-up" class="stats-4-grid" style="display:grid;gap:1px;background:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;overflow:hidden;">
       <div class="stat-box">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,48px);color:#FFD700;" class="counter" data-target="80" data-suffix="+">0+</div>
         <div style="font-size:12px;color:#999;letter-spacing:2px;margin-top:8px;text-transform:uppercase;">Clubs</div>
@@ -731,7 +736,7 @@
       <h2 class="fade-up d1" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,3vw,36px);color:#fff;letter-spacing:2px;text-align:center;text-transform:uppercase;">TOP UNION Works On Your Platform</h2>
     </div>
 
-    <div class="three-grid fade-up d2" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+    <div class="three-grid fade-up d2" style="display:grid;gap:16px;">
       <a href="/pppoker" style="display:block;text-decoration:none;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:4px;padding:24px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='#CC0000'" onmouseout="this.style.borderColor='#1a1a1a'">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px;color:#fff;margin-bottom:8px;">PPPoker</div>
         <div style="font-size:12px;color:#999;letter-spacing:2px;margin-bottom:12px;text-transform:uppercase;">Club ID 3404</div>
@@ -854,7 +859,7 @@
     <div style="background:#080808;border:1px solid #1a1a1a;border-radius:4px;padding:28px;margin-bottom:32px;">
       <div style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:#CC0000;margin-bottom:16px;">AGENT EARNINGS EXAMPLE</div>
       <p style="font-size:16px;color:#999;line-height:1.8;margin-bottom:16px;">A poker agent with 20 active players generating average $50/month in rake each:</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;" class="agent-earnings-grid">
         <div style="text-align:center;padding:16px;background:#0d0d0d;border-radius:4px;">
           <div style="font-size:12px;color:#666;margin-bottom:8px;">Players</div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;">20</div>
