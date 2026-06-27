@@ -242,6 +242,18 @@
     {
       "source": "/rake-calculator",
       "destination": "/rake-calculator.html"
+    },
+    {
+      "source": "/ru/rake-calculator",
+      "destination": "/ru-rake-calculator.html"
+    },
+    {
+      "source": "/es/rake-calculator",
+      "destination": "/es-rake-calculator.html"
+    },
+    {
+      "source": "/pt/rake-calculator",
+      "destination": "/pt-rake-calculator.html"
     }
   ],
   "headers": [

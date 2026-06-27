@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Poker Club Rake Calculator | TOP UNION</title>
-<meta name="description" content="Estimate how much rake your poker club loses to empty tables, and what joining a liquidity network could recover. Free calculator for X Poker and PPPoker club owners."/>
-<link rel="canonical" href="https://topunion.club/rake-calculator"/>
+<title>Calculadora de rake para club de póker | TOP UNION</title>
+<meta name="description" content="Estima cuánto rake pierde tu club por las mesas vacías y cuánto podrías recuperar en una red de liquidez. Calculadora gratuita para dueños de clubes de X Poker y PPPoker."/>
+<link rel="canonical" href="https://topunion.club/es/rake-calculator"/>
 <link rel="alternate" hreflang="en" href="https://topunion.club/rake-calculator"/>
 <link rel="alternate" hreflang="ru" href="https://topunion.club/ru/rake-calculator"/>
 <link rel="alternate" hreflang="es" href="https://topunion.club/es/rake-calculator"/>
 <link rel="alternate" hreflang="pt-BR" href="https://topunion.club/pt/rake-calculator"/>
 <link rel="alternate" hreflang="x-default" href="https://topunion.club/rake-calculator"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Poker Club Rake Calculator | TOP UNION"/>
-<meta property="og:description" content="Estimate how much rake your club loses to empty tables and what a liquidity network could recover."/>
-<meta property="og:url" content="https://topunion.club/rake-calculator"/>
+<meta property="og:title" content="Calculadora de rake para club de póker | TOP UNION"/>
+<meta property="og:description" content="Estima cuánto rake pierde tu club por las mesas vacías y cuánto podrías recuperar en una red de liquidez. Calculadora gratuita para dueños de clubes de X Poker y PPPoker."/>
+<meta property="og:url" content="https://topunion.club/es/rake-calculator"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -154,17 +154,17 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 </nav>
 
 <div class="calc-wrap">
-  <div class="kicker">Club Owner Tool</div>
-  <h1>How Much Rake Are Your Empty Tables Costing You?</h1>
-  <p class="intro">Small clubs lose rake every night that tables sit empty. Adjust the sliders to match your club, and see the gap between what you collect now and what you could collect with full table liquidity.</p>
-  <p class="disclaimer-note">This is an estimate based on adjustable industry averages, not a guarantee. Real results depend on your players, stakes, and platform.</p>
+  <div class="kicker">Herramienta para dueños de clubes</div>
+  <h1>¿Cuánto rake te cuestan las mesas vacías?</h1>
+  <p class="intro">Los clubes pequeños pierden rake cada noche que las mesas están vacías. Ajusta los controles según tu club y ve la diferencia entre lo que cobras ahora y lo que podrías cobrar con mesas siempre llenas.</p>
+  <p class="disclaimer-note">Esto es una estimación basada en promedios ajustables, no una garantía. Los resultados reales dependen de tus jugadores, límites y plataforma.</p>
 
   <div class="calc-card">
     <div class="slider-block">
       <div class="slider-head">
         <div>
-          <div class="slider-label">Active players in your club</div>
-          <div class="slider-sub">Players who log in and play in a typical week</div>
+          <div class="slider-label">Jugadores activos en tu club</div>
+          <div class="slider-sub">Jugadores que entran y juegan en una semana típica</div>
         </div>
         <div class="slider-value"><span id="players-val">50</span></div>
       </div>
@@ -174,10 +174,10 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
     <div class="slider-block">
       <div class="slider-head">
         <div>
-          <div class="slider-label">Average rake per active player</div>
-          <div class="slider-sub">Monthly rake one active player generates</div>
+          <div class="slider-label">Rake promedio por jugador activo</div>
+          <div class="slider-sub">Rake mensual que genera un jugador activo</div>
         </div>
-        <div class="slider-value">$<span id="rake-val">25</span><span class="unit">/mo</span></div>
+        <div class="slider-value">$<span id="rake-val">25</span><span class="unit">/mes</span></div>
       </div>
       <input type="range" id="rake" min="5" max="150" step="5" value="25"/>
     </div>
@@ -185,8 +185,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
     <div class="slider-block">
       <div class="slider-head">
         <div>
-          <div class="slider-label">Current table utilization</div>
-          <div class="slider-sub">How often your players actually find a game</div>
+          <div class="slider-label">Utilización actual de mesas</div>
+          <div class="slider-sub">Con qué frecuencia tus jugadores encuentran partida</div>
         </div>
         <div class="slider-value"><span id="util-val">35</span><span class="unit">%</span></div>
       </div>
@@ -195,34 +195,34 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
     <div class="results">
       <div class="result-cell">
-        <div class="result-label">Rake you collect now</div>
+        <div class="result-label">Rake que cobras ahora</div>
         <div class="result-value muted">$<span id="current">0</span></div>
-        <div class="per">per month</div>
+        <div class="per">por mes</div>
       </div>
       <div class="result-cell highlight">
-        <div class="result-label">Potential in a full network</div>
+        <div class="result-label">Potencial en una red completa</div>
         <div class="result-value">$<span id="potential">0</span></div>
-        <div class="per">per month, at ~85% utilization</div>
+        <div class="per">por mes, al ~85% de utilización</div>
       </div>
     </div>
 
     <div class="recovered">
-      <div class="recovered-label">Rake left on the table</div>
+      <div class="recovered-label">Rake que dejas sobre la mesa</div>
       <div class="recovered-value">$<span id="recovered">0</span></div>
-      <div class="recovered-sub">Estimated monthly rake you are not collecting because tables sit empty at off-peak hours.</div>
+      <div class="recovered-sub">Estimación del rake mensual que no estás cobrando porque las mesas están vacías en horas de poca actividad.</div>
     </div>
   </div>
 
   <div class="assumptions">
-    <h3>How this is calculated</h3>
-    <p><strong>Current rake</strong> = active players x rake per player x current utilization. A club running solo rarely fills tables outside peak hours, so a large share of potential rake never gets generated.</p>
-    <p><strong>Network potential</strong> assumes ~85% utilization, the level a shared liquidity pool can sustain because games run around the clock across many clubs, not just yours.</p>
-    <p><strong>The gap</strong> is the difference. It is an illustration, not a promise. Your real numbers depend on stakes, player activity, and which platform you run on.</p>
+    <h3>Cómo se calcula</h3>
+    <p><strong>Rake actual</strong> = jugadores activos x rake por jugador x utilización actual. Un club en solitario rara vez llena mesas fuera de las horas pico, así que gran parte del rake potencial nunca se genera.</p>
+    <p><strong>Potencial de red</strong> asume ~85% de utilización, el nivel que sostiene un pool de liquidez compartido porque las partidas corren a toda hora entre muchos clubes, no solo el tuyo.</p>
+    <p><strong>La diferencia</strong> es la brecha. Es una ilustración, no una promesa. Tus números reales dependen de los límites, la actividad de los jugadores y la plataforma.</p>
   </div>
 
   <div class="cta-row">
-    <p>Want a real estimate for your specific club?</p>
-    <a href="https://t.me/topunionalex" target="_blank" class="cta-btn">Talk to our team</a>
+    <p>¿Quieres una estimación real para tu club?</p>
+    <a href="https://t.me/topunionalex" target="_blank" class="cta-btn">Habla con nuestro equipo</a>
   </div>
 </div>
 
