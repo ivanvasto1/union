@@ -161,7 +161,7 @@
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 
 @media(max-width:520px){
-  .btn-red,.btn-outline{width:100%!important;box-sizing:border-box!important;padding:16px 20px!important;font-size:16px!important;letter-spacing:2px!important;justify-content:center!important;white-space:normal!important;}
+  .btn-red.btn-outline{width:100%!important;box-sizing:border-box!important;padding:16px 20px!important;font-size:16px!important;letter-spacing:2px!important;justify-content:center!important;white-space:normal!important;}
   .cta-row{flex-direction:column!important;align-items:stretch!important;width:100%!important;max-width:320px!important;margin-left:auto!important;margin-right:auto!important;}
 }
 </style>
@@ -626,7 +626,7 @@ const LEGAL={
   },
   terms:{
     en:{title:"Terms of Service",content:[{h:"⚠️ 18+ ONLY",t:"Services strictly for adults 18+."},{h:"1. Platform & Infrastructure Only",t:"TOP UNION is a B2B technology and infrastructure provider for poker club owners and agents."},{h:"2. No Gambling Services",t:"We do not provide gambling services directly to end users."},{h:"3. Limitation of Liability",t:"Partners are solely responsible for compliance with local laws."}]},
-    ru:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только инфраструктура",t:"Мы — B2B поставщик технологий для владельцев покерных клубов."},{h:"2. Не предоставляем игорные услуги",t:"Мы не предоставляем игорные услуги напрямую."},{h:"3. Ответственность",t:"Партнёры несут ответственность за соблюдение законодательства."}]},
+    ru:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только инфраструктура",t:"Мы, B2B поставщик технологий для владельцев покерных клубов."},{h:"2. Не предоставляем игорные услуги",t:"Мы не предоставляем игорные услуги напрямую."},{h:"3. Ответственность",t:"Партнёры несут ответственность за соблюдение законодательства."}]},
     pt:{title:"Termos de Serviço",content:[{h:"⚠️ APENAS +18",t:"Serviços estritamente para adultos com 18+."},{h:"1. Apenas Infraestrutura B2B",t:"Somos um provedor B2B para donos de clubes de poker."},{h:"2. Sem Serviços de Jogo",t:"Não prestamos serviços de jogo a usuários finais."},{h:"3. Responsabilidade",t:"Parceiros são responsáveis pelo cumprimento das leis locais."}]}
   },
   responsible:{
@@ -672,7 +672,7 @@ const cobs = new IntersectionObserver(entries => {
 }, {threshold: 0.3});
 document.querySelectorAll('.counter').forEach(el => cobs.observe(el));
 
-// Meta Pixel — Contact fires only for WA/TG links
+// Meta Pixel, Contact fires only for WA/TG links
 document.addEventListener('click', function(e) {
   const el = e.target.closest('a, button');
   if(!el) return;

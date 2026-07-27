@@ -113,7 +113,7 @@
   @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
 
 @media(max-width:520px){
-  .btn-red,.btn-outline{width:100%!important;box-sizing:border-box!important;padding:16px 20px!important;font-size:16px!important;letter-spacing:2px!important;justify-content:center!important;white-space:normal!important;}
+  .btn-red.btn-outline{width:100%!important;box-sizing:border-box!important;padding:16px 20px!important;font-size:16px!important;letter-spacing:2px!important;justify-content:center!important;white-space:normal!important;}
   .cta-row{flex-direction:column!important;align-items:stretch!important;width:100%!important;max-width:320px!important;margin-left:auto!important;margin-right:auto!important;}
 }
 </style>
@@ -127,7 +127,7 @@
       "name": "What is ClubGG?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ClubGG is a private poker club platform built on the GGPoker infrastructure — the world's largest poker network. It lets you run a private club with your own rules, rake structure and player base."
+        "text": "ClubGG is a private poker club platform built on the GGPoker infrastructure, the world's largest poker network. It lets you run a private club with your own rules, rake structure and player base."
       }
     },
     {
@@ -151,7 +151,7 @@
       "name": "Will I lose control of my ClubGG club if I join TOP UNION?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Tu club, jugadores, marca y estructura de rake permanecen totalmente bajo tu control. TOP UNION proporciona la infraestructura de liquidez — sigues gestionando tu negocio exactamente como hoy."
+        "text": "No. Tu club, jugadores, marca y estructura de rake permanecen totalmente bajo tu control. TOP UNION proporciona la infraestructura de liquidez, sigues gestionando tu negocio exactamente como hoy."
       }
     },
     {
@@ -762,7 +762,7 @@ const cobs = new IntersectionObserver(entries => {
 }, {threshold: 0.3});
 document.querySelectorAll('.counter').forEach(el => cobs.observe(el));
 
-// Meta Pixel — Contact fires only for WA/TG links
+// Meta Pixel, Contact fires only for WA/TG links
 document.addEventListener('click', function(e) {
   const el = e.target.closest('a, button');
   if(!el) return;
