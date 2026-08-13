@@ -101,11 +101,6 @@
   .modal-close:hover{background:#CC0000;color:#fff;}
   .modal-tab{background:#1a1a1a;border:none;color:#999;padding:8px 16px;border-radius:2px;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:2px;transition:all 0.2s;}
   .modal-tab.active{background:#CC0000;color:#fff;}
-  .modal-tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById('tab-'+curModal).classList.add('active');
-}
-
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}
   .footer-link{background:none;border:none;color:#999;font-size:12px;cursor:pointer;text-decoration:underline;text-decoration-color:#2a2a2a;transition:color 0.2s;padding:0;font-family:'Montserrat',sans-serif;}
   .footer-link:hover{color:#CC0000;}
 </style>
