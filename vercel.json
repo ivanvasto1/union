@@ -254,6 +254,22 @@
     {
       "source": "/pt/rake-calculator",
       "destination": "/pt-rake-calculator.html"
+    },
+    {
+      "source": "/es/join-x-poker-union",
+      "destination": "/es-join-x-poker-union.html"
+    },
+    {
+      "source": "/es/join-pppoker-union",
+      "destination": "/es-join-pppoker-union.html"
+    },
+    {
+      "source": "/pt/join-x-poker-union",
+      "destination": "/pt-join-x-poker-union.html"
+    },
+    {
+      "source": "/pt/join-pppoker-union",
+      "destination": "/pt-join-pppoker-union.html"
     }
   ],
   "headers": [
