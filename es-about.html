@@ -434,6 +434,8 @@ document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   </div>
 </div>
 <script>
+(function(){
+
 const LEGAL={
   privacy:{
     en:{title:"Privacy Policy",content:[{h:"1. Introduction",t:"TOP UNION is committed to protecting your personal information."},{h:"2. Data We Collect",t:"We collect basic contact information you voluntarily provide, solely for establishing a business relationship."},{h:"3. How We Use Your Data",t:"Your data is used exclusively to communicate with you regarding partnership opportunities."},{h:"4. No Third-Party Sharing",t:"We do not sell, trade, or transfer your personal information to any third parties."},{h:"5. Data Security",t:"We implement appropriate technical measures to protect your personal information."},{h:"6. Contact",t:"Contact us via Telegram @topunionalex or WhatsApp +447865080609."}]}
@@ -494,6 +496,9 @@ document.addEventListener('click', function(e) {
   if(isWA) fbq('track', 'Contact', {channel:'whatsapp', content_name:'WhatsApp Click', content_category:'Messaging'});
   if(isTG) fbq('track', 'Contact', {channel:'telegram', content_name:'Telegram Click', content_category:'Messaging'});
 });
+
+window.openModal=openModal;window.closeModal=closeModal;window.switchTab=switchTab;
+})();
 </script>
 </body>
 </html>

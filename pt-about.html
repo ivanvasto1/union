@@ -453,6 +453,8 @@ document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   </div>
 </div>
 <script>
+(function(){
+
 const LEGAL={
   privacy:{title:"Política de Privacidade",content:[{h:"1. Introdução",t:"A TOP UNION está comprometida com a proteção das suas informações pessoais."},{h:"2. Dados que Coletamos",t:"Coletamos informações básicas de contato que você fornece voluntariamente, exclusivamente para estabelecer uma relação comercial."},{h:"3. Uso dos Dados",t:"Seus dados são usados exclusivamente para comunicação sobre oportunidades de parceria."},{h:"4. Compartilhamento com Terceiros",t:"Não vendemos, negociamos ou transferimos suas informações pessoais a terceiros."},{h:"5. Segurança dos Dados",t:"Implementamos medidas técnicas adequadas para proteger suas informações pessoais."},{h:"6. Contato",t:"Entre em contato pelo Telegram @topunionalex ou WhatsApp +447865080609."}]},
   terms:{title:"Termos de Uso",content:[{h:"⚠️ APENAS +18",t:"Serviços estritamente para adultos maiores de 18 anos."},{h:"1. Apenas Plataforma e Infraestrutura",t:"A TOP UNION é um provedor B2B de tecnologia e infraestrutura para donos de clubes de poker e agentes."},{h:"2. Sem Serviços de Jogo",t:"Não fornecemos serviços de jogo diretamente aos usuários finais."},{h:"3. Limitação de Responsabilidade",t:"Os parceiros são os únicos responsáveis pelo cumprimento das leis locais."}]},
@@ -478,6 +480,9 @@ const cobs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isInters
 document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 document.addEventListener('click',function(e){const el=e.target.closest('a,button');if(!el)return;const href=(el.getAttribute('href')||'').toLowerCase();const isWA=href.includes('api.whatsapp.com')||href.includes('wa.me');const isTG=href.includes('t.me')||href.includes('telegram.me');if(typeof fbq==='undefined')return;if(isWA)fbq('track','Contact',{channel:'whatsapp',content_name:'WhatsApp Click',content_category:'Messaging'});if(isTG)fbq('track','Contact',{channel:'telegram',content_name:'Telegram Click',content_category:'Messaging'});});
+
+window.openModal=openModal;window.closeModal=closeModal;window.switchTab=switchTab;
+})();
 </script>
 </body>
 </html>

@@ -404,6 +404,8 @@ document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
   </div>
 </div>
 <script>
+(function(){
+
 const LEGAL={
   privacy:{title:"Политика конфиденциальности",content:[{h:"1. Введение",t:"TOP UNION обязуется защищать вашу личную информацию."},{h:"2. Данные которые мы собираем",t:"Мы собираем базовую контактную информацию, которую вы предоставляете добровольно, исключительно для установления деловых отношений."},{h:"3. Использование данных",t:"Ваши данные используются исключительно для связи с вами по вопросам партнёрства."},{h:"4. Передача третьим лицам",t:"Мы не продаём, не передаём и не обмениваем вашу личную информацию с третьими лицами."},{h:"5. Безопасность данных",t:"Мы применяем технические меры для защиты вашей личной информации."},{h:"6. Контакт",t:"Свяжитесь с нами через Telegram @topunionalex или WhatsApp +447865080609."}]},
   terms:{title:"Условия использования",content:[{h:"⚠️ ТОЛЬКО 18+",t:"Услуги строго для лиц от 18 лет."},{h:"1. Только платформа и инфраструктура",t:"TOP UNION является B2B поставщиком технологий и инфраструктуры для владельцев покерных клубов и агентов."},{h:"2. Отсутствие игорных услуг",t:"Мы не предоставляем игорные услуги напрямую конечным пользователям."},{h:"3. Ограничение ответственности",t:"Партнёры несут исключительную ответственность за соблюдение местного законодательства."}]},
@@ -429,6 +431,9 @@ const cobs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isInters
 document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
 
 document.addEventListener('click',function(e){const el=e.target.closest('a,button');if(!el)return;const href=(el.getAttribute('href')||'').toLowerCase();const isWA=href.includes('api.whatsapp.com')||href.includes('wa.me');const isTG=href.includes('t.me')||href.includes('telegram.me');if(typeof fbq==='undefined')return;if(isWA)fbq('track','Contact',{channel:'whatsapp',content_name:'WhatsApp Click',content_category:'Messaging'});if(isTG)fbq('track','Contact',{channel:'telegram',content_name:'Telegram Click',content_category:'Messaging'});});
+
+window.openModal=openModal;window.closeModal=closeModal;window.switchTab=switchTab;
+})();
 </script>
 </body>
 </html>
