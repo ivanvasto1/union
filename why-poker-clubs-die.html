@@ -243,6 +243,13 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   a svg path[stroke="currentColor"]{transition:transform 0.2s ease;}
   .pill svg, a:hover svg{transition:transform 0.2s ease;}
   .pill:hover svg{transform:translateX(2px);}
+
+  .answer-lead{background:#0d0d0d;border-left:2px solid #CC0000;border-radius:2px;padding:16px 20px;margin:0 0 24px;font-size:17px;line-height:1.65;color:#ddd;}
+  .answer-lead strong{color:#fff;font-weight:600;}
+  .fact-list{list-style:none;margin:16px 0 24px;padding:0;}
+  .fact-list li{position:relative;padding-left:24px;margin-bottom:12px;color:#999;line-height:1.7;}
+  .fact-list li:before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;background:#CC0000;border-radius:1px;}
+  .fact-list li strong{color:#fff;font-weight:600;}
 </style>
 <body>
 
@@ -288,9 +295,22 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <p class="lead reveal">Creating a poker club takes a few seconds. Keeping one alive is where most owners fail. The clubs that die rarely die from bad luck or a single catastrophe. They die from a short list of predictable mistakes, made early and left unfixed, until the lobby goes quiet and the players stop coming back. Here are the seven that kill clubs most often, why each one is fatal, and what to do instead. The patterns below are drawn from how the club-app market actually works across PPPoker, X Poker and ClubGG.</p>
 
+  <p class="answer-lead reveal"><strong>Short answer:</strong> poker clubs die from a liquidity shortage, not from bad luck. Not enough players are online at the same time, so tables sit empty, players stop opening the app, and the club fades. The six mistakes that follow all make that first problem worse.</p>
+
+  <ul class="fact-list reveal">
+    <li><strong>Ignoring liquidity.</strong> Not enough concurrent players to fill a table, discovered too late to fix.</li>
+    <li><strong>Confusing members with action.</strong> A long member list that never converts into running games.</li>
+    <li><strong>Slow or unreliable payouts.</strong> One delayed withdrawal destroys the trust the whole club runs on.</li>
+    <li><strong>Staying isolated.</strong> Competing alone against networks of 80+ clubs sharing one player pool.</li>
+    <li><strong>Underestimating the workload.</strong> Chip handling, disputes, promotion and support, usually alongside another job.</li>
+    <li><strong>Offering one stake and one format.</strong> Winners leave for higher games, casual players leave for softer ones.</li>
+    <li><strong>Flying blind.</strong> No record of which hours run, which stakes draw players, or when members stopped logging in.</li>
+  </ul>
+
   <section id="liquidity">
     <div class="section-kicker reveal">Mistake 1</div>
-    <h2 class="reveal">Ignoring Liquidity Until It Is Too Late</h2>
+    <h2 class="reveal">Why Do Poker Clubs Run Out of Players?</h2>
+    <p class="answer-lead reveal">Because liquidity, the number of players online at the same time, collapses before the member count does. A club can have 80 members on paper and three people online on a Tuesday afternoon, and three people cannot run a table.</p>
     <p class="reveal">This is the killer behind most dead clubs. Liquidity is the number of players actually online and seated at the same time, and it is the one thing a club cannot survive without. An owner can have a polished club, fair rake, and a long member list, and still watch it die because there are never enough people online at once to fill a table.</p>
     <p class="reveal">The trap is that liquidity problems are invisible at the start. A new club with a few enthusiastic friends feels alive for the first couple of weeks. Then the novelty fades, schedules diverge, and the owner discovers that 80 members on paper can mean three people online on a Tuesday afternoon. Three people cannot run a game. The tables sit empty, and empty tables are contagious: players open the app, see nothing running, and stop opening it.</p>
     <p class="reveal">By the time an owner recognises the liquidity problem, the club is often already in decline. The fix has to be structural and it has to come early, before the reputation for dead tables sets in.</p>
@@ -298,7 +318,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <section id="recruiting">
     <div class="section-kicker reveal">Mistake 2</div>
-    <h2 class="reveal">Confusing Members With Action</h2>
+    <h2 class="reveal">Does a Bigger Member List Mean More Games?</h2>
+    <p class="answer-lead reveal">No. Members are a stock number, action is a flow number. A club with 200 members who log in monthly runs fewer games than a club with 40 who log in nightly.</p>
     <p class="reveal">New owners pour energy into recruiting. They chase signups, hand out invites, and measure success by the size of the member list. The mistake is believing that more members automatically means more action. It does not.</p>
     <p class="reveal">A registered member who is never online at the same time as anyone else contributes nothing. No hands, no rake, no game. What matters is not how many names are on the roster but how many are seated simultaneously, and recruiting alone rarely solves that. You can double the member list and still have empty tables if those members play at different hours, in different time zones, or only occasionally.</p>
     <p class="reveal">As a rough industry guideline, a club needs somewhere around 100 active players before it can reliably sustain its own tables, and even then mostly at peak hours. Most owners never reach that on their own. The ones who survive stop treating recruitment as the goal and start treating concurrent liquidity as the goal, which usually means looking beyond their own roster entirely.</p>
@@ -306,7 +327,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <section id="payouts">
     <div class="section-kicker reveal">Mistake 3</div>
-    <h2 class="reveal">Slow or Unreliable Payouts</h2>
+    <h2 class="reveal">How Important Are Fast Payouts for a Poker Club?</h2>
+    <p class="answer-lead reveal">They are the single most important trust signal a club has. In club apps the money flows through the owner, not the platform, so one slow withdrawal is enough to make players leave and warn others.</p>
     <p class="reveal">In club apps, balances are managed outside the app by the operator. The platform handles the software and the cards, but the money flows through the club owner. That makes payout reliability the single most important trust signal a club has, and the fastest way to kill one.</p>
     <p class="reveal">Players in this ecosystem are acutely aware of the risk. Industry coverage is full of cautionary tales of clubs that slow-paid or no-paid winners, and of operators who vanished with balances. Players talk. A single delayed payout, even an honest mistake, spreads through the community and a club's reputation does not recover easily. Once players suspect they might not get paid, they stop putting chips into the club, and a club nobody funds is already dead.</p>
     <p class="reveal">The survivors treat payouts as sacred. Fast, predictable, no excuses, even when it costs the owner short-term convenience. In a market where trust is the only real currency, reliable settlement is not a nice-to-have. It is the product.</p>
@@ -314,7 +336,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <section id="isolation">
     <div class="section-kicker reveal">Mistake 4</div>
-    <h2 class="reveal">Staying Isolated Instead of Joining a Union</h2>
+    <h2 class="reveal">Can a Poker Club Survive Without Joining a Union?</h2>
+    <p class="answer-lead reveal">Only the largest clubs can. For everyone else an isolated club is competing on liquidity against networks of 80+ clubs sharing one player pool, and that comparison is decided before a single hand is dealt.</p>
     <p class="reveal">Some owners try to build everything alone, keeping their club independent out of pride or a misunderstanding of how the market works. For all but the largest clubs, this is a slow death sentence.</p>
     <p class="reveal">A standalone club competes for players against thousands of others while offering only its own small lobby. A union connects many clubs into one shared player pool, so members of every club see and sit at the same tables. Almost all serious club-app action happens inside unions for this exact reason: it is the only way most clubs reach the concurrent player counts that keep tables running around the clock.</p>
     <p class="reveal">The owner who joins a union keeps their players, their branding and their rake configuration, and gains the one thing they could not build alone: liquidity. The owner who refuses watches their isolated lobby stay empty while union clubs run full tables. Independence feels principled right up until the games stop running.</p>
@@ -326,7 +349,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <section id="underestimating">
     <div class="section-kicker reveal">Mistake 5</div>
-    <h2 class="reveal">Underestimating the Workload</h2>
+    <h2 class="reveal">How Much Work Is Running a Poker Club?</h2>
+    <p class="answer-lead reveal">Far more than it looks. The owner keeps the club active, manages the player pool, handles chip distribution and withdrawals, resolves disputes and promotes games, usually alongside another job.</p>
     <p class="reveal">Running a club looks passive from the outside. It is not. The owner is responsible for keeping the club active, managing the player pool, handling chip distribution and withdrawals, resolving disputes, and promoting games, often every single day. Treating it as a side project that runs itself is a reliable way to watch it wither.</p>
     <p class="reveal">The work compounds because neglect is visible. A slow reply to a withdrawal request, an unanswered question about a game, a dispute left to fester: each one chips away at the trust that holds the club together. Owners who go quiet for a week often return to find their most active players have drifted to a club that answered faster.</p>
     <p class="reveal">This is one reason the union model helps beyond liquidity. When the network handles a share of the infrastructure and traffic, the owner can focus their limited time on the part that actually retains players: being responsive, present and reliable.</p>
@@ -334,14 +358,16 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
 
   <section id="one-stake">
     <div class="section-kicker reveal">Mistake 6</div>
-    <h2 class="reveal">Offering One Stake and One Format</h2>
+    <h2 class="reveal">Should a Poker Club Offer More Than One Stake?</h2>
+    <p class="answer-lead reveal">Yes. A single stake at a single format leaks players from both ends: winners move up and find nothing higher, casual players get stung and find nothing softer. Both leave.</p>
     <p class="reveal">A club that runs a single stake level at a single format leaks players from both ends. Winning players move up and find nothing higher. Casual players who get stung move down and find nothing softer. Both leave for clubs that can hold them.</p>
     <p class="reveal">Variety requires liquidity to support it, which loops back to the core problem. You cannot offer five stake levels and multiple formats if you only have enough players for one table. This is exactly what a shared union pool unlocks: enough concurrent players that a range of stakes and formats can run at the same time, giving players a reason to stay inside the network as their bankroll and tastes change.</p>
   </section>
 
   <section id="no-data">
     <div class="section-kicker reveal">Mistake 7</div>
-    <h2 class="reveal">Flying Blind</h2>
+    <h2 class="reveal">What Should a Club Owner Actually Track?</h2>
+    <p class="answer-lead reveal">When tables genuinely run, which stakes draw players, which hours are dead, and when members stop logging in. Owners who do not track these react to a dying club instead of preventing one.</p>
     <p class="reveal">The last mistake is the quietest. Many owners never look closely at when their tables actually run, which stakes draw players, what hours are dead, or why members stopped logging in. They react to the club dying instead of reading the signals that predicted it.</p>
     <p class="reveal">The signals are usually there well before the collapse. Declining concurrent players at peak, longer gaps between running games, a creeping silence in the club chat. An owner paying attention can act while the club is still saveable: adjust schedules to match where the players actually are, lean harder on union liquidity for the dead hours, address whatever broke trust. The owners who survive are not lucky. They are watching.</p>
 

@@ -243,6 +243,13 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   a svg path[stroke="currentColor"]{transition:transform 0.2s ease;}
   .pill svg, a:hover svg{transition:transform 0.2s ease;}
   .pill:hover svg{transform:translateX(2px);}
+
+  .answer-lead{background:#0d0d0d;border-left:2px solid #CC0000;border-radius:2px;padding:16px 20px;margin:0 0 24px;font-size:17px;line-height:1.65;color:#ddd;}
+  .answer-lead strong{color:#fff;font-weight:600;}
+  .fact-list{list-style:none;margin:16px 0 24px;padding:0;}
+  .fact-list li{position:relative;padding-left:24px;margin-bottom:12px;color:#999;line-height:1.7;}
+  .fact-list li:before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;background:#CC0000;border-radius:1px;}
+  .fact-list li strong{color:#fff;font-weight:600;}
 </style>
 <body>
 
@@ -291,7 +298,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- HOW RAKE WORKS -->
   <section id="how-rake-works">
     <div class="section-kicker reveal">The Revenue Source</div>
-    <h2 class="reveal">How Rake Actually Works in Club Apps</h2>
+    <h2 class="reveal">How Does Rake Work in Poker Club Apps?</h2>
+    <p class="answer-lead reveal">The platform takes a percentage of each pot, and that rake is credited to the club the players belong to. The club owner then settles with the union or platform on a fixed schedule, weekly in most networks.</p>
     <p class="reveal">Every cent a poker club earns starts with rake. Rake is the commission taken from each pot for hosting the game, and it is the only real revenue source a poker operation has. Industry-wide, rake runs roughly 2.5% to 10% of the pot up to a capped maximum, and on club apps the common structure is around 5% on ring games with a cap of about 3 big blinds, with no rake taken when a hand ends before the flop.</p>
     <p class="reveal">That cap matters more than the headline percentage. A 5% rake with a 3 big blind cap means a large pot is raked far less, proportionally, than a small one. The economics of a club therefore depend not on the rake rate alone but on volume: how many hands are dealt, at what stakes, by how many active players, across how many hours of the day.</p>
     <p class="reveal">This is the point most new club owners miss. You do not earn from having members. You earn from members <strong>playing</strong>. A club with a large roster that sits idle generates almost nothing. A smaller club with tables running around the clock can out-earn it many times over. Volume is the entire game, and volume depends on one thing above all others: liquidity.</p>
@@ -300,7 +308,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- LIQUIDITY PROBLEM -->
   <section id="liquidity-problem">
     <div class="section-kicker reveal">The Core Problem</div>
-    <h2 class="reveal">Why Independent Clubs Run Out of Action</h2>
+    <h2 class="reveal">Why Do Independent Poker Clubs Run Out of Action?</h2>
+    <p class="answer-lead reveal">Because an isolated club can only seat its own members. When the regulars log off the tables stop, and no amount of recruiting fixes a pool that is too small to overlap in time.</p>
     <p class="reveal">A standalone club is an island. The only players in its lobby are its own members. This sounds obvious, but its consequences are brutal and they are the single most common reason clubs fail.</p>
     <p class="reveal">Consider how player presence actually distributes across a day. Even a healthy roster is rarely online all at once. Members have jobs, time zones, and lives. A club with 80 registered members might see only a handful seated at any given moment outside peak hours. That is not enough to fill a single table at one stake, let alone offer choice across stakes and formats.</p>
     <p class="reveal">When a player opens the app, sees no running games, and closes it, two things happen. First, no rake is generated from that session. Second, and worse, the player learns that this club has no action, and is less likely to open it next time. Empty tables breed empty tables. The club enters a slow decline that no amount of recruiting fixes, because every new member walks into the same dead lobby.</p>
@@ -310,7 +319,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- STANDALONE MATH -->
   <section id="standalone-math">
     <div class="section-kicker reveal">By The Numbers</div>
-    <h2 class="reveal">The Standalone Club Math</h2>
+    <h2 class="reveal">How Much Does a Standalone Poker Club Actually Earn?</h2>
+    <p class="answer-lead reveal">Far less than the member count suggests. Earnings track concurrent players, not registrations, and a club with 100 members but six online at peak generates rake from six.</p>
     <p class="reveal">It helps to see the structure laid out. The figures below are illustrative ranges based on how club rosters typically convert to concurrent players, not guarantees, but they show the shape of the problem every independent operator faces.</p>
 
     <table class="compare-table reveal">
@@ -332,7 +342,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- UNION MODEL -->
   <section id="union-model">
     <div class="section-kicker reveal">The Structural Fix</div>
-    <h2 class="reveal">What a Union Actually Changes</h2>
+    <h2 class="reveal">What Does Joining a Poker Union Change?</h2>
+    <p class="answer-lead reveal">It merges your club into a shared player pool, so your members see tables filled by players from every club in the network. You keep your own club, your own players and your own rake settings.</p>
     <p class="reveal">A union, sometimes called a liga, connects multiple independent clubs into a single shared lobby. The defining mechanic is simple: when clubs join a union, their members all see and sit at the same tables, drawn from the combined pool of every club in the network. Almost all serious club-app action happens inside unions for exactly this reason.</p>
     <p class="reveal">The important part for an operator is what does <strong>not</strong> change. In a properly structured union, the club owner keeps their own players, their own branding, and their own rake configuration. Members still belong to their club for every administrative purpose. What the owner gains is liquidity: the same members now find full tables at more stakes, around the clock, because the lobby is filled by the entire network rather than one club's roster.</p>
     <p class="reveal">The arithmetic flips. Ten clubs of 80 members each become a shared pool of 800. The handful of players each club had online at off-peak hours now aggregate into enough concurrent players to run multiple tables at multiple stakes. The dead Tuesday afternoon becomes a live one. The revenue that was never generated, because nothing was running, starts being generated.</p>
@@ -355,7 +366,15 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- COMMISSION -->
   <section id="commission">
     <div class="section-kicker reveal">The Cost Side</div>
-    <h2 class="reveal">Commission, Rakeback and Where the Money Goes</h2>
+    <h2 class="reveal">What Commission Do Poker Unions Charge?</h2>
+    <p class="answer-lead reveal">The market average runs 15 to 20 percent of union rake. TOP UNION charges 7 percent on X Poker and PPPoker, and 15 percent on ClubGG.</p>
+  <ul class="fact-list reveal">
+    <li><strong>Market average:</strong> 15 to 20 percent of union rake.</li>
+    <li><strong>TOP UNION on X Poker and PPPoker:</strong> 7 percent.</li>
+    <li><strong>TOP UNION on ClubGG:</strong> 15 percent.</li>
+    <li><strong>Settlement:</strong> weekly, every Monday, which is the industry standard.</li>
+    <li><strong>What stays with the owner:</strong> the club itself, its players, and its own rake settings.</li>
+  </ul>
     <p class="reveal">Liquidity is not free. A union charges commission, a percentage of the rake generated by a club's players inside the shared pool. Across the market this typically falls somewhere between 7% and 20%, depending on the network. Reputable unions take no upfront fee and no monthly minimum: the commission model only earns when the club earns, which keeps incentives aligned.</p>
     <p class="reveal">It is worth understanding why club economics can be leaner than traditional online rooms in the first place. A corporate poker site carries marketing budgets, licensing fees across jurisdictions, and shareholder margins, and every one of those takes a slice before anything reaches the operator or player. A private club structure strips most of that out. There is no corporate marketing spend and no licensing overhead layered into every hand, which is why clubs and their agents can often pass more value back through rakeback than a corporate room would.</p>
     <p class="reveal">For the club owner deciding whether a union is worth its commission, the question is straightforward. A standalone club keeps 100% of a number that is often close to zero during dead hours. A club in a strong union pays a commission on a number that is meaningfully larger because tables actually run. The relevant comparison is not "free versus paying a percentage." It is "most of nothing versus a smaller share of something real."</p>
@@ -368,7 +387,8 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   <!-- WHAT CHANGES -->
   <section id="what-changes">
     <div class="section-kicker reveal">In Practice</div>
-    <h2 class="reveal">What Changes in the First Weeks</h2>
+    <h2 class="reveal">How Long Before a Club Sees Results After Joining a Union?</h2>
+    <p class="answer-lead reveal">Table activity usually changes within days, because the shared pool is already running. The measurable difference in rake shows over the first few weekly settlements.</p>
     <p class="reveal">When a club connects to a shared pool, the first visible change is the lobby. Tables that were empty start showing players from across the network. The club's own members, who previously logged in and found nothing, begin finding games at the times they actually play. That is the mechanism behind everything else.</p>
     <p class="reveal">From there the effects compound. Members who consistently find action play more sessions. More sessions mean more hands, and more hands mean more rake under the same structure the owner already set. Because the shared pool covers more time zones, the dead hours fill in, which is usually where a standalone club was leaking the most potential revenue. Integration itself is fast on most networks, typically a matter of one to two days, since it is a configuration change rather than a rebuild.</p>
     <p class="reveal">None of this requires the owner to change how they run the club. The branding, the player relationships, the rake settings all stay in place. What changes is that the club stops competing for a tiny slice of fragmented traffic and starts drawing on the whole network's liquidity. For most independent clubs, that shift from isolated lobby to shared pool is the difference between slow decline and a club that holds its players.</p>
