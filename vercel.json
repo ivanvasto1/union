@@ -270,6 +270,18 @@
     {
       "source": "/pt/join-pppoker-union",
       "destination": "/pt-join-pppoker-union.html"
+    },
+    {
+      "source": "/ru/top-union-vs-primetime-vs-pppfish",
+      "destination": "/ru-top-union-vs-primetime-vs-pppfish.html"
+    },
+    {
+      "source": "/es/top-union-vs-primetime-vs-pppfish",
+      "destination": "/es-top-union-vs-primetime-vs-pppfish.html"
+    },
+    {
+      "source": "/pt/top-union-vs-primetime-vs-pppfish",
+      "destination": "/pt-top-union-vs-primetime-vs-pppfish.html"
     }
   ],
   "headers": [
