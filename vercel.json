@@ -208,6 +208,22 @@
       "destination": "/pt-poker-club-economics.html"
     },
     {
+      "source": "/pppoker-club-statistics",
+      "destination": "/pppoker-club-statistics.html"
+    },
+    {
+      "source": "/ru/pppoker-club-statistics",
+      "destination": "/ru-pppoker-club-statistics.html"
+    },
+    {
+      "source": "/es/pppoker-club-statistics",
+      "destination": "/es-pppoker-club-statistics.html"
+    },
+    {
+      "source": "/pt/pppoker-club-statistics",
+      "destination": "/pt-pppoker-club-statistics.html"
+    },
+    {
       "source": "/why-poker-clubs-die",
       "destination": "/why-poker-clubs-die.html"
     },
