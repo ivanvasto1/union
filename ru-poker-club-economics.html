@@ -252,6 +252,18 @@ footer{border-top:1px solid var(--border);margin-top:80px;padding:48px 0 32px;}
   .pill svg, a:hover svg{transition:transform 0.2s ease;}
   .pill:hover svg{transform:translateX(2px);}
 </style>
+<meta name="theme-color" content="#080808">
+<style id="mobile-fix">
+html,body{max-width:100%;overflow-x:hidden}
+@supports(overflow:clip){html,body{overflow-x:clip}}
+img,video,iframe{max-width:100%}
+@media(max-width:768px){
+  [style*="grid-template-columns"]:not(.compare-wrap *){grid-template-columns:minmax(0,1fr)!important}
+  .btn-red,.btn-outline{max-width:100%;white-space:normal;justify-content:center;text-align:center;padding-left:20px;padding-right:20px;letter-spacing:2px}
+  table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  nav .btn-red,nav .nav-cta{padding-left:14px;padding-right:14px;font-size:15px;white-space:nowrap}
+}
+</style>
 <body>
 
 <div id="progress"></div>
